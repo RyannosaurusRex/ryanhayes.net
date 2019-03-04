@@ -8,13 +8,13 @@ guid: http://ryanhayes.net/?p=1001347924
 permalink: /how-to-migrate-from-rock-rms-to-planning-center-online/
 hestia_layout_select:
   - full-width
-image: img/wp-content/uploads/2019/02/Planning-Center-Online-Import.png
+image: img/logos/planning-center-online-logo.png
 categories:
   - Blog
 ---
 I run the software systems for [Harvest Community Church](https://harvesttn.com/) and also play guitar for our 3 services on Sunday.  We&#8217;ve been using Planning Center&#8217;s Services app to schedule and manage our Sunday mornings for almost a decade. Recently Harvest moved from Rock RMS to PCO, and it&#8217;s been great. Below is the database script I used to extract the data needed from RockRMS and get it in the format needed for a Planning Center Online import.
 
-`gist:1bca0a9dc4e76a0d50640548ab3c38e5#RockRmsExportToPCO.sql`
+`gist:RyannosaurusRex/1bca0a9dc4e76a0d50640548ab3c38e5#RockRmsExportToPCO.sql`
 
 ## Extract the data from Rock RMS
 
