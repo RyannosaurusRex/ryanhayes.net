@@ -6,7 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347862
 permalink: /how-to-run-docker-windows-containers-with-mcafee-endpoint-security/
-image: img/demo1.jpg
+image: img/boat-container.jpeg
 hestia_layout_select:
   - full-width
 categories:
