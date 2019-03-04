@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347473
 permalink: /how-the-xbox-one-lost-me-and-then-won-me-back-with-the-cloud/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 standard_seo_post_level_layout:

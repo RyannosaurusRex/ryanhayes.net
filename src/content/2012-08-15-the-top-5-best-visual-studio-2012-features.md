@@ -5,6 +5,7 @@ date: 2012-08-15T20:32:27+00:00
 author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347383
+image: img/demo1.jpg
 permalink: /the-top-5-best-visual-studio-2012-features/
 standard_seo_post_level_layout:
   - ""

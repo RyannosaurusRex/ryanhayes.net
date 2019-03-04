@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://blog.ryanhayes.net/post/649180253
 permalink: /android-project-part-i-background/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 wpb_post_views_count:

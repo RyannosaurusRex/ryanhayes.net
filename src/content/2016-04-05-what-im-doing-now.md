@@ -5,6 +5,7 @@ date: 2016-04-05T17:25:44+00:00
 author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347718
+image: img/demo1.jpg
 permalink: /what-im-doing-now/
 bluth_post_layout:
   - right_side

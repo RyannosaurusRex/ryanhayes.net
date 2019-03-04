@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347853
 permalink: /slides-intro-progressive-web-apps-pwa/
+image: img/demo1.jpg
 categories:
   - Blog
 ---

@@ -3,6 +3,7 @@ id: 1001346736
 title: How To Sync Multiple Outlook Calendars and Google Calendar Using Google Calendar Sync
 date: 2010-06-14T21:18:35+00:00
 author: Ryan Hayes
+image: img/demo1.jpg
 layout: post
 guid: http://blog.ryanhayes.net/post/698630127
 permalink: /how-to-sync-multiple-outlook-calendars-and-google-calendar-using-google-calendar-sync/

@@ -4,6 +4,7 @@ title: JavaScript is Crazy! Code This, Not That!
 date: 2016-02-25T00:38:53+00:00
 author: Ryan Hayes
 layout: post
+image: img/demo1.jpg
 guid: http://ryanhayes.net/?p=1001347729
 permalink: /code-this-not-that/
 bluth_post_layout:

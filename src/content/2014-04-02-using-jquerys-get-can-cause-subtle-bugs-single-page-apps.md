@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347557
 permalink: /using-jquerys-get-can-cause-subtle-bugs-single-page-apps/
+image: img/demo1.jpg
 bluth_post_layout:
   - right_side
 bluth_post_right_sidebar:

@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347332
 permalink: /automating-daily-status-reports-with-project-server-and-team-foundation-server/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 robotsmeta:

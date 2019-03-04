@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://blog.ryanhayes.net/post/649165642
 permalink: /software-development-academic-vs-real-world-education/
+image: img/demo1.jpg
 robotsmeta:
   - index,follow
 dsq_thread_id:

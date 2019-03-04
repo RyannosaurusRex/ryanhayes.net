@@ -2,8 +2,8 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Ghost',
-    description: 'The professional publishing platform',
+    title: 'Ryan Hayes',
+    description: 'Ryan Hayes - lets build great teams together.',
     siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
   },
   mapping: {
@@ -22,6 +22,13 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: 'gatsby-remark-embed-gist',
+            options: {
+              username: 'RyannosaurusRex',
+              includeDefaultCss: true
+            }
+          },
           {
             resolve: 'gatsby-remark-responsive-iframe',
             options: {

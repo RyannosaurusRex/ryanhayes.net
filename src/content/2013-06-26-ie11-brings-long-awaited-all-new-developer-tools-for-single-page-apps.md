@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347483
 permalink: /ie11-brings-long-awaited-all-new-developer-tools-for-single-page-apps/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 standard_seo_post_level_layout:

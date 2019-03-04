@@ -32,34 +32,15 @@ const About: React.FunctionComponent = () => (
       <main id="site-main" className="site-main" css={[SiteMain, outer]}>
         <article className="post page" css={[PostFull, NoImage]}>
           <PostFullHeader>
-            <PostFullTitle>About</PostFullTitle>
+            <PostFullTitle>About Ryan Hayes</PostFullTitle>
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
-            <div className="post-content">
-              <p>
-                Ghost is professional publishing platform designed for modern journalism. This is a
-                demo site of a basic Ghost install to give you a general sense of what a new Ghost
-                site looks like when set up for the first time.
-              </p>
-              <blockquote>
-                <p>
-                  If you'd like to set up a site like this for yourself, head over to{' '}
-                  <a href="https://ghost.org">Ghost.org</a> and start a free 14 day trial to give
-                  Ghost a try!
-                </p>
-              </blockquote>
-              <p>
-                If you're a developer: Ghost is a completely open source (MIT) Node.js application
-                built on a JSON API with an Ember.js admin client. It works with MySQL and SQLite,
-                and is publicly available <a href="https://github.com/TryGhost/ghost">on Github</a>.
-              </p>
-              <p>
-                If you need help with using Ghost, you'll find a ton of useful articles on{' '}
-                <a href="https://help.ghost.org">our knowledgebase</a>, as well as extensive{' '}
-                <a href="https://docs.ghost.org">developer documentation</a>.
-              </p>
-            </div>
+          <div className="post-content">
+            <p>Ryan has well over a decade&nbsp;of software development and business analysis experience working with big-name clients such as Discovery Channel, AOL, Toyota, and the National Academy of Sciences and for companies like Red Hat. Ryan has helped teams deliver award-winning applications that drive business processes, site traffic, profit and company growth. Currently the Owner and Principal Software Architect at Sonata Cove Software, Ryan puts his experience and business creativity to work every day to build amazing solutions for the enterprise web, desktop and mobile platforms.</p>
+            <p>Ryan holds a B.S. degree in Computer Science from the University of Virginia’s College at Wise, and an M.S. in Software Engineering from George Mason University.</p>
+            <p>Ryan is a four-time Microsoft MVP Award Winner, and a member of the the IE userAgents and Azure Advisors groups&nbsp;at Microsoft.</p>
+		      </div>
           </PostFullContent>
         </article>
       </main>

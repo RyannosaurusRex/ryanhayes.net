@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://blog.ryanhayes.net/post/489175117
 permalink: /secret-passage-is-my-top-dream-home-requirement/
+image: img/demo1.jpg
 wpb_post_views_count:
   - "1391"
 dsq_thread_id:

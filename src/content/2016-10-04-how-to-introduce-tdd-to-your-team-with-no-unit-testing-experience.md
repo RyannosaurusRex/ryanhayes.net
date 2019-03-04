@@ -4,6 +4,7 @@ title: 'TDD 0 to 60: How to Introduce TDD to Your Team With No Unit Testing Expe
 date: 2016-10-04T13:50:05+00:00
 author: Ryan Hayes
 layout: post
+image: img/demo1.jpg
 guid: http://ryanhayes.net/?p=1001347167
 permalink: /how-to-introduce-tdd-to-your-team-with-no-unit-testing-experience/
 robotsmeta:

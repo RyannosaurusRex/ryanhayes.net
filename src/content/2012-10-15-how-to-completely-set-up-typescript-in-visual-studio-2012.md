@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347398
 permalink: /how-to-completely-set-up-typescript-in-visual-studio-2012/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 standard_seo_post_level_layout:

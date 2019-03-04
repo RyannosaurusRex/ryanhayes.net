@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347080
 permalink: /microsoft-mvp-award-announcement/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 robotsmeta:

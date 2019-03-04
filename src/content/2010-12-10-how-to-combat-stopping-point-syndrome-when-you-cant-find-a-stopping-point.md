@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347064
 permalink: /how-to-combat-stopping-point-syndrome-when-you-cant-find-a-stopping-point/
+image: img/demo1.jpg
 robotsmeta:
   - index,follow
 dsq_thread_id:

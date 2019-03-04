@@ -5,6 +5,7 @@ date: 2010-03-30T04:57:00+00:00
 author: Ryan Hayes
 layout: post
 guid: http://blog.ryanhayes.net/post/483463516
+image: img/demo1.jpg
 permalink: /whats-my-motivation-or-resuming-old-projects/
 robotsmeta:
   - index,follow

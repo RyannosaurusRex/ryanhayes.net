@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347322
 permalink: /5-ways-to-build-a-startup-on-the-microsoft-stack-for-free-make-money-before-you-spend-any/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 standard_seo_post_level_layout:

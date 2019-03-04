@@ -5,6 +5,7 @@ date: 2010-05-03T17:34:00+00:00
 author: Ryan Hayes
 layout: post
 guid: http://blog.ryanhayes.net/post/568611165
+image: img/demo1.jpg
 permalink: /mountainographers/
 robotsmeta:
   - index,follow

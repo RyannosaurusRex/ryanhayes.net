@@ -5,6 +5,7 @@ date: 2010-05-31T07:08:54+00:00
 author: Ryan Hayes
 layout: post
 guid: http://blog.ryanhayes.net/post/649210287
+image: img/demo1.jpg
 permalink: /reading-rss-feeds-in-android-and-java/
 robotsmeta:
   - index,follow

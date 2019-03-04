@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347494
 permalink: /msbuild-output-csc-fatal-error-cs2008-inputs-specified/
+image: img/demo1.jpg
 standard_seo_post_level_layout:
   - ""
 standard_link_url_field:

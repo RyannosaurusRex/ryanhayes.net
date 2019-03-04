@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347256
 permalink: /a-first-look-at-codename-windows-8-or-will-there-be-silverlight-in-windows-8/
+image: img/demo1.jpg
 robotsmeta:
   - index,follow
 dsq_thread_id:

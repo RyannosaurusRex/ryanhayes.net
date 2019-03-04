@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347704
 permalink: /how-to-set-up-an-emberjs-app-inside-of-an-asp-net-mvc-app/
+image: img/demo1.jpg
 bluth_post_layout:
   - right_side
 bluth_post_right_sidebar:

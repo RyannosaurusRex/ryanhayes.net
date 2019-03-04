@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347348
 permalink: /why-you-should-build-your-website-using-static-html-files/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 wpb_post_views_count:

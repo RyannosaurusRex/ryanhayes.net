@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347845
 permalink: /azure-bot-service-check/
+image: img/demo1.jpg
 categories:
   - Blog
   - Software

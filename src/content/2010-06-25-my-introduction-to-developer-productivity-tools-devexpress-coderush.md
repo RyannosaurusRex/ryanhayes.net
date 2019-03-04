@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://blog.ryanhayes.net/post/734567300
 permalink: /my-introduction-to-developer-productivity-tools-devexpress-coderush/
+image: img/demo1.jpg
 dsq_thread_id:
   - ""
 robotsmeta:

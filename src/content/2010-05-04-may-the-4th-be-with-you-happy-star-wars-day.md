@@ -5,6 +5,7 @@ date: 2010-05-04T15:29:00+00:00
 author: Ryan Hayes
 layout: post
 guid: http://blog.ryanhayes.net/post/571047972
+image: img/demo1.jpg
 permalink: /may-the-4th-be-with-you-happy-star-wars-day/
 dsq_thread_id:
   - ""

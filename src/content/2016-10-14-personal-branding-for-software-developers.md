@@ -6,6 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347727
 permalink: /personal-branding-for-software-developers/
+image: img/demo1.jpg
 bluth_post_layout:
   - right_side
 bluth_post_right_sidebar:

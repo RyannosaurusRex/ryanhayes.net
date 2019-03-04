@@ -3,6 +3,7 @@ id: 1001346740
 title: 'How To Check a Web Page For a String Using .NET C# Using HttpWebRequest'
 date: 2010-06-01T14:59:58+00:00
 author: Ryan Hayes
+image: img/demo1.jpg
 layout: post
 guid: http://blog.ryanhayes.net/post/653497196
 permalink: /how-to-check-a-web-page-for-a-string-using-net-c-sharp-using-httpwebrequest/
