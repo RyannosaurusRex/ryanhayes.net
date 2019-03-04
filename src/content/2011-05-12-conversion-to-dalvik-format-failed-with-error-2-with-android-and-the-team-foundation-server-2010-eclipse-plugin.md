@@ -23,22 +23,22 @@ tags:
   - software
   - Team Foundation Server 2010
 ---
-Recently I&#8217;ve been working on an big Android application where I work set for release later this year.  It&#8217;s going to be a great help to employees and distributors in the field letting them do all sorts of things they normally need to be at a computer for.  I&#8217;m using my Macbook Pro to do development as it&#8217;s easier to not have to switch back and forth from OSX to windows as I&#8217;m building application features in parallel in an effort to release simultaneously (which may or may not be smart).  One thing, though is that we use Microsoft&#8217;s Team Foundation Server at work, which is, of course, a Microsoft product.  Luckily they bought TeamPrise somewhere along the line and now there&#8217;s [a great Eclipse plugin](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=AF1F5168-C0F7-47C6-BE7A-2A83A6C02E57&displaylang=en) (unfortunately and frustratingly, only available to Bizspark or MSDN Ultimate subscribers &#8211; license key required upon install) to let you check in/out right from within Eclipse.  However, I had one problem that I couldn&#8217;t seem to figure out until I accidentally seemed to find something that works&#8230;<!--more-->
+Recently I've been working on an big Android application where I work set for release later this year.  It's going to be a great help to employees and distributors in the field letting them do all sorts of things they normally need to be at a computer for.  I'm using my Macbook Pro to do development as it's easier to not have to switch back and forth from OSX to windows as I'm building application features in parallel in an effort to release simultaneously (which may or may not be smart).  One thing, though is that we use Microsoft's Team Foundation Server at work, which is, of course, a Microsoft product.  Luckily they bought TeamPrise somewhere along the line and now there's [a great Eclipse plugin](http://www.microsoft.com/downloads/en/details.aspx?FamilyID=AF1F5168-C0F7-47C6-BE7A-2A83A6C02E57&displaylang=en) (unfortunately and frustratingly, only available to Bizspark or MSDN Ultimate subscribers &#8211; license key required upon install) to let you check in/out right from within Eclipse.  However, I had one problem that I couldn't seem to figure out until I accidentally seemed to find something that works&#8230;<!--more-->
 
-Upon installing the TFS Eclipse plugin and adding a project to source control, you&#8217;ll likely come across this error:
+Upon installing the TFS Eclipse plugin and adding a project to source control, you'll likely come across this error:
 
-> &#8220;Conversion to Dalvik format failed with error 2&#8221;
+> "Conversion to Dalvik format failed with error 2"
 
-Something about the way files are added to TFS causes this error to happen initially, and no amount debugging the code will help at all (just to save you some time).  Here&#8217;s what worked and is the #1 thing to try according to my old pal who taught me how to code Java well in the first place &#8211; Drew Stockdreher.
+Something about the way files are added to TFS causes this error to happen initially, and no amount debugging the code will help at all (just to save you some time).  Here's what worked and is the #1 thing to try according to my old pal who taught me how to code Java well in the first place &#8211; Drew Stockdreher.
 
-In Eclipse&#8217;s menu:
+In Eclipse's menu:
 
   1. Select **Project**
   2. Select **Clean&#8230;**
-  3. **Profit!** (or continue in what you were doing because you don&#8217;t need a step 3).
+  3. **Profit!** (or continue in what you were doing because you don't need a step 3).
 
-That&#8217;s it to fix this little error.  Now, I&#8217;m not saying this error doesn&#8217;t represent multiple different states, because exceptions can certainly do that to you sometimes.  However, if you&#8217;re getting started with TFS and Android in particular, give this trick a try whenever you come across it to rule it out as it literally almost takes no time at all.
+That's it to fix this little error.  Now, I'm not saying this error doesn't represent multiple different states, because exceptions can certainly do that to you sometimes.  However, if you're getting started with TFS and Android in particular, give this trick a try whenever you come across it to rule it out as it literally almost takes no time at all.
 
-_Did this not help you out?  Did you find that &#8220;Conversion to Dalvik format failed with error 2&#8221; means something else?  Leave a comment and let everyone know!_
+_Did this not help you out?  Did you find that "Conversion to Dalvik format failed with error 2" means something else?  Leave a comment and let everyone know!_
 
 &nbsp;

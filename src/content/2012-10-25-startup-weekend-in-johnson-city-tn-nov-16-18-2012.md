@@ -19,7 +19,7 @@ categories:
   - Entrepreneurship
 format: image
 ---
-The thing I love about Startups is that it&#8217;s the combination of two things I enjoy: technology and business.  I&#8217;m excited to announce that I&#8217;ll be acting as a coach and mentor for the event!  Startup Weekend coincides with Global Entrepreneurship Week, where events will take place all over the world to help educate people about entrepreneurship and help businesses get started.  Here&#8217;s the official press release and [the Startup Weekend Tri-Cities&#8217; website](http://tricities.startupweekend.org/):
+The thing I love about Startups is that it's the combination of two things I enjoy: technology and business.  I'm excited to announce that I'll be acting as a coach and mentor for the event!  Startup Weekend coincides with Global Entrepreneurship Week, where events will take place all over the world to help educate people about entrepreneurship and help businesses get started.  Here's the official press release and [the Startup Weekend Tri-Cities' website](http://tricities.startupweekend.org/):
 
 > AccelNow, the Northeast Tennessee regional accelerator, will hold a [“Start-up Weekend Tri-Cities” on November 16, 17 and 18.](http://tricities.startupweekend.org/)
 > 

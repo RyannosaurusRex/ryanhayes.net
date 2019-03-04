@@ -21,6 +21,6 @@ tags:
   - development
   - productivity
 ---
-I love CodeRush.  When I was looking at a productivity plugin for Visual Studio, I basically had two options: CodeRush+Refactor! Pro or ReSharper.  I eventually picked CodeRush for the visualizations, code-from-scratch productivity boosters and templates, and extensibility.  As with anything, it takes some getting used to the shortcuts inside CodeRush to really become effective using it.  Here&#8217;s a link to a downloadable and printable cheat sheet with all of the most-used shortcuts for CR and Refactor!
+I love CodeRush.  When I was looking at a productivity plugin for Visual Studio, I basically had two options: CodeRush+Refactor! Pro or ReSharper.  I eventually picked CodeRush for the visualizations, code-from-scratch productivity boosters and templates, and extensibility.  As with anything, it takes some getting used to the shortcuts inside CodeRush to really become effective using it.  Here's a link to a downloadable and printable cheat sheet with all of the most-used shortcuts for CR and Refactor!
 
 Link: [CodeRush Shortcuts/Templates Cheat Sheet Printable PDF Download](http://community.devexpress.com/blogs/markmiller/CodeRushShortcutsAndTemplates.pdf)

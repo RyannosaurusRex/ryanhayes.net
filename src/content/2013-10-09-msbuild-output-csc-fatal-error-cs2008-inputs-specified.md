@@ -34,11 +34,11 @@ Today I was setting up an automated build using TeamCity and came across an issu
 
 > [MSBuild output] CSC : fatal error CS2008: No inputs specified
 
-Turns out that **MSBuild actually fails the whole build when you&#8217;re running it from the command line like this if there&#8217;s not a file that it can build**.  The project in question was actually just full of XML and configuration files that other projects referenced and got published with a NuGet package to our private feed.  **To fix it, I just added a simple .cs file, so that MSBuild had something to do.  🙂**
+Turns out that **MSBuild actually fails the whole build when you're running it from the command line like this if there's not a file that it can build**.  The project in question was actually just full of XML and configuration files that other projects referenced and got published with a NuGet package to our private feed.  **To fix it, I just added a simple .cs file, so that MSBuild had something to do.  🙂**
 
-Here&#8217;s the code:
+Here's the code:
 
-[syntax type=&#8221;html|php|js|css&#8221;]
+[syntax type="html|php|js|css"]
 
 using System;  
 using System.Collections.Generic;  

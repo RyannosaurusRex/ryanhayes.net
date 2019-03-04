@@ -16,7 +16,7 @@ image: img/wp-content/uploads/2013/10/Periodic-Table-of-the-HTML5-Elements_fdhwi
 categories:
   - Blog
 ---
-Have you heard?  HTML 5 is out!  (er, is coming, depending on how you see things).  It&#8217;s still a work in progress, but you can still use HTML 5 now with many of the new browsers.  What does that mean for us as developers?  New things to learn, of course!  New techniques, new designs, but mostly: new tags!  There are lots of new tags in HTML 5 that are specific to headers, footers, navigation, and more.  Luckily, web developer [Josh Duck](http://joshduck.com/) has made an awesome interactive [Table of the HTML 5 Elements](http://joshduck.com/periodic-table.html).<!--more-->The table below is just a sample of the awesomeness!  Head over to 
+Have you heard?  HTML 5 is out!  (er, is coming, depending on how you see things).  It's still a work in progress, but you can still use HTML 5 now with many of the new browsers.  What does that mean for us as developers?  New things to learn, of course!  New techniques, new designs, but mostly: new tags!  There are lots of new tags in HTML 5 that are specific to headers, footers, navigation, and more.  Luckily, web developer [Josh Duck](http://joshduck.com/) has made an awesome interactive [Table of the HTML 5 Elements](http://joshduck.com/periodic-table.html).<!--more-->The table below is just a sample of the awesomeness!  Head over to 
 
 [JoshDuck.com](http://joshduck.com/periodic-table.html) to check out:
 

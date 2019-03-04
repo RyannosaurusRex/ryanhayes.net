@@ -11,4 +11,4 @@ categories:
   - Community
   - Software
 ---
-Over the last decade I&#8217;ve worked with dozens of teams helping them work better as a team and individuals through mentoring and helping build infrastructure.  I recently gave a presentation that used Maslow&#8217;s Hierarchy of Needs and compared that to how you can build great developers on your team. Take a look at the slides below and get in touch if you&#8217;d like me to give this talk at your local meetup or conference!
+Over the last decade I've worked with dozens of teams helping them work better as a team and individuals through mentoring and helping build infrastructure.  I recently gave a presentation that used Maslow's Hierarchy of Needs and compared that to how you can build great developers on your team. Take a look at the slides below and get in touch if you'd like me to give this talk at your local meetup or conference!

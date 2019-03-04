@@ -22,7 +22,7 @@ tags:
   - SharePoint 2010
   - visual studio 2010
 ---
-Visual Studio 2010 SP1 Beta is out for MSDN subscribers, and brings great new features for everyone &#8211; not to mention SharePoint development.  If you&#8217;ve used Intellitrace to step backwards through your code to debug tricky situations that require more context, you know how awesome it is.  Unfortunately, that&#8217;s not available for x64 bit and SharePoint projects currently.   Finally, SP1 bring that functionality to us along with a lot more.  Here are some of the highlights via [Jason Zanders&#8217; Weblog](http://blogs.msdn.com/b/jasonz/archive/2010/12/07/announcing-visual-studio-2010-service-pack-1-beta.aspx):<!--more-->
+Visual Studio 2010 SP1 Beta is out for MSDN subscribers, and brings great new features for everyone &#8211; not to mention SharePoint development.  If you've used Intellitrace to step backwards through your code to debug tricky situations that require more context, you know how awesome it is.  Unfortunately, that's not available for x64 bit and SharePoint projects currently.   Finally, SP1 bring that functionality to us along with a lot more.  Here are some of the highlights via [Jason Zanders' Weblog](http://blogs.msdn.com/b/jasonz/archive/2010/12/07/announcing-visual-studio-2010-service-pack-1-beta.aspx):<!--more-->
 
   * **Help Viewer &#8211;** The new local Help Viewer is a simple client application that re-introduces key productivity features including a fully-expandable table of contents and a keyword index.  For additional information about these improvements, check out Jeff Braaten’s post [here](http://thirdblogfromthesun.com/2010/10/the-story-of-help-in-visual-studio-2010-part-3/ "here").
 

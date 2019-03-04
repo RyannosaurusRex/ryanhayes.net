@@ -26,7 +26,7 @@ dsq_thread_id:
 categories:
   - Blog
 ---
-I love Ember. It helps me build _fantastic_ UIs, but security isn&#8217;t super straightforward and I suck at it. I love ASP.NET MVC. It help me build secure applications and solid APIs, but for some apps I need a great responsive UI with great interaction.
+I love Ember. It helps me build _fantastic_ UIs, but security isn't super straightforward and I suck at it. I love ASP.NET MVC. It help me build secure applications and solid APIs, but for some apps I need a great responsive UI with great interaction.
 
 Together, these two technologies can be used together to create really amazing apps (and really quickly, too). So this guide is to show you how to set them up together.<!--more-->
 
@@ -34,7 +34,7 @@ _Note:_ This article assumes you have created a stock new ASP.NET project within
 
 ## [](https://gist.github.com/RyannosaurusRex/063c76e2d3eb756989f3#set-the-emberjs-indexhtml-as-the-app-route-in-your-mvc-app){#user-content-set-the-emberjs-indexhtml-as-the-app-route-in-your-mvc-app.anchor}Set the EmberJS index.html as the /App route in your MVC app
 
-In whatever route in your MVC app that goes to /App (or whatever you want your &#8220;app&#8221; route to be named), return the `index.html` that&#8217;s built from your Ember app.
+In whatever route in your MVC app that goes to /App (or whatever you want your "app" route to be named), return the `index.html` that's built from your Ember app.
 
 <div class="highlight highlight-source-cs">
   <pre>    [RequireHttps]
@@ -50,7 +50,7 @@ In whatever route in your MVC app that goes to /App (or whatever you want your &
 
 ## [](https://gist.github.com/RyannosaurusRex/063c76e2d3eb756989f3#update-asset-urls){#user-content-update-asset-urls.anchor}Update asset URLS
 
-ASP.NET MVC will set the root of the app and make it different than if you were serving the Ember.js app by itself, so you&#8217;ll need to modify the asset folder URL to the folder relative to the MVC app, like so:
+ASP.NET MVC will set the root of the app and make it different than if you were serving the Ember.js app by itself, so you'll need to modify the asset folder URL to the folder relative to the MVC app, like so:
 
 Change the following in index.html:
 
@@ -60,11 +60,11 @@ to
 
 `<link rel="stylesheet" href="/my-ember-app/dist/assets/vendor.css">`
 
-&#8230;and continue for any other .js apps you are serving in your Ember app&#8217;s index.html
+&#8230;and continue for any other .js apps you are serving in your Ember app's index.html
 
 ## [](https://gist.github.com/RyannosaurusRex/063c76e2d3eb756989f3#setup-camel-casing-of-json-for-ember-data){#user-content-setup-camel-casing-of-json-for-ember-data.anchor}Setup Camel Casing of JSON for Ember Data
 
-Ember Data is certainly not required, but it definitely helps in a lot of cases. In order to save yourself from writing any adapters for Ember Data to support non-camelcase (the default in ASP.NET WebAPI), you use the following code in your Global.asax.cs to force JSON.NET to camelcase all of your responses, and expect the same in return. This also means you&#8217;re closer to supporting the jsonapi.org spec!
+Ember Data is certainly not required, but it definitely helps in a lot of cases. In order to save yourself from writing any adapters for Ember Data to support non-camelcase (the default in ASP.NET WebAPI), you use the following code in your Global.asax.cs to force JSON.NET to camelcase all of your responses, and expect the same in return. This also means you're closer to supporting the jsonapi.org spec!
 
 In your `Global.asax.cs`, import `using Newtonsoft.Json;` and `using Newtonsoft.Json.Serialization;`and then include the following in your ApplicationStart() method:
 

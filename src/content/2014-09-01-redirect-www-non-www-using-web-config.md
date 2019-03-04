@@ -27,7 +27,7 @@ categories:
   - Blog
 ---
 <div class="wrapper">
-  By now, most people know that websites&#8217; SEO is dinged by Google when there is both a www and non-www url with the same content on both. Google (and Bing) treat them as two separate sites and they fight for pagerank as everyone else blows your two competing sites out of the water. I&#8217;ve had redirects set up on my WordPress blog for the past 4 years, which is pretty easy to do, but I <a title="Ghost VS WordPress (and Why I Migrated Back to WordPress)" href="http://ryanhayes.net/ghost-vs-wordpress-migrating/">recently moved my blog over to Ghost</a> blogging engine and since it&#8217;s currently at version 0.5, it didn&#8217;t have this 301 redirect functionality built in, so I needed to roll my own. Since I was moving to <a href="http://azure.com">Azure Websites</a>, I needed to add a redirect to get this fixed in the web.config, so I thought I&#8217;d share it with you!&nbsp;</p> 
+  By now, most people know that websites' SEO is dinged by Google when there is both a www and non-www url with the same content on both. Google (and Bing) treat them as two separate sites and they fight for pagerank as everyone else blows your two competing sites out of the water. I've had redirects set up on my WordPress blog for the past 4 years, which is pretty easy to do, but I <a title="Ghost VS WordPress (and Why I Migrated Back to WordPress)" href="http://ryanhayes.net/ghost-vs-wordpress-migrating/">recently moved my blog over to Ghost</a> blogging engine and since it's currently at version 0.5, it didn't have this 301 redirect functionality built in, so I needed to roll my own. Since I was moving to <a href="http://azure.com">Azure Websites</a>, I needed to add a redirect to get this fixed in the web.config, so I thought I'd share it with you!&nbsp;</p> 
   
   <h3 id="redirectingtononwwwusingthewebconfig">
     Redirecting to non-www using the Web.config
@@ -38,7 +38,7 @@ categories:
   </p>
   
   <p>
-    Here&#8217;s what you need to add to your Web.config:
+    Here's what you need to add to your Web.config:
   </p>
   
   <pre><code>&lt;rewrite&gt;
@@ -60,7 +60,7 @@ categories:
   
   <blockquote>
     <p>
-      Note: You&#8217;ll need to make sure that for redirecting a site like www.example.com to example.com, you&#8217;ll need to make sure that you&#8217;ve configured <em>both</em> of those domains to point to your website. If you never set up the www. site to point to your host, IIS and your Web.config will never be hit to do a redirection.
+      Note: You'll need to make sure that for redirecting a site like www.example.com to example.com, you'll need to make sure that you've configured <em>both</em> of those domains to point to your website. If you never set up the www. site to point to your host, IIS and your Web.config will never be hit to do a redirection.
     </p>
     
     <p>
@@ -77,7 +77,7 @@ categories:
   </h3>
   
   <p>
-    And that&#8217;s it! <strong>These redirects have huge effects on what I call &#8220;accidental&#8221; SEO.</strong> All over the internet you&#8217;ll find people in the habit of hand-linking to websites, and we&#8217;ve got a bad habit of just assuming www and non-www links are inter-changeable, when they&#8217;re not. Setting up these redirects will ensure you get credit for all (or many, many more) of the links to your site that are out there on the web.
+    And that's it! <strong>These redirects have huge effects on what I call "accidental" SEO.</strong> All over the internet you'll find people in the habit of hand-linking to websites, and we've got a bad habit of just assuming www and non-www links are inter-changeable, when they're not. Setting up these redirects will ensure you get credit for all (or many, many more) of the links to your site that are out there on the web.
   </p>
   
   <p>
