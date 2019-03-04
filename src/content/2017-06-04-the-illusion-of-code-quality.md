@@ -7,23 +7,7 @@ layout: post
 guid: http://ryanhayes.net/?p=1001347687
 permalink: /the-illusion-of-code-quality/
 image: img/demo1.jpg
-bluth_post_layout:
-  - right_side
-bluth_post_right_sidebar:
-  - sidebar_right
-bluth_post_left_sidebar:
-  - sidebar_left
-bluth_facebook_status:
-  - ""
-bluth_twitter_status:
-  - ""
-bluth_google_status:
-  - ""
-wpb_post_views_count:
-  - "114"
-dsq_thread_id:
-  - ""
-categories:
+tags:
   - Blog
   - Featured
   - Software
@@ -42,7 +26,7 @@ Comments are a great way to document code, provide extra information about the c
 
 ### Be careful what you target (you just might get it)
 
-[blockquote source="Goodhart's Law"]When a measure becomes a target, it ceases to be a good measure.[/blockquote]
+> When a measure becomes a target, it ceases to be a good measure. -Goodhart's Law
 
 Today we have so many tools, like TeamCity and VSTS, that can automatically run tests, static analysis, and gather a TON of metrics about our code.  That's a whole lot of data, and it's easy to start using these metrics as a target.  Take code coverage for example.  It gives us great insight into how many lines of production code a unit test covers.  20% coverage vs 80% coverage gives you a great indication on whether you have tests or not, but it's harder to tell if the tests that are covering those lines actually test anything other than "please don't blow up". **If your team mandates 80%+ coverage without using code reviews to encourage good tests, coverage can mean a lot of very useless tests and wasted, counter-productive time spent. **That doesn't even count all the time you're now going to be spending _maintaining_ those useless tests.
 
