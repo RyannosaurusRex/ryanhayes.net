@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Ryan Hayes',
-    description: 'Ryan Hayes - lets build great teams together.',
+    description: 'Let\'s build great teams together.',
     siteUrl: 'https://gatsby-casper.netlify.com', // full path to blog - no ending slash
   },
   mapping: {
