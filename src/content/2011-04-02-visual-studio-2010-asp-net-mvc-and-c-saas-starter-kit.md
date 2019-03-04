@@ -1,6 +1,6 @@
 ---
 id: 1001347195
-title: 'Visual Studio 2010 ASP.NET MVC and C# SaaS Starter Kit'
+title: Visual Studio 2010 ASP.NET MVC and C# SaaS Starter Kit
 date: 2011-04-02T10:21:11+00:00
 author: Ryan Hayes
 layout: post

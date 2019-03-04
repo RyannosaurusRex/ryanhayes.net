@@ -1,6 +1,6 @@
 ---
 id: 1001346735
-title: 'My Introduction to Developer Productivity Tools: DevExpress&#039; CodeRush'
+title: My Introduction to Developer Productivity Tools - DevExpress&#039; CodeRush
 date: 2010-06-25T13:34:00+00:00
 author: Ryan Hayes
 layout: post

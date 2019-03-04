@@ -1,6 +1,6 @@
 ---
 id: 1001347256
-title: 'A first look at Codename: Windows 8 OR &quot;Will there be Silverlight in Windows 8?&quot;'
+title: A first look at Codename Windows 8 OR Will there be Silverlight in Windows 8?
 date: 2011-06-01T20:49:13+00:00
 author: Ryan Hayes
 layout: post

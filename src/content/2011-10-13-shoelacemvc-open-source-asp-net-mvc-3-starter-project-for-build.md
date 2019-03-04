@@ -1,6 +1,6 @@
 ---
 id: 1001347299
-title: 'ShoelaceMVC, My Newest Open Source Project &#8211; ASP.NET MVC 3 Starter Project for Building Fast AND Production Quality Webapps.'
+title: ShoelaceMVC, My Newest Open Source Project - ASP.NET MVC 3 Starter Project for Building Fast AND Production Quality Webapps.
 date: 2011-10-13T16:34:45+00:00
 author: Ryan Hayes
 layout: post

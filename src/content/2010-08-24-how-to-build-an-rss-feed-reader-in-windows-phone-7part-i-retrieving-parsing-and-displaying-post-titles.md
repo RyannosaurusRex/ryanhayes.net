@@ -1,6 +1,6 @@
 ---
 id: 1001346731
-title: 'How to Build an RSS Feed Reader in Windows Phone 7 – Part I: Retrieving, Parsing, and Displaying Post Titles'
+title: How to Build an RSS Feed Reader in Windows Phone 7 – Part I - Retrieving, Parsing, and Displaying Post Titles
 date: 2010-08-24T03:05:00+00:00
 author: Ryan Hayes
 excerpt: Read along as we write a simple RSS reader for Windows Phone 7 using the secret, ready-made syndication libraries in the .NET framework.

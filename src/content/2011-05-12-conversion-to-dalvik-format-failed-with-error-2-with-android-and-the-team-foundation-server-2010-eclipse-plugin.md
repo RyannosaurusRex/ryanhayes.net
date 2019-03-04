@@ -1,6 +1,6 @@
 ---
 id: 1001347241
-title: '&quot;Conversion to Dalvik format failed with error 2&quot; with Android and the Team Foundation Server 2010 Eclipse Plugin'
+title: Conversion to Dalvik format failed with error 2&quot; with Android and the Team Foundation Server 2010 Eclipse Plugin
 date: 2011-05-12T15:03:24+00:00
 author: Ryan Hayes
 layout: post
