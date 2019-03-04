@@ -1,6 +1,6 @@
 ---
 id: 1001347557
-title: 'How Using jQuery's $.get() Can Cause Subtle Bugs in Single Page Apps'
+title: How Using jQuery's $.get() Can Cause Subtle Bugs in Single Page Apps
 date: 2014-04-02T15:38:25+00:00
 author: Ryan Hayes
 layout: post
