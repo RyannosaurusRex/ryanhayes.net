@@ -6,8 +6,6 @@ author: Ryan Hayes
 layout: post
 guid: http://ryanhayes.net/?p=1001347924
 permalink: /how-to-migrate-from-rock-rms-to-planning-center-online/
-hestia_layout_select:
-  - full-width
 image: img/logos/planning-center-online-logo.png
 categories:
   - Blog

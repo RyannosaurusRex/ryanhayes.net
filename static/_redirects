@@ -1,0 +1,7 @@
+/home                                               /
+/blog/:slug                                         /:slug
+/software-development/:slug                         /:slug
+/data-annotations-for-entity-framework-4-entities   /data-annotations-for-entity-framework-4-entities-as-an-mvc-model/
+/ryan-hayes                                         /about-ryan-hayes
+/blog/software-development/:slug                    /:slug
+/blog/community/:slug                               /:slug
