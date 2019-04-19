@@ -1,3 +1,7 @@
+https://ryanhayes.netlify.com/* https://ryanhayes.dev/:splat 301!
+blog.ryanhayes.com/* https://ryanhayes.dev/:splat 301!
+
+
 /home                                               /
 /blog/:slug                                         /:slug
 /software-development/:slug                         /:slug
