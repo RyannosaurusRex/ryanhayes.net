@@ -4,7 +4,7 @@ title: How the Xbox One lost me, and then won me back with 24-Hour DRM and the c
 date: 2013-06-13T12:56:58+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347473
+guid: https://ryanhayes.net/?p=1001347473
 permalink: /how-the-xbox-one-lost-me-and-then-won-me-back-with-the-cloud/
 image: img/demo1.jpg
 dsq_thread_id:

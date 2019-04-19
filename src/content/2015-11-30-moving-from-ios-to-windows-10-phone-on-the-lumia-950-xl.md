@@ -4,7 +4,7 @@ title: Moving from iOS to Windows 10 Phone on the Lumia 950 XL
 date: 2015-11-30T19:16:05+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347707
+guid: https://ryanhayes.net/?p=1001347707
 permalink: /moving-from-ios-to-windows-10-phone-on-the-lumia-950-xl/
 bluth_post_layout:
   - right_side

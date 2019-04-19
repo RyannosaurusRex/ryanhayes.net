@@ -97,7 +97,7 @@ Typographically, preformatted text is not the same thing as code. Sometimes, a f
 ### Code
 
 Code can be presented inline, like `<?php bloginfo('stylesheet_url'); ?>`, or using [jekyll's highlight
-filter](http://jekyllrb.com/docs/templates/#code-snippet-highlighting) to
+filter](https://jekyllrb.com/docs/templates/#code-snippet-highlighting) to
 highlight a block of code. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.
 
 ```css
@@ -114,7 +114,7 @@ highlight a block of code. Because we have more specific typographic needs for c
 
 Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.
 
-> Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. — [HAL 9000](http://en.wikipedia.org/wiki/HAL_9000)
+> Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. — [HAL 9000](https://en.wikipedia.org/wiki/HAL_9000)
 
 And here’s a bit of trailing text.
 
@@ -180,7 +180,7 @@ Culpa qui officia deserunt mollit anim id est laborum.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
 
-<p data-height="268" data-theme-id="0" data-slug-hash="bcqhe" data-default-tab="result" data-user="rglazebrook" class='codepen'>See the Pen <a href='http://codepen.io/rglazebrook/pen/bcqhe/'>Simple Rotating Spinner</a> by Rob Glazebrook (<a href='http://codepen.io/rglazebrook'>@rglazebrook</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="268" data-theme-id="0" data-slug-hash="bcqhe" data-default-tab="result" data-user="rglazebrook" class='codepen'>See the Pen <a href='https://codepen.io/rglazebrook/pen/bcqhe/'>Simple Rotating Spinner</a> by Rob Glazebrook (<a href='https://codepen.io/rglazebrook'>@rglazebrook</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 
 Isn't it beautiful.

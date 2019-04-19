@@ -4,7 +4,9 @@ title: 'NServiceBus: Could not enumerate all types'
 date: 2014-10-24T19:41:03+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347678
+guid: https://ryanhayes.net/?p=1001347678
+tags:
+  - uncategorized
 permalink: /nservicebus-enumerate-types/
 bluth_post_layout:
   - right_side

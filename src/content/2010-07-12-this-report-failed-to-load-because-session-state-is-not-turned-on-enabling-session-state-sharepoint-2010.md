@@ -4,7 +4,7 @@ title: Enabling SessionState for SharePoint 2010&quot; OR &quot;This report fail
 date: 2010-07-12T14:48:00+00:00
 author: Ryan Hayes
 layout: post
-guid: http://blog.ryanhayes.net/post/802228928
+guid: https://blog.ryanhayes.net/post/802228928
 permalink: /this-report-failed-to-load-because-session-state-is-not-turned-on-enabling-session-state-sharepoint-2010/
 dsq_thread_id:
   - ""

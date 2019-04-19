@@ -4,7 +4,7 @@ title: 'How To Fight Back Against &quot;Stopping Point Syndrome&quot;'
 date: 2010-12-10T16:46:48+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347064
+guid: https://ryanhayes.net/?p=1001347064
 permalink: /how-to-combat-stopping-point-syndrome-when-you-cant-find-a-stopping-point/
 image: img/demo1.jpg
 robotsmeta:
@@ -19,15 +19,15 @@ tags:
   - How-To
   - Tips
 ---
-Do you have _Stopping Point Syndrome?_ I didn't know that I had it until I read a recent post on [Programmers.SE](http://programmers.stackexchange.com/questions/25234/what-to-do-about-stopping-point-syndrome/25243#25243) about how someone just couldn't find a stopping point and would work into the night or until he passed out.  In essence, it's when you want to wait until you get to a good stopping point, but you just can't seem to get there.  It's a real problem, and one that many of us have faced before.  Here's how I've helped curb this problem in my own development life and used this need of a stopping point to my advantage.<!--more-->
+Do you have _Stopping Point Syndrome?_ I didn't know that I had it until I read a recent post on [Programmers.SE](https://programmers.stackexchange.com/questions/25234/what-to-do-about-stopping-point-syndrome/25243#25243) about how someone just couldn't find a stopping point and would work into the night or until he passed out.  In essence, it's when you want to wait until you get to a good stopping point, but you just can't seem to get there.  It's a real problem, and one that many of us have faced before.  Here's how I've helped curb this problem in my own development life and used this need of a stopping point to my advantage.<!--more-->
 
 ## **Check-in early.  Check-in often.**
 
-The benefit of this is many-fold.  Jeff Atwood of Coding Horror wrote on [the benefits of early and often check-ins of your code](http://www.codinghorror.com/blog/2008/08/check-in-early-check-in-often.html).  You can go back to previous versions, see the progression of code, etc.  In general, you should check-in early and often to find integration issues early.  **The side benefit is that checking-in early and often gives you more frequent stopping points** so you can close the laptop lid and go home when the time comes.
+The benefit of this is many-fold.  Jeff Atwood of Coding Horror wrote on [the benefits of early and often check-ins of your code](https://www.codinghorror.com/blog/2008/08/check-in-early-check-in-often.html).  You can go back to previous versions, see the progression of code, etc.  In general, you should check-in early and often to find integration issues early.  **The side benefit is that checking-in early and often gives you more frequent stopping points** so you can close the laptop lid and go home when the time comes.
 
 ## **Use GTD.**
 
-The [Getting Things Done](http://en.wikipedia.org/wiki/Getting_Things_Done) methodology is a way of working that uses prioritized task lists to&#8230;get things done!  Some people are more fanatical about it than others, but the essence of the idea can definitely help deal with SPS.   Working using a task list forces you to break down the things you're working on into smaller chunks, which gives you more frequent stopping points.  There are a lot of great tools out there to help with tasks like [Remember The Milk](http://rememberthemilk.com) and Outlook, but hopefully you should have a bug/task tracking system set up for your development team that will do exactly this.  If you don't have one &#8211; get one!  If you do, try to make sure everyone is on-board with entering tasks and making them small and manageable, linking smaller ones together to create big tasks.
+The [Getting Things Done](https://en.wikipedia.org/wiki/Getting_Things_Done) methodology is a way of working that uses prioritized task lists to&#8230;get things done!  Some people are more fanatical about it than others, but the essence of the idea can definitely help deal with SPS.   Working using a task list forces you to break down the things you're working on into smaller chunks, which gives you more frequent stopping points.  There are a lot of great tools out there to help with tasks like [Remember The Milk](https://rememberthemilk.com) and Outlook, but hopefully you should have a bug/task tracking system set up for your development team that will do exactly this.  If you don't have one &#8211; get one!  If you do, try to make sure everyone is on-board with entering tasks and making them small and manageable, linking smaller ones together to create big tasks.
 
 ## **Use and stick to your calendar.**
 

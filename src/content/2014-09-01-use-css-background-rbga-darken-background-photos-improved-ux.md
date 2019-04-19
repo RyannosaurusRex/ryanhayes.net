@@ -4,8 +4,10 @@ title: Use CSS background:rbga to Darken Background Photos For Improved UX
 date: 2014-09-01T01:47:00+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.wpengine.com/?p=1001347662
+guid: https://ryanhayes.wpengine.com/?p=1001347662
 permalink: /use-css-background-rbga-darken-background-photos-improved-ux/
+tags:
+  - uncategorized
 bluth_post_layout:
   - right_side
 bluth_post_right_sidebar:
@@ -28,7 +30,7 @@ image: img/wp-content/uploads/2014/09/rbga-css-on_yezm5r.png
 categories:
   - Blog
 ---
-If you've been to any new websites lately, you'll know that [parallax scrolling](http://en.wikipedia.org/wiki/Parallax_scrolling) and large background images are incredibly popular right now. They're great because they are able to help better tell stories, with big, gorgeous photos on the background and relevant text in the foreground overlaying those images as you scroll. In addition, responsive design means that the text overlaying these photos can move around. One of the challenges in this is that you're likely to run into an issue where you have the text the same color as the image behind it. There are a couple of ways to deal with this, but let me show you my personal favorite.  
+If you've been to any new websites lately, you'll know that [parallax scrolling](https://en.wikipedia.org/wiki/Parallax_scrolling) and large background images are incredibly popular right now. They're great because they are able to help better tell stories, with big, gorgeous photos on the background and relevant text in the foreground overlaying those images as you scroll. In addition, responsive design means that the text overlaying these photos can move around. One of the challenges in this is that you're likely to run into an issue where you have the text the same color as the image behind it. There are a couple of ways to deal with this, but let me show you my personal favorite.  
 There is a relatively newer CSS property that you can apply to a background where you can overlay it with a color and specify the opacity (seethrough-ness). Using this is a _great_ way to darken the background just enough to make white text more readable and pop. Here's an example of the before and after shot on my blog:  
 <!--more-->
 
@@ -36,7 +38,7 @@ There is a relatively newer CSS property that you can apply to a background wher
 
 Here's the original background photo. You can see that on the right side of the Macbook that **the photo clashes with the white text and makes it really hard to read.**:<section id="image\_upload\_2" class="js-drop-zone pre-image-uploader">
 
-<img class="js-upload-target" src="http://res.cloudinary.com/ryanhayes-net/image/upload/v1408201310/rbga-css-off_vupjyt.png" alt="" /> </section> 
+<img class="js-upload-target" src="https://res.cloudinary.com/ryanhayes-net/image/upload/v1408201310/rbga-css-off_vupjyt.png" alt="" /> </section> 
 
 ## The Solution {#thesolution}
 
@@ -51,7 +53,7 @@ Here's what it looks like when we've added the overlay. You can see you can make
 
 &nbsp;<section id="image\_upload\_3" class="js-drop-zone pre-image-uploader">
 
-<img class="js-upload-target" src="http://res.cloudinary.com/ryanhayes-net/image/upload/v1408201310/rbga-css-on_yezm5r.png" alt="" /> </p> 
+<img class="js-upload-target" src="https://res.cloudinary.com/ryanhayes-net/image/upload/v1408201310/rbga-css-on_yezm5r.png" alt="" /> </p> 
 
 <div class="description" style="display: none;">
   Add image of <strong>With the rbga CSS property</strong>

@@ -4,7 +4,7 @@ title: Azure Bot Service and Why You Should Check It Out
 date: 2017-01-16T18:59:02+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347845
+guid: https://ryanhayes.net/?p=1001347845
 permalink: /azure-bot-service-check/
 image: img/demo1.jpg
 categories:

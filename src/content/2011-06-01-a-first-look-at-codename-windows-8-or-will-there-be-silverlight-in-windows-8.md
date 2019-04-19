@@ -4,7 +4,7 @@ title: A first look at Codename Windows 8 OR Will there be Silverlight in Window
 date: 2011-06-01T20:49:13+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347256
+guid: https://ryanhayes.net/?p=1001347256
 permalink: /a-first-look-at-codename-windows-8-or-will-there-be-silverlight-in-windows-8/
 image: img/demo1.jpg
 robotsmeta:
@@ -36,7 +36,7 @@ Today at D9, Microsoft opened up about Windows 8 with a bang.  Not only does do
 
 # HTML 5 apps?  What about WPF and Silverlight??  Oh no!!!
 
-[<img class="size-full wp-image-1001347260 alignleft" title="Panic!" src="http://ryanhayes.wpengine.comimg/wp-content/uploads/2013/10/panic_ackmmv.gif" alt="" width="231" height="192" />](http://ryanhayes.wpengine.comimg/wp-content/uploads/2013/10/panic_ackmmv.gif)
+[<img class="size-full wp-image-1001347260 alignleft" title="Panic!" src="https://ryanhayes.wpengine.comimg/wp-content/uploads/2013/10/panic_ackmmv.gif" alt="" width="231" height="192" />](https://ryanhayes.wpengine.comimg/wp-content/uploads/2013/10/panic_ackmmv.gif)
 
 Twitter exploded with people freaking out about this.  When I would answer that HTML5 is geared toward the new UI and there was still the original interface, so "YES!", I was greeted with several "You didn't answer my question".
 

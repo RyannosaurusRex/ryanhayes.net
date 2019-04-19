@@ -4,7 +4,7 @@ title: 'Startup Weekend in Johnson City, TN &#8211; Nov 16-18, 2012'
 date: 2012-10-25T20:44:11+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347405
+guid: https://ryanhayes.net/?p=1001347405
 permalink: /startup-weekend-in-johnson-city-tn-nov-16-18-2012/
 dsq_thread_id:
   - ""
@@ -19,9 +19,9 @@ categories:
   - Entrepreneurship
 format: image
 ---
-The thing I love about Startups is that it's the combination of two things I enjoy: technology and business.  I'm excited to announce that I'll be acting as a coach and mentor for the event!  Startup Weekend coincides with Global Entrepreneurship Week, where events will take place all over the world to help educate people about entrepreneurship and help businesses get started.  Here's the official press release and [the Startup Weekend Tri-Cities' website](http://tricities.startupweekend.org/):
+The thing I love about Startups is that it's the combination of two things I enjoy: technology and business.  I'm excited to announce that I'll be acting as a coach and mentor for the event!  Startup Weekend coincides with Global Entrepreneurship Week, where events will take place all over the world to help educate people about entrepreneurship and help businesses get started.  Here's the official press release and [the Startup Weekend Tri-Cities' website](https://tricities.startupweekend.org/):
 
-> AccelNow, the Northeast Tennessee regional accelerator, will hold a [“Start-up Weekend Tri-Cities” on November 16, 17 and 18.](http://tricities.startupweekend.org/)
+> AccelNow, the Northeast Tennessee regional accelerator, will hold a [“Start-up Weekend Tri-Cities” on November 16, 17 and 18.](https://tricities.startupweekend.org/)
 > 
 > The weekend event is one of the entrepreneurial approaches that is becoming widely used in Tennessee and other cities.
 > 

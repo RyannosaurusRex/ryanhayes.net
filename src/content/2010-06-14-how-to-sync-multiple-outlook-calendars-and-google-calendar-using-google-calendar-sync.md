@@ -5,7 +5,7 @@ date: 2010-06-14T21:18:35+00:00
 author: Ryan Hayes
 image: img/demo1.jpg
 layout: post
-guid: http://blog.ryanhayes.net/post/698630127
+guid: https://blog.ryanhayes.net/post/698630127
 permalink: /how-to-sync-multiple-outlook-calendars-and-google-calendar-using-google-calendar-sync/
 dsq_thread_id:
   - ""
@@ -31,17 +31,17 @@ Viola, now you know exactly where to go and what to do, on the go, at the office
 
 ### To set up Google Calendar Sync:
 
-  1. Make sure you’re using a [supported operating system and Outlook version](http://www.google.com/support/calendar/bin/answer.py?answer=98565).
-  2. Download Google Calendar Sync (version 0.9.3.5) at[](http://dl.google.com/googlecalendarsync/GoogleCalendarSync_Installer.exe)<http://dl.google.com/googlecalendarsync/GoogleCalendarSync_Installer.exe>
+  1. Make sure you’re using a [supported operating system and Outlook version](https://www.google.com/support/calendar/bin/answer.py?answer=98565).
+  2. Download Google Calendar Sync (version 0.9.3.5) at[](https://dl.google.com/googlecalendarsync/GoogleCalendarSync_Installer.exe)<https://dl.google.com/googlecalendarsync/GoogleCalendarSync_Installer.exe>
   3. Once a dialog box appears, click **Save File**. The downloaded file should open automatically. If it doesn’t, manually open it from your browser’s download window.
   4. Click **OK** to confirm that you’re aware this is an executable file.
   5. Read through the Google Calendar Sync Terms of Service, and click **I Agree**.
   6. Follow through the Installation Options and click **Install** to finish the set-up process.
 
 Once Google Calendar Sync is installed on your computer, the Google Calendar Sync Settings window will appear:  
-![Google Calendar Sync Settings window](http://www.google.com/help/hc/images/calendar_89955a_en.gif) 
+![Google Calendar Sync Settings window](https://www.google.com/help/hc/images/calendar_89955a_en.gif) 
 
-In the Settings window, enter your email address and password and select the Sync Option you prefer. [Read about each Sync Option](http://www.google.com/support/calendar/bin/answer.py?answer=89960).
+In the Settings window, enter your email address and password and select the Sync Option you prefer. [Read about each Sync Option](https://www.google.com/support/calendar/bin/answer.py?answer=89960).
 
 You’ll also be able to set the time interval for syncing to occur. Please keep in mind that 10 minutes is the minimum time interval allowed.
 
@@ -51,14 +51,14 @@ After the initial set-up, you can access the Google Calendar Sync Settings windo
 
 To access the Google Calendar Sync Settings window, just right-click the calendar icon in your Windows System Tray and select**Options**.
 
-![select Options from the menu](http://www.google.com/help/hc/images/calendar_89955b_en.gif) 
+![select Options from the menu](https://www.google.com/help/hc/images/calendar_89955b_en.gif) 
 
 When your events are actively syncing between Google Calendar and Microsoft Outlook Calendar, you’ll see arrows in the Google Calendar Sync icon:
 
-![Sync up-arrow/down-arrow icon](http://www.google.com/help/hc/images/calendar_89955c_en.gif.png) 
+![Sync up-arrow/down-arrow icon](https://www.google.com/help/hc/images/calendar_89955c_en.gif.png) 
 
 When events aren’t actively syncing, your calendar icon will look like this:
 
-![Google Calendar Sync calendar icon](http://www.google.com/help/hc/images/calendar_89955d_en.gif.png) 
+![Google Calendar Sync calendar icon](https://www.google.com/help/hc/images/calendar_89955d_en.gif.png) 
 
-Source: [Google Calendar Sync](http://www.google.com/support/calendar/bin/answer.py?answer=89955)
+Source: [Google Calendar Sync](https://www.google.com/support/calendar/bin/answer.py?answer=89955)

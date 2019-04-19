@@ -4,7 +4,7 @@ title: Building a Fluent API in TypeScript
 date: 2016-05-11T00:35:36+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347731
+guid: https://ryanhayes.net/?p=1001347731
 permalink: /building-a-fluent-api-in-typescript/
 image: img/demo1.jpg
 bluth_post_layout:

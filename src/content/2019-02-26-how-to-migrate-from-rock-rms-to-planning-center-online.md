@@ -4,7 +4,7 @@ title: How to migrate from Rock RMS to Planning Center Online
 date: 2019-02-26T13:07:15+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347924
+guid: https://ryanhayes.net/?p=1001347924
 permalink: /how-to-migrate-from-rock-rms-to-planning-center-online/
 image: img/logos/planning-center-online-logo.png
 categories:

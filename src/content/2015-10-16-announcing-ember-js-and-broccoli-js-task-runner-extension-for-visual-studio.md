@@ -4,7 +4,7 @@ title: Announcing Ember.JS and Broccoli.JS Task Runner Extension for Visual Stud
 date: 2015-10-16T02:33:15+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347698
+guid: https://ryanhayes.net/?p=1001347698
 permalink: /announcing-ember-js-and-broccoli-js-task-runner-extension-for-visual-studio/
 bluth_post_layout:
   - right_side

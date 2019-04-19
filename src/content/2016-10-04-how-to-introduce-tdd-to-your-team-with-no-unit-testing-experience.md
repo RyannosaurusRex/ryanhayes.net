@@ -5,7 +5,7 @@ date: 2016-10-04T13:50:05+00:00
 author: Ryan Hayes
 layout: post
 image: img/demo1.jpg
-guid: http://ryanhayes.net/?p=1001347167
+guid: https://ryanhayes.net/?p=1001347167
 permalink: /how-to-introduce-tdd-to-your-team-with-no-unit-testing-experience/
 robotsmeta:
   - index,follow
@@ -29,7 +29,7 @@ While it's true that tests can take up valuable feature time at the very start, 
 I honestly think this is the biggest hurdle for most teams &#8211; not knowing how to write a valuable test or hearing "write a failing test and then fix it" and not knowing _what _to write. **There are three things that you need to write a good test &#8211;  a concrete precondition, an action, and a concrete postcondition. If you use scrum or have a bug or feature tracker of any kind, this is already done for you.** If you have an existing system with NO tests, the absolute best way to get your team to start using TDD is to write a test for an existing bug.  Bugs usually have a format that tells you what state the system is in (precondition), what the user did (action), what they expected to happen (postcondition), and then what actually happened (the bug).
 
   * Start with an automated test that sets up the component or database or system to the precondition state outlined in the bug.
-  * Call a method or run the application (if a webapp, [Selenium](http://seleniumhq.org) is a good example of automating the app through code inside a unit testing framework) outlined in the bug.
+  * Call a method or run the application (if a webapp, [Selenium](https://seleniumhq.org) is a good example of automating the app through code inside a unit testing framework) outlined in the bug.
   * Write an Assert.True(&#8230;) or equivalent line that checks to make sure that the system is in the correct state (if the bug is real, this should fail the test at this point.
   * Fix the application so that the Assert.True(&#8230;) line passes and goes green.
 

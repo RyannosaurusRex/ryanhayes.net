@@ -4,7 +4,7 @@ title: '[MSBuild output] CSC : fatal error CS2008: No inputs specified'
 date: 2013-10-09T02:03:31+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347494
+guid: https://ryanhayes.net/?p=1001347494
 permalink: /msbuild-output-csc-fatal-error-cs2008-inputs-specified/
 image: img/demo1.jpg
 standard_seo_post_level_layout:

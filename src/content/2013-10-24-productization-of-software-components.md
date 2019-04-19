@@ -4,7 +4,7 @@ title: Productizing Software Components
 date: 2013-10-24T02:38:26+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347510
+guid: https://ryanhayes.net/?p=1001347510
 permalink: /productization-of-software-components/
 image: img/demo1.jpg
 tags:
@@ -31,7 +31,7 @@ Not in the open source sense, where you make it open source until you have a rea
 </p>
 
 <p style="text-align: center;">
-  <a href="http://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/UvgtEi6_nowyz1.gif"><img class="size-full wp-image-1001347515 aligncenter" alt="Trying a new software library." src="http://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/UvgtEi6_nowyz1.gif" width="360" height="204" /></a>
+  <a href="https://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/UvgtEi6_nowyz1.gif"><img class="size-full wp-image-1001347515 aligncenter" alt="Trying a new software library." src="https://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/UvgtEi6_nowyz1.gif" width="360" height="204" /></a>
 </p>
 
 <p style="text-align: center;">
@@ -39,7 +39,7 @@ Not in the open source sense, where you make it open source until you have a rea
 </p>
 
 <p style="text-align: center;">
-  <a href="http://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/yqHO0yO_chimen.gif"><img class="size-full wp-image-1001347514 aligncenter" alt="I immediately regret this decision" src="http://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/yqHO0yO_chimen.gif" width="500" height="281" /></a>
+  <a href="https://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/yqHO0yO_chimen.gif"><img class="size-full wp-image-1001347514 aligncenter" alt="I immediately regret this decision" src="https://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/yqHO0yO_chimen.gif" width="500" height="281" /></a>
 </p>
 
 ### Provide Working Samples (Unit Tests)
@@ -51,12 +51,12 @@ The problem with a lot of components is that they're hard to use and easy to mis
 In C# you can depricate methods by using the [Obsolete] annotation over a method.  You can even get fancy and use [Obsolete("Reason to not use this", true)] in order to make compilation fail if someone uses the method if you want to be hardcore.  My point is that you shouldn't just write a comment to say not to use something, or just assume someone else will come along and know to delete unused code.  "If you see something, say something!" in the form of depricating methods in a way that the compiler can warn others.
 
 <p style="text-align: center;">
-  <strong>You don't want to get to the point where you can't remember if you should or shouldn't use something!<a href="http://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/iWRYZI0_nclrk0.gif"><img class="size-full wp-image-1001347513 aligncenter" alt="Should I use this?" src="http://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/iWRYZI0_nclrk0.gif" width="195" height="201" /></a></strong>
+  <strong>You don't want to get to the point where you can't remember if you should or shouldn't use something!<a href="https://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/iWRYZI0_nclrk0.gif"><img class="size-full wp-image-1001347513 aligncenter" alt="Should I use this?" src="https://ryanhayes.wpengine.comimg/wp-content/uploads/2014/01/iWRYZI0_nclrk0.gif" width="195" height="201" /></a></strong>
 </p>
 
 ### Automate Build and Deploy to Maximize Discovery
 
-****While NuGet is a bit specific to .NET, this also goes for delivery via the Node.js package manager, a ruby gem or similar mechanism that developers can discover reusable components.  I personally use [TeamCity](http://jetbrains.com/Teamcity) to automate my builds as it can run continuous integration for .NET, Java, Node.js, and pretty much anything else since you have access to the command line.  The best feature of TeamCity is it has a private NuGet feed built in that makes your automatically built components discoverable.  One huge problem with a lot of organizations I see is discoverability of reusable components, where helper classes and utilities will be hidden deep in source control with no documentation.  Writing a quick .nuspec file and adding a NuPack step in the TeamCity build process (all ready out of the box) lets you give new developers a single NuGet feed URL and have instant access to production-ready components that have been built by TeamCity.  In addition, everything is auditable since the builds are automated from check-in to release, so every NuGet package has "living documentation" as to how to build it, where it is in source control, and is gated so components in the feed are guaranteed to be unit tested and ready to go.  The power of NuGet also lets you pack README.txt or example config files, and even change the web.config if you need to so there's no question how to get rolling with a component.  So awesome!
+****While NuGet is a bit specific to .NET, this also goes for delivery via the Node.js package manager, a ruby gem or similar mechanism that developers can discover reusable components.  I personally use [TeamCity](https://jetbrains.com/Teamcity) to automate my builds as it can run continuous integration for .NET, Java, Node.js, and pretty much anything else since you have access to the command line.  The best feature of TeamCity is it has a private NuGet feed built in that makes your automatically built components discoverable.  One huge problem with a lot of organizations I see is discoverability of reusable components, where helper classes and utilities will be hidden deep in source control with no documentation.  Writing a quick .nuspec file and adding a NuPack step in the TeamCity build process (all ready out of the box) lets you give new developers a single NuGet feed URL and have instant access to production-ready components that have been built by TeamCity.  In addition, everything is auditable since the builds are automated from check-in to release, so every NuGet package has "living documentation" as to how to build it, where it is in source control, and is gated so components in the feed are guaranteed to be unit tested and ready to go.  The power of NuGet also lets you pack README.txt or example config files, and even change the web.config if you need to so there's no question how to get rolling with a component.  So awesome!
 
 ### The Customer is Always Right
 

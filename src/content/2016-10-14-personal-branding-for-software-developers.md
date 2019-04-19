@@ -4,7 +4,7 @@ title: Personal Branding for Software Developers
 date: 2016-10-14T23:29:56+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347727
+guid: https://ryanhayes.net/?p=1001347727
 permalink: /personal-branding-for-software-developers/
 image: img/demo1.jpg
 bluth_post_layout:

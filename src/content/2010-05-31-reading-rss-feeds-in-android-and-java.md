@@ -4,7 +4,7 @@ title: 'Android Project Part II: Reading RSS Feeds'
 date: 2010-05-31T07:08:54+00:00
 author: Ryan Hayes
 layout: post
-guid: http://blog.ryanhayes.net/post/649210287
+guid: https://blog.ryanhayes.net/post/649210287
 image: img/demo1.jpg
 permalink: /reading-rss-feeds-in-android-and-java/
 robotsmeta:
@@ -27,7 +27,7 @@ tags:
 The first real goal for the Android app was getting news updates into the app.  One of the main goals of the app is to be able to get up-to-date information that mirrored that of the harvesttn.com website.  As you probably already know, content is typically served up using an RSS feed in today’s world.   With that in mind, the first real piece that I needed to write for getting news notifications was to build a way to consume and display an RSS feed.
 
 One of the great things is that reading an RSS feed  
-in code is an extremely common activity.  The first thing I did was look for a library that I could use to grab and read the feed.  I eventually found [an article from IBM with code using Android’s SAX parser to parse an XML feed and place it into a ListActivity](http://www.ibm.com/developerworks/opensource/library/x-android/index.html).
+in code is an extremely common activity.  The first thing I did was look for a library that I could use to grab and read the feed.  I eventually found [an article from IBM with code using Android’s SAX parser to parse an XML feed and place it into a ListActivity](https://www.ibm.com/developerworks/opensource/library/x-android/index.html).
 
 I copied over the code, and basically used the MessageList class as a template for my NewsUpdates class in my app.  Not much needed to be changed, except for the way it loads the feed.  The code on IBM’s site grabs a feed from a hardcoded URL in the FeedParserFactory, and out of the box only contains a .getParser(ParserType type) method, passing in what method you want to use to parse the XML (I used Android-SAX).  I figured that I may need to reuse the FeedParser again, so I overloaded the getParser method to pass in not just the type, but also a feed url, as you can see me using  in the code below.Once I did that, the rest of the code is just getting and displaying the information that the FeedParser got for me.  first, you just get the items out of the parser into something that you can use. Here’s a simple way to get and parse the RSS feed, modified from the ListActivity in IBM’s code and simplified for easier use. Here’s a simple way to get and parse an RSS feed once it is modified (read the whole article if you’re cutting corners):
 
@@ -56,4 +56,4 @@ I copied over the code, and basically used the MessageList class as a template f
 > 
 > this.setListAdapter(adapter); 
 
-DONE! Simple as that. RSS is a great way to integrate content into you mobile application and have a similar (and often better) experience to the web version. The original IBM post is located below, where you can also download the full source.  This code was writted for Android SDK release 3, but it worked perfectly with the 7th release (Android 2.1). Remember that when you copy over the code into your project, ensure your manifest file properly registers all the appropriate activities. Otherwise, you’ll get a force close.: [](http://www.ibm.com/developerworks/opensource/library/x-android/index.html)<http://www.ibm.com/developerworks/opensource/library/x-android/index.html>
+DONE! Simple as that. RSS is a great way to integrate content into you mobile application and have a similar (and often better) experience to the web version. The original IBM post is located below, where you can also download the full source.  This code was writted for Android SDK release 3, but it worked perfectly with the 7th release (Android 2.1). Remember that when you copy over the code into your project, ensure your manifest file properly registers all the appropriate activities. Otherwise, you’ll get a force close.: [](https://www.ibm.com/developerworks/opensource/library/x-android/index.html)<https://www.ibm.com/developerworks/opensource/library/x-android/index.html>

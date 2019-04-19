@@ -4,7 +4,7 @@ title: Redirect WWW to Non-WWW using the Web.config
 date: 2014-09-01T02:10:43+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.wpengine.com/?p=1001347663
+guid: https://ryanhayes.wpengine.com/?p=1001347663
 permalink: /redirect-www-non-www-using-web-config/
 image: img/demo1.jpg
 bluth_post_layout:
@@ -27,7 +27,7 @@ categories:
   - Blog
 ---
 <div class="wrapper">
-  By now, most people know that websites' SEO is dinged by Google when there is both a www and non-www url with the same content on both. Google (and Bing) treat them as two separate sites and they fight for pagerank as everyone else blows your two competing sites out of the water. I've had redirects set up on my WordPress blog for the past 4 years, which is pretty easy to do, but I <a title="Ghost VS WordPress (and Why I Migrated Back to WordPress)" href="http://ryanhayes.net/ghost-vs-wordpress-migrating/">recently moved my blog over to Ghost</a> blogging engine and since it's currently at version 0.5, it didn't have this 301 redirect functionality built in, so I needed to roll my own. Since I was moving to <a href="http://azure.com">Azure Websites</a>, I needed to add a redirect to get this fixed in the web.config, so I thought I'd share it with you!&nbsp;</p> 
+  By now, most people know that websites' SEO is dinged by Google when there is both a www and non-www url with the same content on both. Google (and Bing) treat them as two separate sites and they fight for pagerank as everyone else blows your two competing sites out of the water. I've had redirects set up on my WordPress blog for the past 4 years, which is pretty easy to do, but I <a title="Ghost VS WordPress (and Why I Migrated Back to WordPress)" href="https://ryanhayes.net/ghost-vs-wordpress-migrating/">recently moved my blog over to Ghost</a> blogging engine and since it's currently at version 0.5, it didn't have this 301 redirect functionality built in, so I needed to roll my own. Since I was moving to <a href="https://azure.com">Azure Websites</a>, I needed to add a redirect to get this fixed in the web.config, so I thought I'd share it with you!&nbsp;</p> 
   
   <h3 id="redirectingtononwwwusingthewebconfig">
     Redirecting to non-www using the Web.config
@@ -45,7 +45,7 @@ categories:
     &lt;rules&gt;
         &lt;rule name="Redirect to non-www" stopProcessing="true"&gt;
             &lt;match url="(.*)" negate="false"&gt;&lt;/match&gt;
-            &lt;action type="Redirect" url="http://domain.com/{R:1}"&gt;&lt;/action&gt;
+            &lt;action type="Redirect" url="https://domain.com/{R:1}"&gt;&lt;/action&gt;
             &lt;conditions&gt;
                 &lt;add input="{HTTP_HOST}" pattern="^domain\.com$" negate="true"&gt;&lt;/add&gt;
             &lt;/conditions&gt;

@@ -4,7 +4,7 @@ title: Will XNA be available in Windows 8 Metro Apps?
 date: 2011-09-15T21:45:23+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347285
+guid: https://ryanhayes.net/?p=1001347285
 permalink: /will-xna-be-available-in-windows-8-metro-apps/
 robotsmeta:
   - index,follow
@@ -25,10 +25,10 @@ One of the big things I've seen flying around Twitter lately is the question of 
 
 **XNA is multi-platform, popular, and just an abstraction.**
 
-While I don't speak for Microsoft or have any insider information on XNA in particular, I do know that they are invested in XNA in a lot of areas.  Windows Phone uses XNA for games and rich applications.  Xbox has TONS of indie games using XNA and many Xbox Live Arcade games are written using it.  It's so popular in fact that there are [third parties building full game engines](http://www.garagegames.com/products/torque-x) on top of it.  It's a gaming platform for Mobile, Xbox, and Windows (including Windows 8).  At the end of the day, it's just a a  really awesome platform built on top of DirectX.  All it does is help game developers by making them not have to write all the lame and boring boilerplate code for every single game.  It's not going anywhere unless DirectX changes bigtime or something more awesome comes out, and that's highly unlikely on the former, and the later is probably just going to be the next version of XNA which supports DirectX 11 (Metro UI!).
+While I don't speak for Microsoft or have any insider information on XNA in particular, I do know that they are invested in XNA in a lot of areas.  Windows Phone uses XNA for games and rich applications.  Xbox has TONS of indie games using XNA and many Xbox Live Arcade games are written using it.  It's so popular in fact that there are [third parties building full game engines](https://www.garagegames.com/products/torque-x) on top of it.  It's a gaming platform for Mobile, Xbox, and Windows (including Windows 8).  At the end of the day, it's just a a  really awesome platform built on top of DirectX.  All it does is help game developers by making them not have to write all the lame and boring boilerplate code for every single game.  It's not going anywhere unless DirectX changes bigtime or something more awesome comes out, and that's highly unlikely on the former, and the later is probably just going to be the next version of XNA which supports DirectX 11 (Metro UI!).
 
 <div style="width: 245px" class="wp-caption alignright">
-  <img title="Windows Phone 7 Metro UI" src="http://techiser.comimg/wp-content/uploads/2010/10/Samsung-Focus-Windows-Phone-7.jpg" alt="" width="235" height="237" />
+  <img title="Windows Phone 7 Metro UI" src="https://techiser.comimg/wp-content/uploads/2010/10/Samsung-Focus-Windows-Phone-7.jpg" alt="" width="235" height="237" />
   
   <p class="wp-caption-text">
     Metro UI on WP7
@@ -36,7 +36,7 @@ While I don't speak for Microsoft or have any insider information on XNA in part
 </div>
 
 <div style="width: 326px" class="wp-caption alignright">
-  <img title="Windows Phone 7 XNA Game" src="http://4.bp.blogspot.com/_RHC2dZOTRJo/THem_fs9wNI/AAAAAAAAAbE/WXZCG8AJUm0/s1600/catapultwars3.png" alt="" width="316" height="173" />
+  <img title="Windows Phone 7 XNA Game" src="https://4.bp.blogspot.com/_RHC2dZOTRJo/THem_fs9wNI/AAAAAAAAAbE/WXZCG8AJUm0/s1600/catapultwars3.png" alt="" width="316" height="173" />
   
   <p class="wp-caption-text">
     XNA Game on WP7 - Nobody cares it's not a part of the Metro UI. It's all seamless at the user level.

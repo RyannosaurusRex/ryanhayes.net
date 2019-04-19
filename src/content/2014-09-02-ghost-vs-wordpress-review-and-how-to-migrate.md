@@ -4,8 +4,10 @@ title: Ghost VS WordPress (and Why I Migrated Back to WordPress)
 date: 2014-09-02T04:10:32+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347671
+guid: https://ryanhayes.net/?p=1001347671
 permalink: /ghost-vs-wordpress-review-and-how-to-migrate/
+tags:
+  - uncategorized
 bluth_post_layout:
   - right_side
 bluth_post_right_sidebar:
@@ -30,7 +32,7 @@ A few weeks ago I decided to hop on the Ghost train.  Ghost is a blogging engi
 
 ## The Goal
 
-I blog because I love teaching, but I also do it to document what I know and have done in hopes people will [hire me and my team of subcontractors for their project](http://sonatacove.com).  So in general I wanted the following after migrating my blog to Ghost:
+I blog because I love teaching, but I also do it to document what I know and have done in hopes people will [hire me and my team of subcontractors for their project](https://sonatacove.com).  So in general I wanted the following after migrating my blog to Ghost:
 
 **Increase in Page Views**
 
@@ -50,9 +52,9 @@ To actually migrate to Ghost, it was a pretty easy 3 step process:
 
   1. Set up a new Ghost blog somewhere (pretty obvious, right?).
   2. Migrate your images: 
-      1. The easiest way is to install the [Cloudinary plugin for WordPress](http://wordpress.org/plugins/cloudinary-image-management-and-manipulation-in-the-cloud-cdn/) and migrate your images there before step 3.  In doing so you get your URLs automatically moved to Ghost, but with the added benefit of Cloudinary's CDN, which is pretty nice.
+      1. The easiest way is to install the [Cloudinary plugin for WordPress](https://wordpress.org/plugins/cloudinary-image-management-and-manipulation-in-the-cloud-cdn/) and migrate your images there before step 3.  In doing so you get your URLs automatically moved to Ghost, but with the added benefit of Cloudinary's CDN, which is pretty nice.
       2. Back up your wp-content/uploads folder, and upload it to a wp-content/uploads folder under your ghost install so that things all match up.
-  3. Install the [Ghost Export plugin for WordPress](http://www.wordpress.org/plugins/ghost/), and then export your WordPress blog to a .json file that you can then upload into Ghost
+  3. Install the [Ghost Export plugin for WordPress](https://www.wordpress.org/plugins/ghost/), and then export your WordPress blog to a .json file that you can then upload into Ghost
 
 All in all the installation was quick.  The hardest part was getting all of the redirects set up in the web.config.  WordPress handles 301 redirects for you if you ever change a permalink, however Ghost has just introduced the concept of plugins, so the majority of things, like 301 redirects, you have to do yourself (more on this in a bit).
 
@@ -73,7 +75,7 @@ The results were:
   * <span style="color: #993300;">Lost my ability to manage images (ended up managing them in Cloudinary and then just linking to them)</span>
 
 <div id="attachment_1001347673" style="width: 310px" class="wp-caption alignright">
-  <a class="lightbox" href="http://ryanhayes.netimg/wp-content/uploads/2014/09/ghost.png"><img class="wp-image-1001347673 size-medium" src="http://ryanhayes.netimg/wp-content/uploads/2014/09/ghost-300x142.png" alt="ghost" width="300" height="142" srcset="https://ryanhayes.netimg/wp-content/uploads/2014/09/ghost-300x142.png 300w, https://ryanhayes.netimg/wp-content/uploads/2014/09/ghost-1024x485.png 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+  <a class="lightbox" href="https://ryanhayes.netimg/wp-content/uploads/2014/09/ghost.png"><img class="wp-image-1001347673 size-medium" src="https://ryanhayes.netimg/wp-content/uploads/2014/09/ghost-300x142.png" alt="ghost" width="300" height="142" srcset="https://ryanhayes.netimg/wp-content/uploads/2014/09/ghost-300x142.png 300w, https://ryanhayes.netimg/wp-content/uploads/2014/09/ghost-1024x485.png 1024w" sizes="(max-width: 300px) 100vw, 300px" /></a>
   
   <p class="wp-caption-text">
     Ghost allows you to use Markdown and live-edit side-by-side!
@@ -81,17 +83,17 @@ The results were:
 </div>
 
 I _love_ the 2-pane way that Ghost's editor does side-by side editing, how fast it is, and that it's built using Node.JS (there are few languages I hate working with more than PHP).  **The deal-breaker for me was that Ghost lacks the MASSIVE community, support, and plugins that help make blogs grow themselves. ** The data clearly show that my bounce rate increased, page views dropped, while my incoming visitors stayed constant. This means that once users finished reading the article they came to read, they left. [  
-](http://ryanhayes.netimg/wp-content/uploads/2014/09/ghost.png){.lightbox} This was largely due to my WordPress blog's plugins that help users discover other content on the site.  I've got about four different places on my WordPress blog that help guide users into related content on my site that just weren't there in Ghost. That's not really Ghost's fault, as it does the actual content authoring extremely well, however it doesn't change the fact **a big reason you write content on a blog is to have someone read it.** This downside of Ghost will get better with time, but right now, there's next to nothing as far as plugins are concerned.  You can, of course, write your own plugins or hand-code all of these other features that you may need, but then we get back to the part where you're at a huge disadvantage if you aren't a developer.
+](https://ryanhayes.netimg/wp-content/uploads/2014/09/ghost.png){.lightbox} This was largely due to my WordPress blog's plugins that help users discover other content on the site.  I've got about four different places on my WordPress blog that help guide users into related content on my site that just weren't there in Ghost. That's not really Ghost's fault, as it does the actual content authoring extremely well, however it doesn't change the fact **a big reason you write content on a blog is to have someone read it.** This downside of Ghost will get better with time, but right now, there's next to nothing as far as plugins are concerned.  You can, of course, write your own plugins or hand-code all of these other features that you may need, but then we get back to the part where you're at a huge disadvantage if you aren't a developer.
 
 ## Back to WordPress
 
-I ended up moving back to WordPress because keeping my page views are more important to me than being able to edit and preview on the same screen.  Luckily I had a backup that I could flip back to, but I still had the problem of HostGator being pretty slow and taking my site down whenever a post would get featured on a big website somewhere (I had [one post](http://ryanhayes.net/how-the-xbox-one-lost-me-and-then-won-me-back-with-the-cloud/ "How the Xbox One lost me, and then won me back with 24-Hour DRM and the cloud.") get really high on Reddit one day and my site was down for most of the day, sadly).
+I ended up moving back to WordPress because keeping my page views are more important to me than being able to edit and preview on the same screen.  Luckily I had a backup that I could flip back to, but I still had the problem of HostGator being pretty slow and taking my site down whenever a post would get featured on a big website somewhere (I had [one post](https://ryanhayes.net/how-the-xbox-one-lost-me-and-then-won-me-back-with-the-cloud/ "How the Xbox One lost me, and then won me back with 24-Hour DRM and the cloud.") get really high on Reddit one day and my site was down for most of the day, sadly).
 
 Here's what I did differently this time:
 
   * Moved hosting (as well as the majority of my clients) over to WPEngine
-  * Just bit the bullet and did a [page speed audit](http://www.webpagetest.org/ "Web page speed audit") on my site to speed things up 
-      * [Optimized all my site images](http://pnggauntlet.com/)
+  * Just bit the bullet and did a [page speed audit](https://www.webpagetest.org/ "Web page speed audit") on my site to speed things up 
+      * [Optimized all my site images](https://pnggauntlet.com/)
       * Deactivated and removed unused plugins
   * Leveraged a CDN (content delivery network) using WPEngine
 

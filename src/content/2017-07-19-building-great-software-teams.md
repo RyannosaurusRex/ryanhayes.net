@@ -4,7 +4,7 @@ title: Building Great Software Teams
 date: 2017-07-19T18:35:12+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347851
+guid: https://ryanhayes.net/?p=1001347851
 image: img/demo1.jpg
 permalink: /building-great-software-teams/
 categories:

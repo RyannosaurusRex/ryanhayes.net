@@ -4,7 +4,7 @@ title: Synchronize Node.JS Install Version with Visual Studio 2015
 date: 2015-07-22T02:47:12+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347691
+guid: https://ryanhayes.net/?p=1001347691
 permalink: /synchronize-node-js-install-version-with-visual-studio-2015/
 bluth_post_layout:
   - right_side
@@ -37,7 +37,7 @@ Visual Studio 2015 is out for download now (and [free](https://www.visualstudio.
   3. In this dialog, go to **Projects and Solutions > External Web Tools **to open the dialog that manages all of the 3rd party tools used within VS.  This is where Node.js is pointed to.
   4. **Add an entry at the top to the path to the node.js directory to force Visual Studio to use that version instead.**
 
-[<img class="alignnone size-full wp-image-1001347693" src="https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture.png" alt="Capture" width="760" height="442" srcset="https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture.png 760w, https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture-300x174.png 300w, https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture-610x355.png 610w" sizes="(max-width: 760px) 100vw, 760px" />](http://ryanhayes.netimg/wp-content/uploads/2015/07/Capture.png){.lightbox}
+[<img class="alignnone size-full wp-image-1001347693" src="https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture.png" alt="Capture" width="760" height="442" srcset="https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture.png 760w, https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture-300x174.png 300w, https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture-610x355.png 610w" sizes="(max-width: 760px) 100vw, 760px" />](https://ryanhayes.netimg/wp-content/uploads/2015/07/Capture.png){.lightbox}
 
 &nbsp;
 

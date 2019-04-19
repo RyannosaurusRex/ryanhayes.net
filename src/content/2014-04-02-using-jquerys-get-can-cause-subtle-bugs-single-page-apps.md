@@ -4,9 +4,11 @@ title: How Using jQuery's $.get() Can Cause Subtle Bugs in Single Page Apps
 date: 2014-04-02T15:38:25+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347557
+guid: https://ryanhayes.net/?p=1001347557
 permalink: /using-jquerys-get-can-cause-subtle-bugs-single-page-apps/
 image: img/demo1.jpg
+tags:
+  - uncategorized
 bluth_post_layout:
   - right_side
 bluth_post_right_sidebar:

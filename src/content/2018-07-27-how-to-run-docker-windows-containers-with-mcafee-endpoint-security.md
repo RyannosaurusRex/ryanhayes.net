@@ -4,7 +4,7 @@ title: How to run Docker Windows Containers with McAfee Endpoint Security
 date: 2018-07-27T15:14:27+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347862
+guid: https://ryanhayes.net/?p=1001347862
 permalink: /how-to-run-docker-windows-containers-with-mcafee-endpoint-security/
 image: img/boat-container.jpeg
 hestia_layout_select:
@@ -15,7 +15,7 @@ categories:
 ---
 McAfee Endpoint Security and I have a love/hate relationship in that I hate it when it gets in my way and love it when it's not installed. In general, I appreciate security and security research, but recently I had been trying out (or attempting to try out) Docker and Kubernetes for a project I'm working on. It's a .NET 4.6 web application, and as such, requires Windows Server Core (as opposed to the much lighterweight, new Windows Nano Server or a Linux-based container).  The fact that we now have an option to effectively containerize any application, including a windows application, is incredible. So yesterday, I decided to try and set it up. Here's how it went.
 
-[<img class="alignnone size-large wp-image-1001347863" src="https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1024x521.png" alt="What OS to target with .NET Containers" width="1024" height="521" srcset="https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1024x521.png 1024w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-300x153.png 300w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-768x391.png 768w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1080x550.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />](http://ryanhayes.netimg/wp-content/uploads/2018/07/image1.png)
+[<img class="alignnone size-large wp-image-1001347863" src="https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1024x521.png" alt="What OS to target with .NET Containers" width="1024" height="521" srcset="https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1024x521.png 1024w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-300x153.png 300w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-768x391.png 768w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1080x550.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />](https://ryanhayes.netimg/wp-content/uploads/2018/07/image1.png)
 
 The only potential downside that I had heard about Windows Server Core containers were that they were pretty big. When I say big I mean like real big. 10GB big.
 

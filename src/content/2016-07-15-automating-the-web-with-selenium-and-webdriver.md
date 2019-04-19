@@ -5,7 +5,7 @@ date: 2016-07-15T00:31:26+00:00
 author: Ryan Hayes
 layout: post
 image: img/demo1.jpg
-guid: http://ryanhayes.net/?p=1001347730
+guid: https://ryanhayes.net/?p=1001347730
 permalink: /automating-the-web-with-selenium-and-webdriver/
 bluth_post_layout:
   - right_side

@@ -4,7 +4,7 @@ title: 'How to Permanently Fix "Could not copy "C:\MyProject\MyDLL.dll" to "C:\M
 date: 2018-06-18T19:03:02+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347859
+guid: https://ryanhayes.net/?p=1001347859
 image: img/demo1.jpg
 permalink: /how-to-permanently-fix-could-not-copy-dll-to-dll/
 categories:

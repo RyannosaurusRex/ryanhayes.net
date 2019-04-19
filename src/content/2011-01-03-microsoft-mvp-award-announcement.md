@@ -4,7 +4,7 @@ title: Microsoft MVP Award Announcement
 date: 2011-01-03T23:11:47+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347080
+guid: https://ryanhayes.net/?p=1001347080
 permalink: /microsoft-mvp-award-announcement/
 image: img/demo1.jpg
 dsq_thread_id:
@@ -17,7 +17,7 @@ categories:
   - Community
 ---
 <div id="attachment_100134" style="width: 144px" class="wp-caption alignleft">
-  <a href="http://beta.ryanhayes.netimg/wp-content/uploads/2011/01/mvp.jpg"><img class="size-medium wp-image-1001347079  " title="Microsoft MVP" src="http://ryanhayes.wpengine.comimg/wp-content/uploads/2013/10/mvp_cdzier-192x300.jpg" alt="Ryan Hayes Microsoft MVP" width="134" height="210" /></a>
+  <a href="https://beta.ryanhayes.netimg/wp-content/uploads/2011/01/mvp.jpg"><img class="size-medium wp-image-1001347079  " title="Microsoft MVP" src="https://ryanhayes.wpengine.comimg/wp-content/uploads/2013/10/mvp_cdzier-192x300.jpg" alt="Ryan Hayes Microsoft MVP" width="134" height="210" /></a>
   
   <p class="wp-caption-text">
     Microsoft MVP
@@ -28,7 +28,7 @@ A couple days ago I woke to receive this in my inbox:
 
 > Congratulations! We are pleased to present you with the 2011 Microsoft® MVP Award! This award is given to exceptional technical community leaders who actively share their high quality, real world expertise with others. We appreciate your outstanding contributions in Internet Explorer technical communities during the past year.
 
-It's a huge honor for me to be called a Microsoft MVP and a special thanks goes to Carter Rabasa of the IE9 team for my initial nomination.  Since I started coding back in 2003, I've followed and got inspiration from heavy hitters like [Rick Strahl](http://www.west-wind.com/weblog/), [Phil Haack](http://haacked.com/), [Scott Hanselman](http://www.hanselman.com/blog/) and [Jon Skeet](http://stackoverflow.com/users/22656/jon-skeet), who have all held the MVP award, and it's awesome to be able to join them.  Here's what Microsoft's MVP site says about what an MVP is:
+It's a huge honor for me to be called a Microsoft MVP and a special thanks goes to Carter Rabasa of the IE9 team for my initial nomination.  Since I started coding back in 2003, I've followed and got inspiration from heavy hitters like [Rick Strahl](https://www.west-wind.com/weblog/), [Phil Haack](https://haacked.com/), [Scott Hanselman](https://www.hanselman.com/blog/) and [Jon Skeet](https://stackoverflow.com/users/22656/jon-skeet), who have all held the MVP award, and it's awesome to be able to join them.  Here's what Microsoft's MVP site says about what an MVP is:
 
 <!--more-->
 
@@ -40,9 +40,9 @@ I wasn't really expecting the award.  I haven't been pursuing any kind of award
 
 So, if you want to see me in action, check out:
 
-  * [Programmers.SE](http://programmers.stackexchange.com/users/1521/ryan-hayes)
-  * [StackOverflow](http://stackoverflow.com/users/403661/ryan-hayes)
-  * [Tri-Cities User Group](http://www.tricitiesug.net/)
+  * [Programmers.SE](https://programmers.stackexchange.com/users/1521/ryan-hayes)
+  * [StackOverflow](https://stackoverflow.com/users/403661/ryan-hayes)
+  * [Tri-Cities User Group](https://www.tricitiesug.net/)
   * [My MVP Profile](https://mvp.support.microsoft.com/profile/Ryan.Hayes)
 
 Happy New Year!

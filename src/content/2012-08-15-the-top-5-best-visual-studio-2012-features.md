@@ -4,7 +4,7 @@ title: The Top 5 Best Visual Studio 2012 Features
 date: 2012-08-15T20:32:27+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347383
+guid: https://ryanhayes.net/?p=1001347383
 image: img/demo1.jpg
 permalink: /the-top-5-best-visual-studio-2012-features/
 standard_seo_post_level_layout:
@@ -37,11 +37,11 @@ Windows 8 is here and VS2012 lets you build awesome apps in C#, C++, and even Ja
 
 ## Debugging T4 Templates
 
-Debugging T4 Templates has been really hard in the past.  In building [ShoelaceMVC](http://ryanhayes.net/blog/shoelacemvc-open-source-asp-net-mvc-3-starter-project-for-build/), the only way to make sure my T4 templates to generate views actually worked was to generate them live.  Which sucked.  Really.  It's slow and cumbersome and time consuming and manual.  In VS2012, they introduced the ability to step through and debug T4 templates as it generates your code.  This is amazing and a huge timesaver for people who work on frameworks, starter projects, and other awesome tools.
+Debugging T4 Templates has been really hard in the past.  In building [ShoelaceMVC](https://ryanhayes.net/blog/shoelacemvc-open-source-asp-net-mvc-3-starter-project-for-build/), the only way to make sure my T4 templates to generate views actually worked was to generate them live.  Which sucked.  Really.  It's slow and cumbersome and time consuming and manual.  In VS2012, they introduced the ability to step through and debug T4 templates as it generates your code.  This is amazing and a huge timesaver for people who work on frameworks, starter projects, and other awesome tools.
 
 ## TFS in the Cloud
 
-Team Foundation Server has always been a good, solid product.  Shelvesets make it easy to share and show others your code.  Gated checkins and automated builds? &#8211; Check.  The problem though is continuous integration and using it with Scrum.  Nobody &#8211; and I mean nobody &#8211; has done a good end-to-end solution from requirements, to agile, to code, to code review, to build, to test, to deployment.  The whole ALM circle at once is what developers have been looking for for years.  You can do Jetbrains TeamCity, but you need another tool to do agile, and another to track bugs.  You can do full application lifecycle management, but you need someone to set it all up and manage it, which is usually different products stitched together with hopes, dreams, and prayers that it won't break and you never have to touch it again (plus it's a lot of work to set up).  **The new TFS in the cloud changes everything.  **It includes agile project management using a card board.  It's got all the branch/merge goodness that TFS has always had, but the best part is automated deployments, particularly to Azure, which is just awesome for people like me who have a 100% in the cloud business and clients who are doing the same.  You can check it out at http://tfspreview.com
+Team Foundation Server has always been a good, solid product.  Shelvesets make it easy to share and show others your code.  Gated checkins and automated builds? &#8211; Check.  The problem though is continuous integration and using it with Scrum.  Nobody &#8211; and I mean nobody &#8211; has done a good end-to-end solution from requirements, to agile, to code, to code review, to build, to test, to deployment.  The whole ALM circle at once is what developers have been looking for for years.  You can do Jetbrains TeamCity, but you need another tool to do agile, and another to track bugs.  You can do full application lifecycle management, but you need someone to set it all up and manage it, which is usually different products stitched together with hopes, dreams, and prayers that it won't break and you never have to touch it again (plus it's a lot of work to set up).  **The new TFS in the cloud changes everything.  **It includes agile project management using a card board.  It's got all the branch/merge goodness that TFS has always had, but the best part is automated deployments, particularly to Azure, which is just awesome for people like me who have a 100% in the cloud business and clients who are doing the same.  You can check it out at https://tfspreview.com
 
 &nbsp;
 

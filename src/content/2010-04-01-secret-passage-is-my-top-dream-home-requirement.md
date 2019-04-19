@@ -4,7 +4,7 @@ title: 'Dream Home Requirement #1: Secret Passageway'
 date: 2010-04-01T15:17:00+00:00
 author: Ryan Hayes
 layout: post
-guid: http://blog.ryanhayes.net/post/489175117
+guid: https://blog.ryanhayes.net/post/489175117
 permalink: /secret-passage-is-my-top-dream-home-requirement/
 image: img/demo1.jpg
 wpb_post_views_count:
@@ -31,7 +31,7 @@ tags:
 ---
 A lot of times growing up, there comes a point when you want to design the house you’ll live in when you’re older. So you pull out a sheet of paper and start drawing…and drawing…and drawing.
 
-<img src="http://shakhammer.comimg/wp-content/oldimages/shakhammer//photos/uncategorized/2008/11/25/hiddenroom.jpg" alt="" width="342" height="377" /> 
+<img src="https://shakhammer.comimg/wp-content/oldimages/shakhammer//photos/uncategorized/2008/11/25/hiddenroom.jpg" alt="" width="342" height="377" /> 
 
 By the time you’re done you end up with a 3 story house complete with a swimming pool, lazer fence, a guest room for each of your best friends, a movie theater, 10 car garage, helicopter pad, and war-room to keep all of your Batman gear. No matter what my dream home looked like at the time, one thing always was a requirement – a secret passageway.
 
@@ -39,8 +39,8 @@ You’ve seen them before in the movies, you tilt a candlestick and the fireplac
 
 I was talking to one of my friends a few months ago about how realistic it would be to put one of these bad boys in a house. Is it feasible to put a secret doorway in a home that’s already built? Is it something you plan for? Luckily, there are plenty of companies to help you sort it all out and even build and install your own custom or pre-made hideout portal.  What are your wildest hidden room dreams?
 
-[Hidden Passageways](http://hiddenpassageway.com/ "Hidden Passageways")
+[Hidden Passageways](https://hiddenpassageway.com/ "Hidden Passageways")
 
-[Hide A Door](http://www.hideadoor.com/)
+[Hide A Door](https://www.hideadoor.com/)
 
-[Secret Doorways](http://secretdoorways.com/)
+[Secret Doorways](https://secretdoorways.com/)

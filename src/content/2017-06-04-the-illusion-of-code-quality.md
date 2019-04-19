@@ -4,7 +4,7 @@ title: The Illusion of Code Quality
 date: 2017-06-04T17:26:27+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347687
+guid: https://ryanhayes.net/?p=1001347687
 permalink: /the-illusion-of-code-quality/
 image: img/demo1.jpg
 tags:

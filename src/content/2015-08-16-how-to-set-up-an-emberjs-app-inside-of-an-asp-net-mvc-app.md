@@ -4,7 +4,7 @@ title: How To Set Up an EmberJS App Inside of an ASP.NET MVC App
 date: 2015-08-16T02:47:01+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347704
+guid: https://ryanhayes.net/?p=1001347704
 permalink: /how-to-set-up-an-emberjs-app-inside-of-an-asp-net-mvc-app/
 image: img/demo1.jpg
 bluth_post_layout:

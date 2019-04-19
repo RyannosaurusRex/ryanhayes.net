@@ -4,7 +4,7 @@ title: 'Azure Functions: Developer Infrastructure is the Sweet Spot'
 date: 2018-02-16T18:04:18+00:00
 author: Ryan Hayes
 layout: post
-guid: http://ryanhayes.net/?p=1001347848
+guid: https://ryanhayes.net/?p=1001347848
 permalink: /azure-functions-sweet-spot/
 image: img/wp-content/uploads/2018/02/download.png
 categories:
