@@ -7,6 +7,7 @@ layout: post
 guid: http://ryanhayes.net/?p=1001347521
 permalink: /test-internet-explorer-mac/
 image: img/demo1.jpg
+tags:
 dsq_thread_id:
   - ""
 standard_seo_post_level_layout:
