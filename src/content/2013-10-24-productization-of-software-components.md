@@ -7,6 +7,8 @@ layout: post
 guid: http://ryanhayes.net/?p=1001347510
 permalink: /productization-of-software-components/
 image: img/demo1.jpg
+tags:
+  - software
 dsq_thread_id:
   - ""
 standard_seo_post_level_layout:
