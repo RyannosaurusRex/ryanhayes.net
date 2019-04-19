@@ -32,7 +32,7 @@ const config: WebsiteConfig = {
   title: 'Ryan Hayes',
   description: 'Let\'s build great teams together.',
   coverImage: 'img/blog-cover.jpg',
-  logo: 'img/ghost-logo.png',
+  logo: 'img/ryan-hayes.png',
   lang: 'en',
   siteUrl: 'https://www.ryanhayes.net',
   facebook: 'https://www.facebook.com/Mr.Ryan.Hayes',

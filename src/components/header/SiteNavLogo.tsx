@@ -8,7 +8,7 @@ const SiteNavLogoStyles = css`
   flex-shrink: 0;
   display: block;
   margin-right: 24px;
-  padding: 11px 0;
+  padding: 0px 0;
   color: #fff;
   font-size: 1.7rem;
   line-height: 1em;
@@ -22,9 +22,16 @@ const SiteNavLogoStyles = css`
   img {
     display: block;
     width: auto;
-    height: 21px;
+    height: 30px;
   }
 `;
+
+const LogoStyles = css`
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+`
 
 interface SiteNavLogoProps {
   logo?: {
@@ -38,7 +45,7 @@ const SiteNavLogo = () => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {
-        logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+        logo: file(relativePath: { eq: "img/ryan-hayes.jpg" }) {
           childImageSharp {
             fixed {
               ...GatsbyImageSharpFixed
@@ -51,7 +58,7 @@ const SiteNavLogo = () => (
     render={(data: SiteNavLogoProps) => (
       <Link className="site-nav-logo" css={SiteNavLogoStyles} to="/">
         {data.logo ? (
-          <img src={data.logo.childImageSharp.fixed.src} alt={config.title} />
+          <img src={data.logo.childImageSharp.fixed.src} css={LogoStyles} alt={config.title} />
         ) : (
           config.title
         )}
