@@ -193,7 +193,7 @@ const ReadNextCard: React.FunctionComponent<ReadNextProps> = props => {
               &mdash; {config.title} &mdash;
             </ReadNextCardHeaderSitetitle>
             <ReadNextCardHeaderTitle>
-              <Link to={`/tags/${_.kebabCase(props.tags[0])}/`}>{props.tags[0]}</Link>
+              <Link to={`/tags/${_.kebabCase(props.tags? props.tags[0] : '')}/`}>{props.tags? props.tags[0] : ''}</Link>
             </ReadNextCardHeaderTitle>
           </ReadNextCardHeader>
           <ReadNextDivider>
@@ -211,7 +211,7 @@ const ReadNextCard: React.FunctionComponent<ReadNextProps> = props => {
             </ul>
           </ReadNextCardContent>
           <ReadNextCardFooter>
-            <Link to={`/tags/${_.kebabCase(props.tags[0])}/`}>
+            <Link to={`/tags/${_.kebabCase(props.tags? props.tags[0] : '')}/`}>
               {props.relatedPosts.totalCount > 1 &&
                 `See all ${props.relatedPosts.totalCount} posts`}
               {props.relatedPosts.totalCount === 1 && `1 post`}
