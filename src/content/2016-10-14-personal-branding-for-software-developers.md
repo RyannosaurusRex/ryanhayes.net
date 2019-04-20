@@ -30,3 +30,5 @@ tags:
   - talks
 ---
 I recently gave a talk on branding for software developers at TriJS.  While I didn't get a chance to record it, I did upload the slides for your viewing please.  The slides are readable without listening to the talk and have a few protips and specific actionable things that you can do to boost your personal brand as a developer.  It's one of those things where you don't really need it until you want to change jobs or you need to promote something, then you wish you did.  If you don't know how to get started, take a look at the slides and let me know some of the things that you've done to increase your visibility as a software developer!
+
+<iframe src="//slides.com/ryanhayes/deck/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
