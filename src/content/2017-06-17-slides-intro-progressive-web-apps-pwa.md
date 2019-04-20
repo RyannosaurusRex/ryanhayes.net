@@ -10,3 +10,5 @@ image: img/demo1.jpg
 categories:
   - Blog
 ---
+
+<iframe src="//slides.com/ryanhayes/progressive-web-apps/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
