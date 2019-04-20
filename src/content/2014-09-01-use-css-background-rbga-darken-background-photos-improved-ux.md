@@ -1,7 +1,7 @@
 ---
 id: 1001347662
 title: How to Darken Photos Using Only CSS
-date: 2019-20-01T01:47:00+00:00
+date: 2019-04-20T01:47:00+00:00
 author: Ryan Hayes
 layout: post
 guid: https://ryanhayes.wpengine.com/?p=1001347662
