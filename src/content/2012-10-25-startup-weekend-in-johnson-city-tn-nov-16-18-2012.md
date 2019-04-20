@@ -1,6 +1,6 @@
 ---
 id: 1001347405
-title: 'Startup Weekend in Johnson City, TN &#8211; Nov 16-18, 2012'
+title: 'Startup Weekend in Johnson City, TN Nov 16-18, 2012'
 date: 2012-10-25T20:44:11+00:00
 author: Ryan Hayes
 layout: post
