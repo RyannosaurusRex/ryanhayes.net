@@ -16,9 +16,9 @@ tags:
   - Docker
   - McAfee
 ---
-McAfee Endpoint Security and I have a love/hate relationship in that I hate it when it gets in my way and love it when it's not installed. In general, I appreciate security and security research, but recently I had been trying out (or attempting to try out) Docker and Kubernetes for a project I'm working on. It's a .NET 4.6 web application, and as such, requires Windows Server Core (as opposed to the much lighterweight, new Windows Nano Server or a Linux-based container).  The fact that we now have an option to effectively containerize any application, including a windows application, is incredible. So yesterday, I decided to try and set it up. Here's how it went.
+McAfee Endpoint Security and I have a love/hate relationship in that I hate it when it gets in my way and love it when it's not installed. In general, I appreciate security and security research, but recently I had been trying out (or attempting to try out) Docker and Kubernetes for a project I'm working on. It's a .NET 4.6 web application, and as such, requires Windows Server Core (as opposed to the much lighter-weight, new Windows Nano Server or a Linux-based container).  The fact that we now have an option to effectively containerize any application, including a windows application, is incredible. So yesterday, I decided to try and set it up. Here's how it went.
 
-[<img class="alignnone size-large wp-image-1001347863" src="/img/wp-content/uploads/2018/07/image1-1024x521.png" alt="What OS to target with .NET Containers" width="1024" height="521" srcset="/img/wp-content/uploads/2018/07/image1-1024x521.png 1024w, /img/wp-content/uploads/2018/07/image1-300x153.png 300w, /img/wp-content/uploads/2018/07/image1-768x391.png 768w, /img/wp-content/uploads/2018/07/image1-1080x550.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />](/img/wp-content/uploads/2018/07/image1.png)
+![Windows docker](/img/wp-content/uploads/2018/07/image1.png)
 
 The only potential downside that I had heard about Windows Server Core containers were that they were pretty big. When I say big I mean like real big. 10GB big.
 
@@ -48,14 +48,16 @@ Installing Docker on Windows with McAfee is pretty straightforward. This was the
 
 Everything seemed to be going as well as I could expect until it came time to run `docker build` on my dockerfile and get everything set up.  It seemed to be pulling things from the registry OK, but then I was met with this error message:
 
-`PS C:\WINDOWS\system32> docker pull microsoft/windowsservercore  
+```
+PS C:\WINDOWS\system32> docker pull microsoft/windowsservercore  
 Using default tag: latest  
 latest: Pulling from microsoft/windowsservercore  
 9c7f9c7d9bc2: Extracting [==================================================>] 3.738 GB/3.738 GB  
 d33fff6043a1: Download complete  
-failed to register layer: rename C:\ProgramData\Docker\image\windowsfilter\layerdb\tmp\write-set-925881297 C:\ProgramData\Docker\image\windowsfilter\layerdb\sha256\3fd27ecef6a323f5ea7f3fde1f7b87a2dbfb1afa797f88fd7d20e8dbdc856f67: Access is denied.`
+failed to register layer: rename C:\ProgramData\Docker\image\windowsfilter\layerdb\tmp\write-set-925881297 C:\ProgramData\Docker\image\windowsfilter\layerdb\sha256\3fd27ecef6a323f5ea7f3fde1f7b87a2dbfb1afa797f88fd7d20e8dbdc856f67: Access is denied.
+```
 
-Ok, so let's look at what's happening here.  **It's saying it can't register a layer because access is denied on my computer's file system&#8230;but I'm administrator! **What could possibly be the issue? Then I remember. _McAfee. _A quick Google search showed a lot of other folks having the same kind of issue, and ends up that McAfee doesn't even support Windows containers. Yea, that's right.
+Ok, so let's look at what's happening here. **It's saying it can't register a layer because access is denied on my computer's file system, but I'm administrator!** What could possibly be the issue? Then I remember. _McAfee._ A quick Google search showed a lot of other folks having the same kind of issue, and ends up that McAfee doesn't even support Windows containers. Yea, that's right.
 
 ### McAfee Endpoint Security Does Not Support Windows-based Docker Containers!
 
