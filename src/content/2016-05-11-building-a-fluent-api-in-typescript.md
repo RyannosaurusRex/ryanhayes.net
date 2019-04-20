@@ -26,3 +26,5 @@ dsq_thread_id:
 categories:
   - Blog
 ---
+
+<iframe src="//slides.com/ryanhayes/building-a-fluent-api-in-typescript/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

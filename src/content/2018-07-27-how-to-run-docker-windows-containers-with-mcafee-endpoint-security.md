@@ -15,6 +15,7 @@ categories:
 tags:
   - Docker
   - McAfee
+draft: false
 ---
 McAfee Endpoint Security and I have a love/hate relationship in that I hate it when it gets in my way and love it when it's not installed. In general, I appreciate security and security research, but recently I had been trying out (or attempting to try out) Docker and Kubernetes for a project I'm working on. It's a .NET 4.6 web application, and as such, requires Windows Server Core (as opposed to the much lighter-weight, new Windows Nano Server or a Linux-based container).  The fact that we now have an option to effectively containerize any application, including a windows application, is incredible. So yesterday, I decided to try and set it up. Here's how it went.
 
