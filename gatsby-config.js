@@ -24,6 +24,7 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          'gatsby-plugin-sitemap',
           {
             resolve: 'gatsby-remark-embed-gist',
             options: {
