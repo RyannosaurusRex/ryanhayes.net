@@ -48,7 +48,7 @@ const SiteNavLogo = () => (
         logo: file(relativePath: { eq: "img/ryan-hayes.jpg" }) {
           childImageSharp {
             fixed {
-              ...GatsbyImageSharpFixed
+              ...GatsbyImageSharpFixed_withWebp
             }
           }
         }
