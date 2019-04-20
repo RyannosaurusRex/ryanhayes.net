@@ -19,15 +19,15 @@ _Note:_ This article assumes you have created a stock new ASP.NET project within
 
 In whatever route in your MVC app that goes to /App (or whatever you want your "app" route to be named), return the `index.html` that's built from your Ember app.
 
-`[RequireHttps]`
-`public class AppController : Controller`
-`{`
-`    [Authorize]`
-`    public ActionResult Index()`
-`    {`
-`        return File(Server.MapPath("~/my-ember-app/dist/") + "index.html", "text/html");`
-`    }`
-`}`
+[RequireHttps]
+public class AppController : Controller
+{
+    [Authorize]
+    public ActionResult Index()
+    {
+        return File(Server.MapPath("~/my-ember-app/dist/") + "index.html", "text/html");
+    }
+}
 
 ASP.NET MVC will set the root of the app and make it different than if you were serving the Ember.js app by itself, so you'll need to modify the asset folder URL to the folder relative to the MVC app, like so:
 
@@ -45,9 +45,9 @@ Ember Data is certainly not required, but it definitely helps in a lot of cases.
 
 In your `Global.asax.cs`, import `using Newtonsoft.Json;` and `using Newtonsoft.Json.Serialization;`and then include the following in your ApplicationStart() method:
 
-> //Camel case the JSON to format correctly for Ember
-> var formatters = GlobalConfiguration.Configuration.Formatters;
-> var jsonFormatter = formatters.JsonFormatter;
-> var settings = jsonFormatter.SerializerSettings;
-> settings.Formatting = Formatting.Indented;
-> settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+//Camel case the JSON to format correctly for Ember
+var formatters = GlobalConfiguration.Configuration.Formatters;
+var jsonFormatter = formatters.JsonFormatter;
+var settings = jsonFormatter.SerializerSettings;
+settings.Formatting = Formatting.Indented;
+settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
