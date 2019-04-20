@@ -39,7 +39,7 @@ tags:
 ---
 Math is important.  No, really!  I’m not just talking about that 2+2=4 stuff.  I’m talking about the big stuff.  The Cal III type stuff.  The problems that keep you up all night long.  The problems where the professor gives you 5 problems on Monday to do in a week and you say “Oh, shoot, 5 problems?  That’s it?  Pfft.  I’ll start next Sunday night at 9PM because Halo 3 just came out!”  Then you pull an
 
-<img class=" wp-image-1001347469 alignright" alt="math in software" src="https://res.cloudinary.com/ryanhayes-net/image/upload/v1382116577/hangman_oumevg.gif" width="240" height="395" /> 
+<img class=" wp-image-1001347469 alignright" alt="math in software" src="/img/wp-content/uploads/2010/06/hangman.gif" width="240" height="395" /> 
 
 all nighter on Sunday and barely get four of the problems done.  Yea, I may or may not know about that first hand.  But really, I ask, why are you learning all this?  Are you really going to need all these crazy formulas for programming and software development?  Can’t just pull them out of a math book later?  It’s just a formula, right?  To be honest, there’s probably a 2% chance you will ever need this kind of math as a software developer.  Unless you go into graphics programming or something like that, you’ll likely never need it, and even then you’ll have references in the real world.  So why do I still think (really) hard math as absolutely essential to being a great developer?  Allow me to explain…
 

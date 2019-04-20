@@ -62,6 +62,7 @@ module.exports = {
     'gatsby-plugin-typescript',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-twitter',
     'gatsby-transformer-yaml',
     'gatsby-plugin-feed',
     {
@@ -78,7 +79,7 @@ module.exports = {
         head: true,
         // IP anonymization for GDPR compliance
         anonymize: true,
-        // Disable analytics for users with `Do Not Track` enabled
+        // Disable analytics or users with `Do Not Track` enabled
         respectDNT: false,
         // Avoids sending pageview hits from custom paths
         exclude: ['/preview/**'],

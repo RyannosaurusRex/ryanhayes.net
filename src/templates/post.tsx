@@ -6,6 +6,7 @@ import * as React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 import { Helmet } from 'react-helmet';
+import { DiscussionEmbed } from 'disqus-react';
 
 import AuthorCard from '../components/AuthorCard';
 import Footer from '../components/Footer';
@@ -214,6 +215,12 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
     width = post.frontmatter.image.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
     height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
   }
+
+  const disqusShortname = "ryanhayesblog";
+  const disqusConfig = {
+    //identifier: post.id,
+    title: post.frontmatter.title,
+  };
 
   return (
     <IndexLayout className="post-template">

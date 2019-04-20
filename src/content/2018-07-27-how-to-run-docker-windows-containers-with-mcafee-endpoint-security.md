@@ -18,7 +18,7 @@ tags:
 ---
 McAfee Endpoint Security and I have a love/hate relationship in that I hate it when it gets in my way and love it when it's not installed. In general, I appreciate security and security research, but recently I had been trying out (or attempting to try out) Docker and Kubernetes for a project I'm working on. It's a .NET 4.6 web application, and as such, requires Windows Server Core (as opposed to the much lighterweight, new Windows Nano Server or a Linux-based container).  The fact that we now have an option to effectively containerize any application, including a windows application, is incredible. So yesterday, I decided to try and set it up. Here's how it went.
 
-[<img class="alignnone size-large wp-image-1001347863" src="https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1024x521.png" alt="What OS to target with .NET Containers" width="1024" height="521" srcset="https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1024x521.png 1024w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-300x153.png 300w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-768x391.png 768w, https://ryanhayes.netimg/wp-content/uploads/2018/07/image1-1080x550.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />](https://ryanhayes.netimg/wp-content/uploads/2018/07/image1.png)
+[<img class="alignnone size-large wp-image-1001347863" src="/img/wp-content/uploads/2018/07/image1-1024x521.png" alt="What OS to target with .NET Containers" width="1024" height="521" srcset="/img/wp-content/uploads/2018/07/image1-1024x521.png 1024w, /img/wp-content/uploads/2018/07/image1-300x153.png 300w, /img/wp-content/uploads/2018/07/image1-768x391.png 768w, /img/wp-content/uploads/2018/07/image1-1080x550.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />](/img/wp-content/uploads/2018/07/image1.png)
 
 The only potential downside that I had heard about Windows Server Core containers were that they were pretty big. When I say big I mean like real big. 10GB big.
 
@@ -40,8 +40,7 @@ Ok, fine, that's&#8230;that's not good but there's no other way to run full fram
 
 Installing Docker on Windows with McAfee is pretty straightforward. This was the first time I'd installed it in a couple years, so I was pleasantly surprised when the entire thing was pretty seamless. The wizard created the necessary docker-users security group and added me to it and has a pretty nice interface now. There were a few initial setup steps that were unclear I had to lookup, though:
 
-  1. **You need to add your user to the Hyper-V Administrators group.** For whatever reason, the Docker for Windows installation created the docker-users group and added me there, but didn't to the existing Hyper-V Administrators group. 🤷  
-    ###  {.r}
+  1. **You need to add your user to the Hyper-V Administrators group.** For whatever reason, the Docker for Windows installation created the docker-users group and added me there, but didn't to the existing Hyper-V Administrators group. 🤷
 
   2. **When building a docker container via the command line interface (Docker CLI)**, the login information is different from what you use to log into the website.  The website accepts you username OR your email address (I use my email address), but **the CLI will only accept your username, and not the email address.**  It also doesn't tell you why the login fails, so just get in a habit of using your username.
 
@@ -85,7 +84,7 @@ I know this isn't much help, particularly if you have a large application alread
 
 ### Remove McAfee?
 
-Move away from McAfee if Windows Docker containers are a hard requirement for you and no other options work well for your team.
+One of the possible solutions is to move away from McAfee. If Windows Docker containers are a hard requirement for you and no other options work well for your team, this might be the only option. 
 
 ## The bottom line
 
