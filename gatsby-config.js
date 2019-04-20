@@ -1,6 +1,6 @@
 const path = require('path');
 
-let siteUrl = 'https://ryanhayes.dev';
+let siteUrl = 'https://ryanhayes.net';
 
 module.exports = {
   siteMetadata: {
