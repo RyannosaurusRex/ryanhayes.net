@@ -34,13 +34,13 @@ The only potential downside that I had heard about Windows Server Core container
 
 
 
-Ok, fine, that's&#8230;that's not good but there's no other way to run full framework .NET apps without it a WindowsServerCore container, so I can get past that.
+Ok, fine, that's&#8230;that's not good but there's no other way to run full framework .NET apps inside Docker without it being in a WindowsServerCore container, so it's something I'll have to live with for now.
 
 ## Installing Docker and gotchas
 
-Installing Docker on Windows with McAfee is pretty straightforward. This was the first time I'd installed it in a couple years, so I was pleasantly surprised when the entire thing was pretty seamless. The wizard created the necessary docker-users security group and added me to it and has a pretty nice interface now. There were a few initial setup steps that were unclear I had to lookup, though:
+Installing Docker on Windows with McAfee is pretty straightforward. This was the first time I'd installed it in a couple years, so I was pleasantly surprised when the entire thing was pretty seamless. The wizard created the necessary docker-users security group and added me to it and has a pretty nice interface. There were a few initial setup steps that were unclear I had to lookup, though:
 
-  1. **You need to add your user to the Hyper-V Administrators group.** For whatever reason, the Docker for Windows installation created the docker-users group and added me there, but didn't to the existing Hyper-V Administrators group. 🤷
+  1. **You need to add your user to the Hyper-V Administrators group.** For whatever reason, the Docker for Windows installation created the docker-users group and added me there, but didn't to the existing Hyper-V Administrators group. 🤷 This could be McAfee preventing the proper setup, but there were no error messages that I saw in the output related to this.
 
   2. **When building a docker container via the command line interface (Docker CLI)**, the login information is different from what you use to log into the website.  The website accepts you username OR your email address (I use my email address), but **the CLI will only accept your username, and not the email address.**  It also doesn't tell you why the login fails, so just get in a habit of using your username.
 
@@ -48,7 +48,7 @@ Installing Docker on Windows with McAfee is pretty straightforward. This was the
 
 Everything seemed to be going as well as I could expect until it came time to run `docker build` on my dockerfile and get everything set up.  It seemed to be pulling things from the registry OK, but then I was met with this error message:
 
-```
+```powershell
 PS C:\WINDOWS\system32> docker pull microsoft/windowsservercore  
 Using default tag: latest  
 latest: Pulling from microsoft/windowsservercore  
@@ -68,7 +68,7 @@ After tons of research, the answer from McAfee itself (according to a knowledge 
   * Slowness in opening containers
   * Firewall/NAT issues
 
-To take a look for yourself, here's the original [KB article on Windows Docker containers not being supported by McAfee](https://kc.mcafee.com/corporate/index?page=content&id=KB90041&actp=null&viewlocale=en_US&showDraft=false&platinum_status=false&locale=en_US).
+To take a look for yourself, here's the original [KB article on Windows Docker containers not being supported by McAfee](https://kc.mcafee.com/corporate/index?page=content&id=KB90041&actp=null&viewlocale=en_US&showDraft=false&platinum_status=false&locale=en_US). McAfee updates this article with the current support status, so check here for any updates to McAfee's support for both Docker on Windows as well as running McAfee inside of a Docker container (not that you would want to do that, but it's not supported currently).
 
 ## How can I run Windows Docker Containers on Windows if McAfee doesn't support it?
 
@@ -76,7 +76,7 @@ There are actually a few workarounds that have been successful for me and my tea
 
 ### Virtual Machines
 
-First, you can use the docker tools inside a separate "real" virtual machine (using VMWare, VirtualBox, etc) and actually perform the work there. This gets you around McAfee being on the VM directly, but also has a few drawbacks. It will slow your workflow down as you'll have the VM to jump through from your local machine to the docker tools and images you may be running. This is not ideal, but might give you some runway until McAfee can add support.
+First, you can use the docker tools inside a separate "real" virtual machine (using VMWare, VirtualBox, etc) and actually perform the work there. This gets you around McAfee being on the VM directly, but also has a few drawbacks. It will slow your workflow down as you'll have the VM to jump through from your local machine to the docker tools and images you may be running. This is not ideal, but might give you some runway until McAfee can add support for Docker on Windows in the future.
 
 ### .NET Core!
 
