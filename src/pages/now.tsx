@@ -21,7 +21,7 @@ const PageTemplate = css`
 const About: React.FunctionComponent = () => (
   <IndexLayout>
     <Helmet>
-      <title>Now</title>
+      <title>/Now</title>
     </Helmet>
     <Wrapper css={PageTemplate}>
       <header css={[outer, SiteHeader]}>
@@ -37,8 +37,20 @@ const About: React.FunctionComponent = () => (
 
           <PostFullContent className="post-full-content">
           <div className="post-content">
-            //TODO
-		      </div>
+            <h2>Here’s what I’m focusing on right now:</h2>
+
+            <ul>
+              <li>Being the best husband and dad I can be to my wife and my three little kids.</li>
+              <li>Leading teams at Heartland Payment Systems with some fantastic smart people from my local .NET meetup.</li>
+              <li>Moving a *huge* application to Azure.</li>
+              <li>Co-Organizing and growing TriDev developer meetup, speaking at other meetups.</li>
+              <li><a href="https://youtube.com/ryanhayesnet">Becoming a better speaker by creating more video content.</a></li>
+              <li>Volunteering doing a Rock RMS implementation at [Harvest Community Church and contributing the the open source project.</li>
+            </ul>
+            
+            This page is part of the /now movement. It's what I'd tell a friend if I hadn't seen them in a year.
+
+          </div>
           </PostFullContent>
         </article>
       </main>

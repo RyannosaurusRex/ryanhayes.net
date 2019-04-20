@@ -30,7 +30,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'Ryan Hayes',
-  description: 'Hi. I\'m Ryan. Let\'s build great teams together.',
+  description: 'Hi. I\'m Ryan. Let\'s build great software teams together.',
   coverImage: 'img/blog-cover.jpg',
   logo: 'img/ryan-hayes.png',
   lang: 'en',

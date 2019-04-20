@@ -311,6 +311,8 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
                 <PostFullFooterRight authorId={post.frontmatter.author.id} />
               </PostFullFooter>
             </article>
+            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+
           </div>
         </main>
 
