@@ -12,6 +12,7 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
@@ -24,7 +25,6 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          'gatsby-plugin-sitemap',
           {
             resolve: 'gatsby-remark-embed-gist',
             options: {
