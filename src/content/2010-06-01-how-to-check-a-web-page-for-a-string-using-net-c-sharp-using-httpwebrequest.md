@@ -1,6 +1,6 @@
 ---
 id: 1001346740
-title: 'How To Check a Web Page For a String Using .NET C# Using HttpWebRequest'
+title: 'How To Screen Scrape a Web Page Using .NET C# Without Selenium'
 date: 2010-06-01T14:59:58+00:00
 author: Ryan Hayes
 image: img/demo1.jpg
@@ -28,13 +28,21 @@ categories:
 tags:
   - .NET
   - CSharp
-  - How-To
-  - software
-  - Web
+  - Web Development
 ---
-`using System.Text;<br />
-using System.Net;using System.IO;<br />
-HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(URL);myRequest.Method = "GET";WebResponse myResponse = myRequest.GetResponse();StreamReader sr = new StreamReader(myResponse.GetResponseStream(), System.Text.Encoding.UTF8);string result = sr.ReadToEnd();sr.Close();myResponse.Close();`
 
-`//Now, once you have this, perform the search on result string<br />
-int stringFound = result.IndexOf("My search string");`
+```csharp
+using System.Text;
+using System.Net;
+using System.IO;
+HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create(URL);myRequest.Method = "GET";
+WebResponse myResponse = myRequest.GetResponse();
+StreamReader sr = new StreamReader(myResponse.GetResponseStream(), System.Text.Encoding.UTF8);
+string result = sr.ReadToEnd();
+sr.Close();
+myResponse.Close();
+```
+```csharp
+//Now, once you have this, perform the search on result string<br />
+int stringFound = result.IndexOf("My search string");
+```
