@@ -48,7 +48,7 @@ In general it seems that Visual Studio tries to isolate itself and the tools it 
 
 ###### Managing switching the Node.js Version using Powershell
 
-Another issue that might arise due to using the `$(PATH)` is that you might have projects that use different versions of Node.js. For example one might use Node.js 8.x.x, while another uses 10.x.x. In this case you might want to use Node Version Manager(https://github.com/aaronpowell/ps-nvm), or "NVM" as it's called, to switch versions on the command line in powershell.
+Another issue that might arise due to using the `$(PATH)` is that you might have projects that use different versions of Node.js. For example one might use Node.js 8.x.x, while another uses 10.x.x. In this case you might want to use [Node Version Manager](https://github.com/aaronpowell/ps-nvm), or "NVM" as it's called, to switch versions on the command line in powershell.
 
  You can use NVM to switch versions of Node.js yourself on the command line, or use it to read the package.json file's "Engine" property, and sets the appropriate version. If the version isn't available it can even silently install the appropriate Node.js version. This is helpful in many situations, and can be included in an MSBuild task if needed to swap the version when you hit the "Play" button to the correct version, or as a step in your CI/CD build process.
 
