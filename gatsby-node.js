@@ -47,8 +47,14 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     {
+      site {
+        siteMetadata {
+          title
+        }
+      }
       allMarkdownRemark(
         limit: 2000
+        filter: { fields: { draft: { eq: false } } }
         sort: { fields: [frontmatter___date], order: ASC }
       ) {
         edges {

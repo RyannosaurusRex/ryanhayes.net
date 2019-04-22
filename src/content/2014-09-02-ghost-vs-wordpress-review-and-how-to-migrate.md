@@ -1,11 +1,11 @@
 ---
 id: 1001347671
-title: Ghost VS WordPress (and Why I Migrated Back to WordPress)
+title: Ghost VS WordPress
 date: 2014-09-02T04:10:32+00:00
 author: Ryan Hayes
 layout: post
 guid: https://ryanhayes.net/?p=1001347671
-permalink: /ghost-vs-wordpress-review-and-how-to-migrate/
+permalink: /ghost-vs-wordpress/
 tags:
   - uncategorized
 bluth_post_layout:

@@ -12,3 +12,4 @@ https://www.ryanhayes.net/* https://ryanhayes.net/:splat 301!
 /ryan-hayes                                         /about-ryan-hayes
 /blog/software-development/:slug                    /:slug
 /blog/community/:slug                               /:slug
+/ghost-vs-wordpress-review-and-how-to-migrate/      /ghost-vs-wordpress

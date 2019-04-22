@@ -14,12 +14,6 @@ bluth_post_right_sidebar:
   - sidebar_right
 bluth_post_left_sidebar:
   - sidebar_left
-bluth_facebook_status:
-  - ""
-bluth_twitter_status:
-  - ""
-bluth_google_status:
-  - ""
 wpb_post_views_count:
   - "6762"
 dsq_thread_id:
@@ -32,16 +26,13 @@ I've recently started using NServiceBus for the first time in a long time.  The
 
 Basically in an existing app where you've added NServiceBus code to handle/send messages, then you know exactly the assembly where it lives.  Again, **by default, NServiceBus scans everything, so in NServiceBus 5.0 and above, when you create the actual Bus object, you need to specify in the configuration the assemblies you want to scan.**  Generally, the code is going to be in right int he webapp/console app that you are adding it to, so in that case just add:
 
-[syntax type="html|php|js|css"]
-
+```csharp
 var config = new BusConfiguration();
 
 // config.AllYourOtherConfigurationGoesHere
 
-**config.AssembliesToScan(Assembly.GetExecutingAssembly());**
-
+config.AssembliesToScan(Assembly.GetExecutingAssembly());
 var bus = Bus.Create(config);
-
-[/syntax]
+```
 
 This tells NServiceBus to only scan the assembly that is currently in use (This will fix things 95% of the time, unless your comsumer/sender code is in a different project and pulled in).  Once this is configured, NServiceBus will not scan every single assembly in hopes of finding a handler somewhere, which helps a ton if you have really old assemblies that are fragile and busted.  🙂

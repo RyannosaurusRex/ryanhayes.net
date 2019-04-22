@@ -46,6 +46,12 @@ If you're making this change, you probably notice that you can also move the `$(
 
 In general it seems that Visual Studio tries to isolate itself and the tools it uses from both other installs of Visual Studio and anything else that may cause issue with it. In general, Visual Studio developers have not traditionally had to touch the command line much, so this makes sense historically, but modern web applications require a different approach.
 
+###### Managing switching the Node.js Version using Powershell
+
+Another issue that might arise due to using the `$(PATH)` is that you might have projects that use different versions of Node.js. For example one might use Node.js 8.x.x, while another uses 10.x.x. In this case you might want to use Node Version Manager(https://github.com/aaronpowell/ps-nvm), or "NVM" as it's called, to switch versions on the command line in powershell.
+
+ You can use NVM to switch versions of Node.js yourself on the command line, or use it to read the package.json file's "Engine" property, and sets the appropriate version. If the version isn't available it can even silently install the appropriate Node.js version. This is helpful in many situations, and can be included in an MSBuild task if needed to swap the version when you hit the "Play" button to the correct version, or as a step in your CI/CD build process.
+
 ### Wrapping Up
 
 And that's it!  Now you're all synced up!  Having two separate installs is really confusing.  If you're starting out with JUST the VS Node.js version, you'll eventually come to a point where you may update node.js by installing it outside VS, causing it to get out of sync anyway. If you're a veteran to Node.js, then you're already using Node outside of Visual Studio and will need to do this anyway. It seems like there should be better documentation or indicators to show what version VS is using so this is more apparent.
