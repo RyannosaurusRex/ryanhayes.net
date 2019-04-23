@@ -6,7 +6,7 @@ author: Ryan Hayes
 excerpt: "If you've developed for SharePoint in the past, you know how painful it is to have to do all development on a Windows Server machine.  In this article, I'll show you how to get SharePoint 2010 up and running on your Windows 7 development box."
 layout: post
 guid: https://blog.ryanhayes.net/post/910790633
-permalink: /how-to-install-sharepoint-server-2010-rtm-on-windows-7-2/
+permalink: /how-to-install-sharepoint-server-2010-rtm-on-windows/
 Thumbnail:
   - img/wp-content/uploads/2010/08/SharePoint2010-WallPaper-03.jpg
 robotsmeta:

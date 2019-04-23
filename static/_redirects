@@ -14,5 +14,7 @@ https://www.ryanhayes.net/* https://ryanhayes.net/:splat 301!
 /blog/community/:slug                               /:slug
 /ghost-vs-wordpress-migrating/                      /ghost-vs-wordpress/
 /653866005/                                         /reading-rss-feeds-in-android-and-java/
-/ghost-vs-wordpress-review-and-how-to-migrate/      /ghost-vs-wordpress
-/how-to-set-up-an-ember-app-inside-of-an-asp-net-mvc-app/ /how-to-set-up-an-emberjs-app-inside-of-an-asp-net-mvc-app/
+/ghost-vs-wordpress-review-and-how-to-migrate/                          /ghost-vs-wordpress
+/how-to-set-up-an-ember-app-inside-of-an-asp-net-mvc-app/               /how-to-set-up-an-emberjs-app-inside-of-an-asp-net-mvc-app/
+/post/910790633/how-to-install-sharepoint-server-2010-rtm-on-windows-7  /how-to-install-sharepoint-server-2010-rtm-on-windows/
+/how-to-install-sharepoint-server-2010-rtm-on-windows-7-2/              /how-to-install-sharepoint-server-2010-rtm-on-windows/
