@@ -11,3 +11,5 @@ https://www.ryanhayes.net/* https://ryanhayes.net/:splat 301!
 /ryan-hayes                                         /about-ryan-hayes
 /blog/software-development/:slug                    /:slug
 /blog/community/:slug                               /:slug
+/ghost-vs-wordpress-migrating/                      /ghost-vs-wordpress/
+/653866005/                                         /reading-rss-feeds-in-android-and-java/
