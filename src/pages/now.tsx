@@ -42,7 +42,7 @@ const About: React.FunctionComponent = () => (
             <ul>
               <li>Being the best husband and dad I can be to my wife and my three little kids.</li>
               <li>Leading teams at Heartland Payment Systems with some fantastic smart people from my local .NET meetup.</li>
-              <li>Moving a *huge* application to Azure.</li>
+              <li>Moving a <b>huge</b> application to Azure.</li>
               <li>Co-Organizing and growing TriDev developer meetup, speaking at other meetups.</li>
               <li><a href="https://youtube.com/ryanhayesnet">Becoming a better speaker by creating more video content.</a></li>
               <li>Volunteering doing a Rock RMS implementation at [Harvest Community Church](https://harvesttn.com) and contributing the the open source project.</li>
