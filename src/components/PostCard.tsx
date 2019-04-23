@@ -65,7 +65,7 @@ const PostCardContentLink = css`
 const PostCardTags = styled.span`
   display: block;
   margin-bottom: 4px;
-  color: ${colors.midgrey};
+  color: ${colors.black};
   font-size: 1.2rem;
   line-height: 1.15em;
   font-weight: 500;
@@ -184,7 +184,7 @@ const AuthorProfileImage = styled.img`
 const ReadingTime = styled.span`
   flex-shrink: 0;
   margin-left: 20px;
-  color: ${colors.midgrey};
+  color: ${colors.black};
   font-size: 1.2rem;
   line-height: 33px;
   font-weight: 500;

@@ -6,18 +6,9 @@ author: Ryan Hayes
 layout: post
 guid: https://ryanhayes.net/?p=1001347405
 permalink: /startup-weekend-in-johnson-city-tn-nov-16-18-2012/
-dsq_thread_id:
-  - ""
-standard_seo_post_level_layout:
-  - ""
-robotsmeta:
-  - index,follow
-wpb_post_views_count:
-  - "1727"
 image: img/wp-content/uploads/2013/10/SW_kauffman_green_rd0xhm.png
 categories:
   - Entrepreneurship
-format: image
 ---
 The thing I love about Startups is that it's the combination of two things I enjoy: technology and business.  I'm excited to announce that I'll be acting as a coach and mentor for the event!  Startup Weekend coincides with Global Entrepreneurship Week, where events will take place all over the world to help educate people about entrepreneurship and help businesses get started.  Here's the official press release and [the Startup Weekend Tri-Cities' website](https://tricities.startupweekend.org/):
 

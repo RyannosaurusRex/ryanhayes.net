@@ -8,6 +8,7 @@ import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 import Facebook from '../icons/facebook';
 import Twitter from '../icons/twitter';
+import Twitch from '../icons/twitch';
 import SubscribeModal from '../subscribe/SubscribeOverlay';
 import SiteNavLogo from './SiteNavLogo';
 
@@ -150,6 +151,11 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
             <li role="menuitem">
               <Link to="/now/">Now</Link>
             </li>
+            <li>
+              <a href="https://stackoverflow.com/users/story/403661?view=Cv" 
+                 target="_blank"
+                 rel="noreferrer">Resume/CV</a>
+            </li>
           </ul>
         </SiteNavLeft>
         <SiteNavRight>
@@ -176,6 +182,15 @@ class SiteNav extends React.Component<SiteNavProps, SiteNaveState> {
                 <Twitter />
               </a>
             )}
+            <a 
+              css={SocialLink}
+              href="https://twitch.tv/RyannosaurusRex"
+              title="Twitch"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitch />
+            </a>
             <a
                   css={SocialLink} className="social-link-rss"
                   href="https://feedly.com/i/subscription/feed/https://ryanhayes.net/rss.xml"

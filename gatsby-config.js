@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-draft',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',

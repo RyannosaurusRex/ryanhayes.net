@@ -173,7 +173,7 @@ const GlobalStyles = css`
     border: 0;
   }
   svg:not(:root) {
-    overflow: hidden;
+    overflow: overlay;
   }
   mark {
     background-color: #fdffb6;

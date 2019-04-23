@@ -5,6 +5,7 @@ https://ryanhayes.dev/* https://ryanhayes.net/:splat 301!
 https://www.ryanhayes.net/* https://ryanhayes.net/:splat 301!
 
 /home                                               /
+/blog/                                              /
 /blog/:slug                                         /:slug
 /software-development/:slug                         /:slug
 /data-annotations-for-entity-framework-4-entities   /data-annotations-for-entity-framework-4-entities-as-an-mvc-model/
@@ -13,3 +14,5 @@ https://www.ryanhayes.net/* https://ryanhayes.net/:splat 301!
 /blog/community/:slug                               /:slug
 /ghost-vs-wordpress-migrating/                      /ghost-vs-wordpress/
 /653866005/                                         /reading-rss-feeds-in-android-and-java/
+/ghost-vs-wordpress-review-and-how-to-migrate/      /ghost-vs-wordpress
+/how-to-set-up-an-ember-app-inside-of-an-asp-net-mvc-app/ /how-to-set-up-an-emberjs-app-inside-of-an-asp-net-mvc-app/
