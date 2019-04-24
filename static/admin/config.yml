@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional and defaults to master)
+publish_mode: editorial_workflow # Only works with Github repositories.
+media_folder: "img/uploads"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/content"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "New Post"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "Ryan Hayes"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Tag", name: "tags", widget: "string", default: "Web Development"}
+      - {label: "Body", name: "body", widget: "markdown"}

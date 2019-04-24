@@ -12,6 +12,12 @@ module.exports = {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        enableIdentityWidget: true,
+      },
+    },
     'gatsby-plugin-sitemap',
     'gatsby-plugin-draft',
     'gatsby-plugin-sharp',
