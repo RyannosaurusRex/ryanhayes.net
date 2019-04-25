@@ -1,20 +1,10 @@
 ---
-id: 1001346762
-title: 'What&#039;s My Motivation? OR Resuming Old Projects'
-date: 2010-03-30T04:57:00+00:00
+title: What's My Motivation? OR Resuming Old Projects
+date: 2010-03-30T04:57:00.000Z
 author: Ryan Hayes
 layout: post
-guid: https://blog.ryanhayes.net/post/483463516
-image: img/demo1.jpg
 permalink: /whats-my-motivation-or-resuming-old-projects/
-robotsmeta:
-  - index,follow
-dsq_thread_id:
-  - ""
-wpb_post_views_count:
-  - "1592"
-categories:
-  - Blog
+thumbnail: /img/uploads/tumblr_l1uje5og5h1qbwim9o1_1280.jpg
 tags:
   - development
   - Motivation
@@ -30,7 +20,7 @@ is a big one.  If it’s not do-able, then why are you even doing it?  Want to
 
 **2.  Automated Reminders**
 
-Depending on how important the project is (and how close the deadline is!), you may just need a simple reminder to keep working on it.  GTD apps (that stands for Get Things Done), such as <a>Remember The Milk</a> and <a>ToodleDo</a> can both set recurring reminders to spend a little time working on your project every day, or other day or every week.  Even if it’s 30 minutes a day, you’re making progress, son!  The great thing about these apps is you can not only access them on the web, but there are mobile <a>apps</a> for the <a>iPhone</a>, <a>Android ,</a> <a>Blackberry</a>, and <a>Windows Mobile</a> phones. Or, if think checking things off lists are for your losers, you can simply set a reminder in your favorite calendar application.  Schedule it in to make sure you have time!
+Depending on how important the project is (and how close the deadline is!), you may just need a simple reminder to keep working on it.  GTD apps (that stands for Get Things Done), such as Wunderlist or even Slack /remind-ers can both set recurring reminders to spend a little time working on your project every day, or other day or every week.  Even if it’s 30 minutes a day, you’re making progress, son!  The great thing about these apps is you can not only access them on the web, but there are mobile apps for iPhone or Android. Or, if think checking things off lists are for your losers, you can simply set a reminder in your favorite calendar application. Schedule it in to make sure you have time!
 
 **3.  (Induced) Peer Pressure**
 
