@@ -8,7 +8,7 @@ tags:
   - RockRMS
   - Planning Center
   - Open Source
-  - 
+  -
 guid: https://ryanhayes.net/?p=1001347924
 permalink: /how-to-migrate-from-rock-rms-to-planning-center-online/
 image: img/logos/planning-center-online-logo.png

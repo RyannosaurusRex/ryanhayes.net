@@ -15,6 +15,6 @@ collections:
       - {label: "Author", name: "author", widget: "string", default: "Ryan Hayes"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Permalink", name: "permalink", widget: "string"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Tag", name: "tags", widget: "string", default: "Web Development"}
       - {label: "Body", name: "body", widget: "markdown"}
