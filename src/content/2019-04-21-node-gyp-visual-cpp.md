@@ -1,11 +1,17 @@
 ---
-title: ""
+title: "[Solved] MSBUILD : error MSB3428: Could not load the Visual C++ component \"VCBuild.exe\"."
+date: 2019-04-30T13:07:15+00:00
 author: Ryan Hayes
 tags:
-    - uncategorized
-image: ""
-draft: true
+  - NPM
+  - Web Development
+image: img/tools.jpg
+permalink: /npm-node-gyp-msbuild-vcbuildexe
 ---
+
+Recently, I ported this website to Gatsby.js. As part of it, I wanted to make sure that I tied up any loose ends and cleaned up all of my accessibility and technical issues. One great way to do that is to run a tool called [Webhint](https://webhint.io) over your website and get "hints" as to what you need to change. These hints are installed through NPM, and if you're familiar with NPM, you probably know the node_packages folder ends up with hundreds of package dependencies. One of these dependencies ended up needing node-gyp, which is a build tool that requires a few build tools (like VC++ and python) installed on your machine, particularly if you're on Windows. This article will explain the how to fix the error both quickly and permanently.
+
+Here's what I ran from the command line and the error message that I received. **You'll see that it's attempting to run node-gyp and then gives an error that it can't find `VBuild.exe`**. 
 
 ```bash
 RyannosaurusRex@Bespin MINGW64 /c/git/personal/ryanhayes.net (master)
@@ -55,18 +61,34 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 npm ERR! A complete log of this run can be found in:
 npm ERR!     C:\Users\RyannosaurusRex\AppData\Roaming\npm-cache\_logs\2019-04-22T03_31_15_972Z-debug.log
 ```
-######[Install Windows Build Tools](https://www.npmjs.com/package/windows-build-tools)
 
-```bash
+## The 'Could not load the Visual C++ component "VCBuild.exe"' solution
+
+The error message mentions that you need to install MSBuild or Visual Studio. That works, of course, and is one solution. If you don't need all of Visual Studio, that's a very large footprint (7+ GB of storage) just to satisfy a small dependency like VCBuild.exe. 
+
+**If you already have Visual Studio or the necessary tools installed, make sure you are using powershell.** To swith to powershell on the linux/WSL command line, just run `$ powershell` to switch and try again.
+
+## Installing Windows Build Tools 
+
+To fix the issue without having to install Visual Studio, Microsoft has created a great npm package called `windows-build-tools`. This package allows you to compile Native Node modules, which is required by some npm packages, particularly packages that deal with Chromium and canvas.
+
+You can read the [full documentation on windows-build-tools on the NPM registry page]((https://www.npmjs.com/package/windows-build-tools).
+
+To install the tools, you can use NPM
+
+```powershell
 npm install --global windows-build-tools
 ```
 
-```bash
+If you prefer yarn, here's the install for that.
+```powershell
 yarn global add windows-build-tools
 ```
 
+Here's the output from the run on my machine. You'll see that it installs VCBuild.exe and related tools, but also Python as well, which is necessary for a lot of other npm packages.
+
 ```powershell
-PS C:\windows\system32> npm install --global --production windows-build-tools
+PS C:\windows\system32> npm install --global windows-build-tools
 
 > windows-build-tools@5.1.0 postinstall C:\Users\RyannosaurusRex\AppData\Roaming\npm\node_modules\windows-build-tools
 > node ./dist/index.js
@@ -94,3 +116,8 @@ Status from the installers:
 ------------------- Python --------------------
 Successfully installed Python 2.7
 ```
+## Wrapping up
+
+While the error message is fairly clear, the solution it proposed was not a great one. Visual Studio is a very large dependency to take, particularly for a lightweight Gatsby site. Thankfully, [windows-build-tools](https://www.npmjs.com/package/windows-build-tools) allowed me to install just the dependencies that I needed without the extra bloat. 
+
+Hope this helped you!

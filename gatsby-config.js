@@ -5,7 +5,7 @@ let siteUrl = 'https://ryanhayes.net';
 module.exports = {
   siteMetadata: {
     title: 'Ryan Hayes',
-    description: 'Hi. I\'m Ryan. Let\'s build great software teams together.',
+    description: 'Ryan Hayes is .NET and web development consultant in Kingsport, TN.',
     siteUrl: siteUrl, // full path to blog - no ending slash
   },
   mapping: {
