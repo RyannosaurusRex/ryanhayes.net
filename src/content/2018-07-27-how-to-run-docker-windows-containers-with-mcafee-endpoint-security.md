@@ -7,8 +7,6 @@ layout: post
 guid: https://ryanhayes.net/?p=1001347862
 permalink: /how-to-run-docker-windows-containers-with-mcafee-endpoint-security/
 image: img/boat-container.jpeg
-hestia_layout_select:
-  - full-width
 categories:
   - Blog
   - Software
@@ -25,7 +23,7 @@ The only potential downside that I had heard about Windows Server Core container
 
 <blockquote class="twitter-tweet" data-lang="en">
   <p dir="ltr" lang="en">
-    Any issues with the size?&#8230;we were playing with those and they were up into the 10 gig range.
+    Any issues with the size? ...we were playing with those and they were up into the 10 gig range.
   </p>
   
   <p>
@@ -35,7 +33,7 @@ The only potential downside that I had heard about Windows Server Core container
 
 
 
-Ok, fine, that's&#8230;that's not good but there's no other way to run full framework .NET apps inside Docker without it being in a WindowsServerCore container, so it's something I'll have to live with for now.
+Ok, fine, that's...that's not good but there's no other way to run full framework .NET apps inside Docker without it being in a WindowsServerCore container, so it's something I'll have to live with for now.
 
 ## Installing Docker and gotchas
 
@@ -81,7 +79,7 @@ First, you can use the docker tools inside a separate "real" virtual machine (us
 
 ### .NET Core!
 
-**McAfee says that Linux-based containers are OK**. This means if you're using a language or tools that require Windows containers, you may be able to move to something that doesn't require them.
+**McAfee says that Linux-based containers are OK**. This means if you're using a language or tools that require Windows containers, you may be able to move to something that doesn't require them. This means you could use .NET Core, or potentially something else to run on a Linux container, which _is_ supported.
 
 I know this isn't much help, particularly if you have a large application already that you're moving to Docker, but can be an option if you're just starting out or if you are able to adjust your stack enough to be able to drop the Windows requirement.
 
