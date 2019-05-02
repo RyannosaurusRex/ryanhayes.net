@@ -6,22 +6,6 @@ author: Ryan Hayes
 layout: post
 guid: https://ryanhayes.net/?p=1001347707
 permalink: /moving-from-ios-to-windows-10-phone-on-the-lumia-950-xl/
-bluth_post_layout:
-  - right_side
-bluth_post_right_sidebar:
-  - sidebar_right
-bluth_post_left_sidebar:
-  - sidebar_left
-bluth_facebook_status:
-  - ""
-bluth_twitter_status:
-  - ""
-bluth_google_status:
-  - ""
-wpb_post_views_count:
-  - "3865"
-dsq_thread_id:
-  - ""
 image: img/wp-content/uploads/2015/11/download.jpg
 categories:
   - Blog

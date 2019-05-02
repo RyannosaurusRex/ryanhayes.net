@@ -8,7 +8,7 @@ tags:
   - .NET
   - NServiceBus
 permalink: /nservicebus-enumerate-types/
-image: img/wp-content/uploads/2014/10/nservicebus_logo-black.png
+image: img/things/bus.jpg
 categories:
   - Blog
 ---
@@ -25,4 +25,4 @@ config.AssembliesToScan(Assembly.GetExecutingAssembly());
 var bus = Bus.Create(config);
 ```
 
-This tells NServiceBus to only scan the assembly that is currently in use (This will fix things 95% of the time, unless your comsumer/sender code is in a different project and pulled in).  Once this is configured, NServiceBus will not scan every single assembly in hopes of finding a handler somewhere, which helps a ton if you have really old assemblies that are fragile and busted.  🙂
+This tells NServiceBus to only scan the assembly that is currently in use (This will fix things 95% of the time, unless your consumer/sender code is in a different project and pulled in).  Once this is configured, NServiceBus will not scan every single assembly in hopes of finding a handler somewhere, which helps a ton if you have really old assemblies that are fragile and busted.  🙂

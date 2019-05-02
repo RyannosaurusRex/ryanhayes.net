@@ -7,8 +7,6 @@ layout: post
 image: img/demo1.jpg
 guid: https://ryanhayes.net/?p=1001347167
 permalink: /how-to-introduce-tdd-to-your-team-with-no-unit-testing-experience/
-robotsmeta:
-  - index,follow
 categories:
   - Uncategorized
 ---
