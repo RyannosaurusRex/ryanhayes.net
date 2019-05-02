@@ -18,4 +18,4 @@ This year I've decided to focus on a few things to become a better developer, an
 
 I'm always interested in ways to help automate my "0-60" introduction and help people better understand where I'm at, so that we can both help each other out better.  **How do you keep acquaintances and random internet passer-bys up to date on where you currently are in life? Is there something better?**
 
-[Check out my /now page to see what I'm up to&#8230;right now!](https://ryanhayes.net/now/ "Now")
+[Check out my /now page to see what I'm up to&#8230;right now!](/now/ "Now")

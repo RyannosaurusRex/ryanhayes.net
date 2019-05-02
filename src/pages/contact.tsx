@@ -18,10 +18,10 @@ const PageTemplate = css`
 `;
 
 
-const About: React.FunctionComponent = () => (
+const Contact: React.FunctionComponent = () => (
   <IndexLayout>
     <Helmet>
-      <title>/Now</title>
+      <title>Contact</title>
     </Helmet>
     <Wrapper css={PageTemplate}>
       <header css={[outer, SiteHeader]}>
@@ -32,24 +32,14 @@ const About: React.FunctionComponent = () => (
       <main id="site-main" className="site-main" css={[SiteMain, outer]}>
         <article className="post page" css={[PostFull, NoImage]}>
           <PostFullHeader>
-            <PostFullTitle>/Now</PostFullTitle>
+            <PostFullTitle>Contact</PostFullTitle>
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
           <div className="post-content">
-            <h2>Here’s what I’m focusing on right now:</h2>
-
-            <ul>
-              <li>Being the best husband and dad I can be to my wife and my three little kids.</li>
-              <li>Leading teams at Heartland Payment Systems with some fantastic smart people from my local .NET meetup.</li>
-              <li>Co-Organizing and growing TriDev developer meetup.</li>
-              <li>I live stream coding and business development every Tuesday at 9PM Eastern on <a href="https://twitch.tv/RyannosaurusRex">Twitch</a>.</li>
-              <li><a href="https://youtube.com/ryanhayesnet">Becoming a better speaker by creating more video content.</a></li>
-              <li>Volunteering doing a Rock RMS implementation at <a href="https://harvesttn.com">Harvest Community Church</a> and contributing the the open source project.</li>
-            </ul>
-            
-            This page is part of the /now movement. It's what I'd tell a friend if I hadn't seen them in a year.
-
+            Hi! I should have a contact page up in the next week or so, but in the meantime, you can send me a message over on <a href="https://twitter.com/RyannosaurusRex">Twitter</a> or <a href="https://www.linkedin.com/in/jryanhayes">LinkedIn</a>, whichever you prefer.
+            <br /> <br />
+            If you <b>really</b> want to send me a message through a proper contact page here, I'll be live streaming the building of it within the week over on <a href="https://twitch.tv/RyannosaurusRex">Twitch</a>!
           </div>
           </PostFullContent>
         </article>
@@ -59,4 +49,4 @@ const About: React.FunctionComponent = () => (
   </IndexLayout>
 );
 
-export default About;
+export default Contact;
