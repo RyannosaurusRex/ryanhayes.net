@@ -6,7 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: https://blog.ryanhayes.net/post/649165642
 permalink: /software-development-academic-vs-real-world-education/
-image: img/demo1.jpg
+image: img\wp-content\uploads\2013\10\hooray_zone_venn_diagram_caecef.jpg
 robotsmeta:
   - index,follow
 dsq_thread_id:
@@ -19,10 +19,6 @@ tags:
   - academia
   - software
 ---
-<p style="text-align: center;">
-  <img class="size-medium wp-image-1001347012 aligncenter" title="Hooray Success Zen Diagram" src="https://ryanhayes.wpengine.comimg/wp-content/uploads/2013/10/hooray_zone_venn_diagram_caecef-300x300.jpg" alt="" width="570" height="570" srcset="https://ryanhayes.netimg/wp-content/uploads/2013/10/hooray_zone_venn_diagram_caecef-300x300.jpg 300w, https://ryanhayes.netimg/wp-content/uploads/2013/10/hooray_zone_venn_diagram_caecef-150x150.jpg 150w, https://ryanhayes.netimg/wp-content/uploads/2013/10/hooray_zone_venn_diagram_caecef-80x80.jpg 80w, https://ryanhayes.netimg/wp-content/uploads/2013/10/hooray_zone_venn_diagram_caecef.jpg 500w" sizes="(max-width: 570px) 100vw, 570px" />
-</p>
-
 I’m pretty lucky.  I knew that I wanted to do something in computers since I was in the 5th grade.  My class got an old (new) computer with a green screen, some kind of math/vocabulary rabbit game, and my favorite…BASIC (the programming language).  Yes, “10 Print” and all.  I wrote my first video game on that machine &#8211; Magic 8 Ball.  It was pretty simple.  You entered your name and your gender, and then, if you were the girl that I liked in class, it would tell you who you would end up kissing me by the end of the day.  Ahh, memories.  How did I learn how to code that?  I can’t even remember.  Was it learning from class?  Was it trial and error and figuring it out?  What was most important?<!-- more -->
 
 <!--more-->
@@ -59,4 +55,4 @@ So, when you look at someone who has a all of these school credentials, or someo
 
 If you want to read more about hard work in Software Engineering, here is a great, timeless article: [Teach Yourself Programming in 10 Years](https://norvig.com/21-days.html) by Peter Norvig
 
-May I also suggest: [Discipline Outdoes IQ in the Long Run](https://lifehacker.com/5543677/discipline-outdoes-iq-in-the-long-run) Via [Lifehacker](https://www.lifehacker.com/)  [](https://lifehacker.com/5543677/discipline-outdoes-iq-in-the-long-run)
+May I also suggest: [Discipline Outdoes IQ in the Long Run](https://lifehacker.com/5543677/discipline-outdoes-iq-in-the-long-run)
