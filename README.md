@@ -1,6 +1,10 @@
+# RyanHayes.NET public website
+
+Hey! I'm Ryan. You may know me as RyannosaurusRex from the Internet. This is my personal site, which has over a decade of history from Blogspot, Tumblr, Wordpress, Ghost, Jekyll, back to Wordpress, and now Gatsby.js. I write about software development and team building. Feel free to fork the repo and make your own personal site - it's a good investment as a software developer. If you want to ask questions about this, one of my other repos, or any question related to software development, you can contact me through this site, on Twitter or Twitch. I'm @RyannosaurusRex pretty much everywhere.
+
 ## Follow Along on Twitch
 
-I stream development of this site as well as other .NET and Web Dev related content every week on [Twitch](https://twitch.tv/ryannosaurusrex). Come join us!
+I stream development of this site as well as other .NET and Web Dev related content every week on [Twitch](https://twitch.tv/ryannosaurusrex). Come hang out!
 
 ## Theme used:
 - Modified Gatsby Casper
