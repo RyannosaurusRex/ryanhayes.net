@@ -12,7 +12,7 @@ categories:
 ---
 I love Ember. It helps me build _fantastic_ UIs, but security isn't super straightforward and I suck at it. I love ASP.NET MVC. It help me build secure applications and solid APIs, but for some apps I need a great responsive UI with great interaction.
 
-Together, these two technologies can be used together to create really amazing apps (and really quickly, too). So this guide is to show you how to set them up together.
+Together, these two technologies can be used in conjunction with one another to create really amazing apps (and really quickly, too). So this guide is to show you how to set them up so that you get ASP.NET's security benefits with authentication and authorization, and then have Ember take over once you're signed in for an incredible Single Page App (SPA) experience.
 
 _Note:_ This article assumes you have created a stock new ASP.NET project within Visual Studio and included MVC and WebAPI options. It also assumes you have EmberCLI installed and have run`ember new my-ember-app` into a directory in the root of your ASP.NET MVC project.
 
