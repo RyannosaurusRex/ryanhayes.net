@@ -72,7 +72,7 @@ The error message mentions that you need to install MSBuild or Visual Studio. Th
 
 To fix the issue without having to install Visual Studio, Microsoft has created a great npm package called `windows-build-tools`. This package allows you to compile Native Node modules, which is required by some npm packages, particularly packages that deal with Chromium and canvas.
 
-You can read the [full documentation on windows-build-tools on the NPM registry page]((https://www.npmjs.com/package/windows-build-tools).
+You can read the [full documentation on windows-build-tools on the NPM registry page](https://www.npmjs.com/package/windows-build-tools).
 
 To install the tools, you can use NPM
 
