@@ -36,11 +36,17 @@ const Contact: React.FunctionComponent = () => (
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
-          <div className="post-content">
-            Hi! I should have a contact page up in the next week or so, but in the meantime, you can send me a message over on <a href="https://twitter.com/RyannosaurusRex">Twitter</a> or <a href="https://www.linkedin.com/in/jryanhayes">LinkedIn</a>, whichever you prefer.
-            <br /> <br />
-            If you <b>really</b> want to send me a message through a proper contact page here, I'll be live streaming the building of it within the week over on <a href="https://twitch.tv/RyannosaurusRex">Twitch</a>!
-          </div>
+            <form name="contact" netlify>
+              <p>
+                <label>Name <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Email <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
           </PostFullContent>
         </article>
       </main>
