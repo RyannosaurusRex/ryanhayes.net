@@ -25,7 +25,7 @@ const PageTemplate = css`
   }
   
   .form-wrapper {
-    max-width: 600px;
+    max-width: 600px
     margin-top: 15px;
     border-radius: 5px;
     background-color: #f2f2f2;
