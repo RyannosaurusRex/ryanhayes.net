@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-casper",
-  "description": "Casper for gatsby",
+  "name": "ryanhayesnet",
+  "description": "https://ryanhayes.net",
   "version": "0.0.0",
   "private": true,
-  "author": "Scott Cooper <scttcper@gmail.com>",
+  "author": "Ryan Hayes <ryan@ryanhayes.net>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -23,7 +23,7 @@
     "disqus-react": "^1.0.5",
     "emotion": "10.0.7",
     "emotion-server": "10.0.7",
-    "gatsby": "^2.3.25",
+    "gatsby": "^2.8.2",
     "gatsby-image": "2.0.29",
     "gatsby-plugin-canonical-urls": "2.0.10",
     "gatsby-plugin-draft": "^0.0.4",
