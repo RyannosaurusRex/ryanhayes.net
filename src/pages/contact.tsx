@@ -15,6 +15,28 @@ const PageTemplate = css`
     background: #fff;
     padding-bottom: 4vw;
   }
+
+  .contact-form {
+    font-family: inherit;
+  }
+
+  .button {
+    border-radius: 3px;
+  }
+  
+  .form-wrapper {
+    max-width: 600px
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  textarea {
+    width:100%;
+    height:150px;
+    font-size: 80%;
+  }
 `;
 
 
@@ -36,11 +58,26 @@ const Contact: React.FunctionComponent = () => (
           </PostFullHeader>
 
           <PostFullContent className="post-full-content">
-          <div className="post-content">
-            Hi! I should have a contact page up in the next week or so, but in the meantime, you can send me a message over on <a href="https://twitter.com/RyannosaurusRex">Twitter</a> or <a href="https://www.linkedin.com/in/jryanhayes">LinkedIn</a>, whichever you prefer.
-            <br /> <br />
-            If you <b>really</b> want to send me a message through a proper contact page here, I'll be live streaming the building of it within the week over on <a href="https://twitch.tv/RyannosaurusRex">Twitch</a>!
-          </div>
+            Need to get in touch? I make it a point to respond to every comment
+            on this blog and social media. If email is more appropriate, just fill
+            out this form and I'll get back to you.
+            <div className="form-wrapper">
+              <form className="contact-form" name="contact" data-netlify-recaptcha="true" netlify>
+                <p>
+                  <label>Name <input type="text" name="name" /></label>
+                </p>
+                <p>
+                  <label>Email <input type="email" name="email" /></label>
+                </p>
+                <p>
+                  <label for="message">Message</label><br/><textarea id="message" name="message" />
+                </p>
+                <div data-netlify-recaptcha="true"></div>
+                <p>
+                  <button className="button" type="submit">Send</button>
+                </p>
+              </form>
+            </div>
           </PostFullContent>
         </article>
       </main>
