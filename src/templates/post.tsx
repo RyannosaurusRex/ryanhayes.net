@@ -218,7 +218,7 @@ const PageTemplate: React.FunctionComponent<PageTemplateProps> = props => {
 
   const disqusShortname = "ryanhayesblog";
   const disqusConfig = {
-    //identifier: post.id,
+    // identifier: post.id,
     title: post.frontmatter.title,
   };
 
