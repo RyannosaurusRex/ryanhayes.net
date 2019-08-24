@@ -7,7 +7,7 @@ tags:
   - Web Development
 image: img/tools.jpg
 permalink: /npm-install-error-eperm-operation-not-permitted-rename
-draft: true
+draft: false
 ---
 
 This is an incredibly quick post so that I can remember what to do, not if, but when, I run into this again. 
