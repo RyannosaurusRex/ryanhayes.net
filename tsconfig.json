@@ -9,7 +9,7 @@
     "esModuleInterop": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "removeComments": false,
+    "removeComments": true,
     "preserveConstEnums": true
   },
   "include": ["./src/**/*"]
