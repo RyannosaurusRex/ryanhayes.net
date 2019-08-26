@@ -6,7 +6,7 @@
   "author": "Ryan Hayes <ryan@ryanhayes.net>",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "node --max-old-space-size=8192 ./node_modules/gatsby/dist/bin/gatsby build",
     "clean": "rimraf public",
     "dev": "gatsby develop",
     "lint": "tslint -t stylish -p .",
