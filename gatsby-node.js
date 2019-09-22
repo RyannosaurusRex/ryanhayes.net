@@ -54,8 +54,8 @@ exports.createPages = async ({ graphql, actions }) => {
       }
       allMarkdownRemark(
         limit: 2000
-        filter: { fields: { draft: { eq: false } } }
         sort: { fields: [frontmatter___date], order: ASC }
+        filter: { frontmatter: { draft: { ne: true } } }
       ) {
         edges {
           node {
@@ -83,7 +83,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 avatar {
                   children {
                     ... on ImageSharp {
-                      fixed(quality: 100) {
+                      fixed(quality: 90) {
                         src
                       }
                     }
@@ -116,6 +116,24 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create post pages
   const posts = result.data.allMarkdownRemark.edges;
+
+  // Create paginated index
+  const postsPerPage = 6;
+  const numPages = Math.ceil(posts.length / postsPerPage);
+
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? '/' : `/${i + 1}`,
+      component: path.resolve('./src/templates/index.tsx'),
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    });
+  });
+
   posts.forEach(({ node }, index) => {
     const { slug, layout } = node.fields;
     const prev = index === 0 ? null : posts[index - 1].node;

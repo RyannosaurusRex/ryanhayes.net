@@ -51,14 +51,14 @@ interface NotFoundTemplateProps {
   data: {
     allMarkdownRemark: {
       totalCount: number;
-      edges: {
+      edges: Array<{
         node: PageContext;
-      }[];
+      }>;
     };
   };
 }
 
-const NotFoundPage: React.FunctionComponent<NotFoundTemplateProps> = props => {
+const NotFoundPage: React.FC<NotFoundTemplateProps> = props => {
   const { edges } = props.data.allMarkdownRemark;
 
   return (
@@ -76,7 +76,7 @@ const NotFoundPage: React.FunctionComponent<NotFoundTemplateProps> = props => {
             <section style={{ textAlign: 'center' }}>
               <ErrorCode>404</ErrorCode>
               <ErrorDescription>Page not found</ErrorDescription>
-              <Link css={ErrorLink} to={''}>
+              <Link css={ErrorLink} to="">
                 Go to the front page →
               </Link>
             </section>
@@ -121,7 +121,7 @@ export const pageQuery = graphql`
               avatar {
                 children {
                   ... on ImageSharp {
-                    fixed(quality: 100) {
+                    fixed(quality: 90) {
                       src
                     }
                   }
