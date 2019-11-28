@@ -64,7 +64,8 @@ const Contact: React.FunctionComponent = () => (
             on this blog and social media. If email is more appropriate, just fill
             out this form and I'll get back to you.
             <div className="form-wrapper">
-              <form method="post" className="contact-form" name="contact" data-netlify-recaptcha="true" data-netlify="true" netlify>
+              <form method="POST" className="contact-form" name="contact" data-netlify="true"data-netlify-honeypot="bot-field">
+                <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact" />
                 <p>
                   <label>Name <input type="text" name="name" /></label>
@@ -73,9 +74,8 @@ const Contact: React.FunctionComponent = () => (
                   <label>Email <input type="email" name="email" /></label>
                 </p>
                 <p>
-                  <label for="message">Message</label><br/><textarea id="message" name="message" />
+                  <label>Message</label><br/><textarea id="message" name="message" />
                 </p>
-                <div data-netlify-recaptcha="true" />
                 <p>
                   <button className="button" type="submit">Send ✉</button>
                 </p>

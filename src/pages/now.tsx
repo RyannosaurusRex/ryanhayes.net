@@ -1,4 +1,5 @@
 import IndexLayout from '../layouts';
+import { Link } from 'gatsby';
 import Wrapper from '../components/Wrapper';
 import SiteNav from '../components/header/SiteNav';
 import { SiteHeader, outer, inner, SiteMain } from '../styles/shared';
@@ -40,12 +41,12 @@ const About: React.FunctionComponent = () => (
             <h2>Here’s what I’m focusing on right now:</h2>
 
             <ul>
+              <li>Building and dogfooding a meetup.com competitor called UpGo. <Link to="/contact">Drop me a line to get early access.</Link></li>
               <li>Being the best husband and dad I can be to my wife and my three little kids.</li>
-              <li>Leading teams at Heartland Payment Systems with some fantastic smart people from my local .NET meetup.</li>
+              <li>Leading dev teams at Heartland Payment Systems.</li>
               <li>Co-Organizing and growing TriDev developer meetup.</li>
               <li>I live stream coding and business development every Tuesday at 9PM Eastern on <a href="https://twitch.tv/RyannosaurusRex">Twitch</a>.</li>
               <li><a href="https://youtube.com/ryanhayesnet">Becoming a better speaker by creating more video content.</a></li>
-              <li>Volunteering doing a Rock RMS implementation at <a href="https://harvesttn.com">Harvest Community Church</a> and contributing the the open source project.</li>
             </ul>
             
             This page is part of the /now movement. It's what I'd tell a friend if I hadn't seen them in a year.
