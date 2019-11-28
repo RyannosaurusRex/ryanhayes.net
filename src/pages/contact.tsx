@@ -22,10 +22,12 @@ const PageTemplate = css`
 
   .button {
     border-radius: 3px;
+    background-color: black;
+    color: white;
   }
   
   .form-wrapper {
-    max-width: 600px
+    max-width: 600px;
     margin-top: 15px;
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -73,9 +75,9 @@ const Contact: React.FunctionComponent = () => (
                 <p>
                   <label for="message">Message</label><br/><textarea id="message" name="message" />
                 </p>
-                <div data-netlify-recaptcha="true"></div>
+                <div data-netlify-recaptcha="true" />
                 <p>
-                  <button className="button" type="submit">Send</button>
+                  <button className="button" type="submit">Send ✉</button>
                 </p>
               </form>
             </div>
