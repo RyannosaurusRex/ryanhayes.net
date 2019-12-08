@@ -31,11 +31,11 @@ export const SiteTitle = styled.h1`
 export const SiteDescription = styled.h2`
   z-index: 10;
   margin: 0;
-  padding: 5px 0;
-  font-size: 2.2rem;
-  font-weight: 300;
+  padding: 40px 0;
+  font-size: 2.5rem;
+  font-weight: 350;
   letter-spacing: 0.5px;
-  opacity: 0.8;
+  opacity: 1;
 `;
 
 export const PostFeed = css`
@@ -77,7 +77,6 @@ export const SiteHeader = css`
   padding-top: 12px;
   padding-bottom: 12px;
   color: #fff;
-  /* background: color(var(--darkgrey) l(-5%)) no-repeat center center; */
   background: ${darken('0.05', colors.darkgrey)} no-repeat center center;
   background-size: cover;
 `;

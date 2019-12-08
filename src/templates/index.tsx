@@ -68,9 +68,10 @@ const HomePosts = css`
 
 const SiteTitleImageStyles = css`
   vertical-align: middle;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  box-shadow: 0px 0px 1px 10px rgba(0,0,0,0.5);
 `;
 
 export interface IndexProps {
@@ -196,7 +197,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    header: file(relativePath: { eq: "img/blog-cover.jpg" }) {
+    header: file(relativePath: { eq: "img/things/forest-drive.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
