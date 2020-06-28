@@ -84,7 +84,7 @@ const ReadNextDivider = styled.div`
     fill: transparent;
     stroke: #fff;
 
-    stroke-width: 0.5px;
+    strokeWidth: 0.5px;
     stroke-opacity: 0.65;
   }
 `;

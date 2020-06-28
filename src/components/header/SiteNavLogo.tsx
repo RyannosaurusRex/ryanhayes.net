@@ -41,7 +41,7 @@ interface SiteNavLogoProps {
   };
 }
 
-const SiteNavLogo = () => (
+const SiteNavLogo: React.FC = () => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {

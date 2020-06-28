@@ -1,78 +1,16 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { css } from '@emotion/core';
 import Helmet from 'react-helmet';
 
 import Footer from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
 import PostCard from '../components/PostCard';
-import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import config from '../website-config';
 import Pagination from '../components/Pagination';
-
-import {
-  inner,
-  outer,
-  PostFeed,
-  PostFeedRaise,
-  SiteDescription,
-  SiteHeader,
-  SiteHeaderContent,
-  SiteMain,
-  SiteTitle,
-} from '../styles/shared';
+import FromTheBlog from '../components/FromTheBlog';
 import { PageContext } from './post';
-
-const HomePosts = css`
-  @media (min-width: 795px) {
-    .post-card:nth-of-type(6n + 1):not(.no-image) {
-      flex: 1 1 100%;
-      flex-direction: row;
-    }
-
-    .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-image-link {
-      position: relative;
-      flex: 1 1 auto;
-      border-radius: 5px 0 0 5px;
-    }
-
-    .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-image {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-content {
-      flex: 0 1 357px;
-    }
-
-    .post-card:nth-of-type(6n + 1):not(.no-image) h2 {
-      font-size: 2.6rem;
-    }
-
-    .post-card:nth-of-type(6n + 1):not(.no-image) p {
-      font-size: 1.8rem;
-      line-height: 1.55em;
-    }
-
-    .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-content-link {
-      padding: 30px 40px 0;
-    }
-
-    .post-card:nth-of-type(6n + 1):not(.no-image) .post-card-meta {
-      padding: 0 40px 30px;
-    }
-  }
-`;
-
-const SiteTitleImageStyles = css`
-  vertical-align: middle;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 1px 10px rgba(0,0,0,0.5);
-`;
+import Hero from '../components/Hero';
 
 export interface IndexProps {
   pageContext: {
@@ -103,7 +41,7 @@ const IndexPage: React.FC<IndexProps> = props => {
   const height = String(Number(width) / props.data.header.childImageSharp.fluid.aspectRatio);
 
   return (
-    <IndexLayout css={HomePosts}>
+    <IndexLayout>
       <Helmet>
         <html lang={config.lang} />
         <title>{config.title}</title>
@@ -136,50 +74,27 @@ const IndexPage: React.FC<IndexProps> = props => {
         <meta property="og:image:width" content={width} />
         <meta property="og:image:height" content={height} />
       </Helmet>
-      <Wrapper>
-        <header
-          css={[outer, SiteHeader]}
-          style={{
-            backgroundImage: `url('${props.data.header.childImageSharp.fluid.src}')`,
-          }}
-        >
-          <div css={inner}>
-            <SiteHeaderContent>
-              <SiteTitle>
-                {props.data.logo ? (
+      <div>
+      <div id="hero" className="relative bg-gray-50 overflow-hidden">
+
+          <SiteNav isHome />
+          <Hero imageSrc={props.data.logo.childImageSharp.fixed.src} />
+          </div>
+      </div>
+          <div>
+                {/* {props.data.logo ? (
                   <img
-                    css={SiteTitleImageStyles}
                     src={props.data.logo.childImageSharp.fixed.src}
                     alt={config.title}
                   />
                 ) : (
                   config.title
-                )}
-              </SiteTitle>
-              <SiteDescription>{config.description}</SiteDescription>
-            </SiteHeaderContent>
-            <SiteNav isHome />
+                )} */}
           </div>
-        </header>
-        <main id="site-main" css={[SiteMain, outer]}>
-          <div css={inner}>
-            <div css={[PostFeed, PostFeedRaise]}>
-              {props.data.allMarkdownRemark.edges.map(post => {
-                // filter out drafts in production
-                return (
-                  (post.node.frontmatter.draft !== true ||
-                    process.env.NODE_ENV !== 'production') && (
-                    <PostCard key={post.node.fields.slug} post={post.node} />
-                  )
-                );
-              })}
-            </div>
-          </div>
-        </main>
+          <FromTheBlog pages={props.data.allMarkdownRemark.edges} />
         {props.children}
         <Pagination currentPage={props.pageContext.currentPage} numPages={props.pageContext.numPages} />
         <Footer />
-      </Wrapper>
     </IndexLayout>
   );
 };

@@ -18,7 +18,6 @@ module.exports = {
         enableIdentityWidget: true,
       },
     },
-    'gatsby-plugin-postcss',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-draft',
     'gatsby-plugin-sharp',
@@ -114,7 +113,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-postcss',
       options: {
-        postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
+        postCssPlugins: [require('tailwindcss'), require('postcss-color-function'), require('cssnano')()],
       },
     },
     {
