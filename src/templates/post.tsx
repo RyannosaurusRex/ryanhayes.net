@@ -46,17 +46,6 @@ export const NoImage = css`
   }
 `;
 
-export const PostFullHeader = styled.header`
-  margin: 0 auto;
-  padding: 6vw 3vw 3vw;
-  max-width: 1040px;
-  text-align: center;
-
-  @media (max-width: 500px) {
-    padding: 14vw 3vw 10vw;
-  }
-`;
-
 const PostFullMeta = styled.section`
   display: flex;
   justify-content: center;
@@ -207,6 +196,48 @@ export interface PageContext {
   };
 }
 
+
+const PostFullContainer: React.FC = props => {
+
+  return <div className="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+    {props.children}
+  </div>
+}
+
+const PostHeader: React.FC<{title: string; date: string}> = props => {
+
+  return <header className="pt-6 xl:pb-10">
+      <div className="space-y-1 text-center">
+          <dl className="space-y-10">
+              <div>
+                  <dt className="sr-only">
+                      Published on
+                      </dt>
+                      <dd className="text-base leading-6 font-medium text-gray-500">
+                          <time dateTime="2020-06-30T18:05:31Z">
+                              {props.date}
+                          </time>
+                      </dd>
+                  </div>
+              </dl>
+          <div>
+      <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+        {props.title}
+      </h1>
+  </div>
+  </div>
+  </header>
+}
+
+const PostArticle: React.FC<{htmlAst: any}> = props => {
+
+  return <main>
+      <article className="">
+        <PostContent htmlAst={props.htmlAst} />
+      </article>
+  </main>
+}
+
 const PageTemplate: React.FC<PageTemplateProps> = props => {
   const post = props.data.markdownRemark;
   let width = '';
@@ -265,15 +296,18 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         {width && <meta property="og:image:width" content={width} />}
         {height && <meta property="og:image:height" content={height} />}
       </Helmet>
-      <Wrapper css={PostTemplate}>
-        <header css={[outer, SiteHeader]}>
-          <div css={inner}>
+      <Wrapper>
+        <header>
+          <div>
             <SiteNav />
           </div>
         </header>
-        <main id="site-main" className="site-main" css={[SiteMain, outer]}>
-          <div css={inner}>
-            {/* TODO: no-image css tag? */}
+        <PostFullContainer>
+          <PostHeader date={post.frontmatter.userDate} title={post.frontmatter.title} />
+          <PostArticle htmlAst={post.htmlAst} />
+        </PostFullContainer>
+        {/* <main id="site-main" className="site-main" css={[SiteMain, outer]}>
+          <div>
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
               <PostFullHeader>
                 <PostFullMeta>
@@ -303,7 +337,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
               )}
               <PostContent htmlAst={post.htmlAst} />
 
-              {/* The big email subscribe modal content */}
+              {/* The big email subscribe modal content 
               {config.showSubscribe && <Subscribe title={config.title} />}
 
               <PostFullFooter>
@@ -311,10 +345,10 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 <PostFullFooterRight authorId={post.frontmatter.author.id} />
               </PostFullFooter>
             </article>
-            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+                          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 
           </div>
-        </main>
+        </main> */}
 
         {/* Links to Previous/Next posts */}
         <aside className="read-next" css={outer}>

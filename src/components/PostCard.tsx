@@ -8,63 +8,39 @@ import { PageContext } from '../templates/post';
 
 
 export interface PostCardProps {
-  post: PageContext;
+    post: PageContext;
 }
 
-const PostCard: React.FC<PostCardProps> = ({ post }) => {
-  return (
-    <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
-                    <div className="flex-shrink-0">
-                    <Img
-                 alt={`${post.frontmatter.title} cover image`}
-                 className="h-48 w-full object-cover"
-                 fluid={post.frontmatter.image.childImageSharp.fluid}
-               />
-                    </div>
-                    <div className="flex-1 bg-white p-6 flex flex-col justify-between">
-                    <div className="flex-1">
-                        <p className="text-sm leading-5 font-medium text-indigo-600">
+const PostCard: React.FC<PostCardProps> = ( props ) => {
+    return (
+        <div className="flex flex-col rounded-lg shadow-lg shadow overflow-hidden">
+            <div className="flex-shrink-0">
+                <Img
+                    alt={`${props.post.frontmatter.title} cover image`}
+                    className="h-48 w-full object-cover"
+                    fluid={props.post.frontmatter.image.childImageSharp.fluid}
+                />
+            </div>
+            <div className="flex-1 bg-white p-6 flex flex-col justify-between">
+                <div className="flex-1">
+                    <p className="text-sm leading-5 font-medium text-indigo-600">
                         <a href="#" className="hover:underline">
                             Blog
                         </a>
-                        </p>
-                        <a href="#" className="block">
+                    </p>
+                    <Link to={props.post.fields.slug} className="block">
                         <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                            Boost your conversion rate
+                            {props.post.frontmatter.title}
                         </h3>
                         <p className="mt-3 text-base leading-6 text-gray-500">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
+                            {props.post.excerpt}
                         </p>
-                        </a>
-                    </div>
-                    <div className="mt-6 flex items-center">
-                        <div className="flex-shrink-0">
-                        <a href="#">
-                            <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
-                        </a>
-                        </div>
-                        <div className="ml-3">
-                        <p className="text-sm leading-5 font-medium text-gray-900">
-                            <a href="#" className="hover:underline">
-                            Roel Aufderhar
-                            </a>
-                        </p>
-                        <div className="flex text-sm leading-5 text-gray-500">
-                            <time dateTime="2020-03-16">
-                            Mar 16, 2020
-                            </time>
-                            <span className="mx-1">
-                            &middot;
-                            </span>
-                            <span>
-                            6 min read
-                            </span>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
+                    </Link>
                 </div>
-    // <article
+            </div>
+        </div>
+
+        // <article
     //   className={`post-card ${post.frontmatter.image ? '' : 'no-image'}`}
     //   css={PostCardStyles}
     // >
@@ -111,7 +87,7 @@ const PostCard: React.FC<PostCardProps> = ({ post }) => {
     //     </PostCardMeta>
     //   </PostCardContent>
     // </article>
-  );
+    );
 };
 
 export default PostCard;

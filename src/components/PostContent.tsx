@@ -6,13 +6,11 @@ import RehypeReact from 'rehype-react';
 import { colors } from '../styles/colors';
 
 export const PostFullContent = styled.section`
-  position: relative;
   margin: 0 auto;
   padding: 70px 100px 0;
   min-height: 230px;
-  font-family: Georgia, serif;
-  font-size: 2.2rem;
-  line-height: 1.6em;
+  font-size: 1.2rem;
+  line-height: 2rem;
   background: #fff;
 
   @media (max-width: 1170px) {
@@ -34,6 +32,10 @@ export const PostFullContent = styled.section`
     background: rgba(39, 44, 49, 0.15);
     filter: blur(5px);
     transform: rotate(-5deg);
+  }
+
+  p {
+    margin-bottom: 1.3rem;
   }
 
   :after {
@@ -97,7 +99,7 @@ export const PostFullContent = styled.section`
     line-height: 1.6em;
   }
 
-  li:first-child {
+  li:first-of-type {
     margin-top: 0;
   }
 
@@ -108,7 +110,6 @@ export const PostFullContent = styled.section`
   img,
   video {
     display: block;
-    margin: 1.5em auto;
     max-width: 1040px;
     height: auto;
   }
@@ -225,13 +226,11 @@ export const PostFullContent = styled.section`
   h5,
   h6 {
     color: ${setLightness('0.05', colors.darkgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
   h1 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 4.6rem;
+    font-size: 3.2rem;
     font-weight: 700;
   }
   @media (max-width: 500px) {
@@ -241,20 +240,17 @@ export const PostFullContent = styled.section`
   }
 
   h2 {
-    margin: 0.5em 0 0.2em 0;
-    font-size: 3.6rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   @media (max-width: 500px) {
     h2 {
-      font-size: 2.6rem;
     }
   }
 
   h3 {
-    margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
-    font-weight: 700;
   }
   @media (max-width: 500px) {
     h3 {
@@ -279,9 +275,8 @@ export const PostFullContent = styled.section`
     padding: 1em 0 1.5em;
     border: 0;
     color: ${colors.blue};
-    font-family: Georgia, serif;
     font-size: 3.2rem;
-    line-height: 1.35em;
+    line-height: 2em;
     text-align: center;
   }
   @media (min-width: 1180px) {
@@ -316,8 +311,6 @@ export const PostFullContent = styled.section`
     width: auto;
     border-spacing: 0;
     border-collapse: collapse;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     white-space: nowrap;
     vertical-align: top;
@@ -333,7 +326,7 @@ export const PostFullContent = styled.section`
     background-repeat: no-repeat;
   }
 
-  table td:first-child {
+  table td:first-of-type {
     background-image: linear-gradient(
       to right,
       rgba(255, 255, 255, 1) 50%,
@@ -387,6 +380,8 @@ export const PostFullContent = styled.section`
   code[class*='language-'],
   pre[class*='language-'] {
     background: none;
+    background-color:black;
+    color: white;
     font-family: Consolas, Menlo, Monaco, source-code-pro, Courier New, monospace;
     font-feature-settings: normal;
     text-align: left;
@@ -395,7 +390,7 @@ export const PostFullContent = styled.section`
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-    margin-bottom: 0;
+    margin-bottom: 1;
 
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -410,7 +405,7 @@ export const PostFullContent = styled.section`
   /* Code blocks */
   pre[class*='language-'] {
     overflow: auto;
-    padding: 1.3125rem;
+    padding: 1.3125 rem;
   }
 
   pre[class*='language-']::-moz-selection {
@@ -441,7 +436,7 @@ export const PostFullContent = styled.section`
     border-radius: 0.3em;
     background: var(--inlineCode-bg);
     color: var(--inlineCode-text);
-    padding: 0.15em 0.2em 0.05em;
+    padding: 0.3em 0.2em 0.05em;
     white-space: normal;
   }
 
@@ -561,7 +556,7 @@ export interface PostContentProps {
 
 const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => {
   return (
-    <PostFullContent className="post-full-content">
+    <PostFullContent className="full-width">
       {/* TODO: this will apply the class when rehype-react is published https://github.com/rhysd/rehype-react/pull/11 */}
       <Ast className="post-content" ast={htmlAst} />
     </PostFullContent>
