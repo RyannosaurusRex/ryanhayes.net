@@ -19,7 +19,7 @@ const PostCard: React.FC<PostCardProps> = (props) => {
                     <Img
                         alt={`${props.post.frontmatter.title} cover image`}
                         className="h-48 w-full object-cover"
-                        fluid={props.post.frontmatter.image.childImageSharp.fluid}
+                        fluid={props.post.frontmatter.image?.childImageSharp?.fluid}
                     />
                 </div>
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
