@@ -1,6 +1,6 @@
 const PageFullContent: React.FC = props => {
 
-    return <div className="flex flex-col center mx-auto px-4 max-width-1">
+    return <div className="d-block center mx-auto px-4">
             {props.children}
         </div>
 }

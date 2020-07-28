@@ -4,7 +4,6 @@ import React from 'react';
 import Footer from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
 import PostCard from '../components/PostCard';
-import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import {
   inner,
@@ -84,7 +83,6 @@ const Tags: React.FC<TagTemplateProps> = props => {
           />
         )}
       </Helmet>
-      <Wrapper>
         <header
           className={`${tagData && tagData.node.image ? '' : 'no-cover'}`}
           css={[outer, SiteHeader]}
@@ -96,7 +94,6 @@ const Tags: React.FC<TagTemplateProps> = props => {
           }}
         >
           <div css={inner}>
-            <SiteNav isHome={false} />
             <SiteHeaderContent>
               <SiteTitle>{tag}</SiteTitle>
               <SiteDescription>
@@ -123,7 +120,6 @@ const Tags: React.FC<TagTemplateProps> = props => {
           </div>
         </main>
         <Footer />
-      </Wrapper>
     </IndexLayout>
   );
 };

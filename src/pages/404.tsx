@@ -5,7 +5,6 @@ import { css } from '@emotion/core';
 
 import SiteNavLogo from '../components/header/SiteNavLogo';
 import PostCard from '../components/PostCard';
-import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
 import { inner, outer, PostFeed, SiteHeader } from '../styles/shared';
@@ -63,7 +62,6 @@ const NotFoundPage: React.FC<NotFoundTemplateProps> = props => {
 
   return (
     <IndexLayout>
-      <Wrapper>
         <header css={[SiteHeader, outer]}>
           <div className="inner">
             <SiteNavCenter>
@@ -91,7 +89,6 @@ const NotFoundPage: React.FC<NotFoundTemplateProps> = props => {
             </div>
           </div>
         </aside>
-      </Wrapper>
     </IndexLayout>
   );
 };

@@ -3,7 +3,6 @@ import Helmet from 'react-helmet';
 // @ts-ignore
 import favicon from '../../src/favicon.ico';
 import Footer from '../components/Footer';
-import Wrapper from '../components/Wrapper';
 import SiteNav from '../components/header/SiteNav';
 
 import config from '../website-config';
@@ -54,10 +53,8 @@ const IndexLayout: React.FC<IndexProps> = props => {
         <meta property="og:image:height" content={props.imageHeight} />
       </Helmet>
 
-    <Wrapper>
       <SiteNav />
       {props.children}
-    </Wrapper>
     <Footer></Footer>
     </div>
   );

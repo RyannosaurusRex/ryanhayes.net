@@ -26,7 +26,6 @@ dsq_thread_id:
 categories:
   - Blog
 ---
-<div class="wrapper">
   By now, most people know that websites' SEO is dinged by Google when there is both a www and non-www url with the same content on both. Google (and Bing) treat them as two separate sites and they fight for pagerank as everyone else blows your two competing sites out of the water. I've had redirects set up on my WordPress blog for the past 4 years, which is pretty easy to do, but I <a title="Ghost VS WordPress (and Why I Migrated Back to WordPress)" href="https://ryanhayes.net/ghost-vs-wordpress-migrating/">recently moved my blog over to Ghost</a> blogging engine and since it's currently at version 0.5, it didn't have this 301 redirect functionality built in, so I needed to roll my own. Since I was moving to <a href="https://azure.com">Azure Websites</a>, I needed to add a redirect to get this fixed in the web.config, so I thought I'd share it with you!&nbsp;</p> 
   
   <h3 id="redirectingtononwwwusingthewebconfig">
@@ -82,4 +81,3 @@ categories:
   
   <p>
   </p>
-</div>

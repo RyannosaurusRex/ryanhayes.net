@@ -5,6 +5,8 @@ import RehypeReact from 'rehype-react';
 
 import { colors } from '../styles/colors';
 import PageFullContent from './PageFullContent';
+import { DiscussionEmbed } from 'disqus-react';
+import config from './../website-config'
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
@@ -19,14 +21,14 @@ const Ast = ({ ast, ...props }: any) => {
 
 export interface PostContentProps {
   htmlAst: any;
+  disqusConfig: string;
 }
-
-const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => {
+const PostContent: React.FC<PostContentProps> = props => {
   return (
     <PageFullContent>
       <div className="prose xl:prose-xl mx-auto">
-        {/* TODO: this will apply the class when rehype-react is published https://github.com/rhysd/rehype-react/pull/11 */}
-        <Ast className="mx-auto" ast={htmlAst} />
+        <Ast className="mx-auto" ast={props.htmlAst} />
+        <DiscussionEmbed shortname={"ryanhayesblog"} config={props.disqusConfig.id} />
       </div>
     </PageFullContent>
   );

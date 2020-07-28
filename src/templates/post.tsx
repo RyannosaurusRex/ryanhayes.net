@@ -17,7 +17,6 @@ import PostFullFooter from '../components/PostFullFooter';
 import PostFullFooterRight from '../components/PostFullFooterRight';
 import ReadNextCard from '../components/ReadNextCard';
 import Subscribe from '../components/subscribe/Subscribe';
-import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
@@ -76,11 +75,13 @@ export const PostFullTitle = styled.h1`
 
 const PostFullImage = styled.figure`
   margin: 0 -10vw -165px;
-  height: 800px;
+  height:400px;
+  max-height:600px;
   background: ${colors.lightgrey} center center;
   background-size: cover;
   border-radius: 5px;
   z-index: -1;
+  margin-bottom: 10px;
 
   @media (max-width: 1170px) {
     margin: 0 -4vw -100px;
@@ -92,7 +93,7 @@ const PostFullImage = styled.figure`
     height: 400px;
   }
   @media (max-width: 500px) {
-    margin-bottom: 4vw;
+    /*margin-bottom: 4vw;*/
     height: 350px;
   }
 `;
@@ -223,11 +224,11 @@ const PostHeader: React.FC<{ title: string; date: string }> = props => {
   </header>
 }
 
-const PostArticle: React.FC<{ htmlAst: any }> = props => {
+const PostArticle: React.FC<{ htmlAst: any, disqusConfig: any }> = props => {
 
   return <main>
     <article className="">
-      <PostContent htmlAst={props.htmlAst} />
+      <PostContent htmlAst={props.htmlAst} disqusConfig={props.disqusConfig}/>
     </article>
   </main>
 }
@@ -241,9 +242,9 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
     height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
   }
 
-  const disqusShortname = "ryanhayesblog";
+  const disqusShortname: string = "ryanhayesblog";
   const disqusConfig = {
-    // identifier: post.id,
+    identifier: post.id,
     title: post.frontmatter.title,
   };
 
@@ -288,12 +289,11 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         {width && <meta property="og:image:width" content={width} />}
         {height && <meta property="og:image:height" content={height} />}
       </Helmet>
-      <Wrapper>
         <PageFullContent>
           {post.frontmatter.image && post.frontmatter.image.childImageSharp &&
             <><PostFullImage>
               <Img
-                style={{ height: '100%', zIndex: "-1" }}
+                style={{ height: '100%'}}
                 fluid={post.frontmatter.image.childImageSharp.fluid}
               />
             </PostFullImage>
@@ -302,7 +302,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
             </div></>
           }
           <PostHeader date={post.frontmatter.userDate} title={post.frontmatter.title} />
-          <PostArticle htmlAst={post.htmlAst} />
+          <PostArticle htmlAst={post.htmlAst} disqusConfig={disqusConfig} />
         </PageFullContent>
         {/* <main id="site-main" className="site-main" css={[SiteMain, outer]}>
           <div>
@@ -343,7 +343,6 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 <PostFullFooterRight authorId={post.frontmatter.author.id} />
               </PostFullFooter>
             </article>
-                          <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 
           </div>
         </main> */}
@@ -361,7 +360,6 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
             </ReadNextFeed>
           </div>
         </aside>
-      </Wrapper>
     </IndexLayout>
   );
 };

@@ -1,123 +1,38 @@
 import * as React from 'react';
+import { printIntrospectionSchema } from 'graphql';
+
+const FooterList: React.FC<{title: string}> = (props) => {
+  return <div className="mt-12 md:mt-0">
+    <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+      {props.title}
+    </h4>
+    <ul className="mt-4">{props.children}</ul>
+  </div>
+}
+const FooterLink: React.FC<{ name: string, href: string }> = props => {
+  return <li className="mt-4">
+    <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
+      <a href={props.href}>{props.name}</a>
+    </a>
+  </li>
+}
 
 const Footer: React.FC = () => {
   return (
     <footer>
       <div className="bg-gray-800">
-        <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div className="max-w-screen-xl mx-auto py-6 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                    Solutions
-            </h4>
-                  <ul className="mt-4">
-                    <li>
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Marketing
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Analytics
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Commerce
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Insights
-                </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="mt-12 md:mt-0">
-                  <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                    Support
-            </h4>
-                  <ul className="mt-4">
-                    <li>
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Pricing
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Documentation
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Guides
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        API Status
-                </a>
-                    </li>
-                  </ul>
-                </div>
+                <FooterList title="Test">
+                    <FooterLink name="test" href="#"></FooterLink>
+                </FooterList>
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
-                <div>
-                  <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                    Company
-            </h4>
-                  <ul className="mt-4">
-                    <li>
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        About
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Blog
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Jobs
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Press
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Partners
-                </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="mt-12 md:mt-0">
-                  <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                    Legal
-            </h4>
-                  <ul className="mt-4">
-                    <li>
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Claim
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Privacy
-                </a>
-                    </li>
-                    <li className="mt-4">
-                      <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-                        Terms
-                </a>
-                    </li>
-                  </ul>
-                </div>
+                <FooterList title="Test">
+                    <FooterLink name="test" href="#"></FooterLink>
+                </FooterList>
               </div>
             </div>
             <div className="mt-8 xl:mt-0">
