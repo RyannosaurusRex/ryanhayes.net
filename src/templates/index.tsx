@@ -3,7 +3,6 @@ import * as React from 'react';
 import Helmet from 'react-helmet';
 
 import Footer from '../components/Footer';
-import SiteNav from '../components/header/SiteNav';
 import PostCard from '../components/PostCard';
 import IndexLayout from '../layouts';
 import config from '../website-config';
@@ -40,49 +39,15 @@ const IndexPage: React.FC<IndexProps> = props => {
   const width = props.data.header.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
   const height = String(Number(width) / props.data.header.childImageSharp.fluid.aspectRatio);
 
-  return (
-    <IndexLayout>
-      <Helmet>
-        <html lang={config.lang} />
-        <title>{config.title}</title>
-        <meta name="description" content={config.description} />
-        <meta property="og:site_name" content={config.title} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={config.title} />
-        <meta property="og:description" content={config.description} />
-        <meta property="og:url" content={config.siteUrl} />
-        <meta
-          property="og:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
-        />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        {config.googleSiteVerification && <meta name="google-site-verification" content={config.googleSiteVerification} />}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={config.title} />
-        <meta name="twitter:description" content={config.description} />
-        <meta name="twitter:url" content={config.siteUrl} />
-        <meta
-          name="twitter:image"
-          content={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}
-        />
-        {config.twitter && (
-          <meta
-            name="twitter:site"
-            content={`@${config.twitter.split('https://twitter.com/')[1]}`}
-          />
-        )}
-        <meta property="og:image:width" content={width} />
-        <meta property="og:image:height" content={height} />
-      </Helmet>
-      <div>
-      <div id="hero" className="relative bg-gray-50 overflow-hidden">
 
-          <SiteNav isHome />
-          <Hero imageSrc={props.data.logo.childImageSharp.fixed.src} />
-          </div>
+  return (
+    <IndexLayout imageHeight={height} imageWidth={width} imageSrc={`${config.siteUrl}${props.data.header.childImageSharp.fluid.src}`}>
+
+      <div id="hero" className="relative bg-gray-50 overflow-hidden">
+        <Hero imageSrc={props.data.logo.childImageSharp.fixed.src} />
       </div>
-          <div>
-                {/* {props.data.logo ? (
+      <div>
+        {/* {props.data.logo ? (
                   <img
                     src={props.data.logo.childImageSharp.fixed.src}
                     alt={config.title}
@@ -90,11 +55,10 @@ const IndexPage: React.FC<IndexProps> = props => {
                 ) : (
                   config.title
                 )} */}
-          </div>
-          <FromTheBlog pages={props.data.allMarkdownRemark.edges} />
-        {props.children}
-        <Pagination currentPage={props.pageContext.currentPage} numPages={props.pageContext.numPages} />
-        <Footer />
+      </div>
+      <FromTheBlog pages={props.data.allMarkdownRemark.edges} />
+      {props.children}
+      <Pagination currentPage={props.pageContext.currentPage} numPages={props.pageContext.numPages} />
     </IndexLayout>
   );
 };

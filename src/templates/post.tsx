@@ -22,6 +22,7 @@ import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
+import PageFullContent from '../components/PageFullContent';
 
 const PostTemplate = css`
   .site-main {
@@ -79,6 +80,7 @@ const PostFullImage = styled.figure`
   background: ${colors.lightgrey} center center;
   background-size: cover;
   border-radius: 5px;
+  z-index: -1;
 
   @media (max-width: 1170px) {
     margin: 0 -4vw -100px;
@@ -196,45 +198,37 @@ export interface PageContext {
   };
 }
 
-
-const PostFullContainer: React.FC = props => {
-
-  return <div className="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
-    {props.children}
-  </div>
-}
-
-const PostHeader: React.FC<{title: string; date: string}> = props => {
+const PostHeader: React.FC<{ title: string; date: string }> = props => {
 
   return <header className="pt-6 xl:pb-10">
-      <div className="space-y-1 text-center">
-          <dl className="space-y-10">
-              <div>
-                  <dt className="sr-only">
-                      Published on
+    <div className="space-y-1 text-center">
+      <dl className="space-y-10">
+        <div>
+          <dt className="sr-only">
+            Published on
                       </dt>
-                      <dd className="text-base leading-6 font-medium text-gray-500">
-                          <time dateTime="2020-06-30T18:05:31Z">
-                              {props.date}
-                          </time>
-                      </dd>
-                  </div>
-              </dl>
-          <div>
-      <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
-        {props.title}
-      </h1>
-  </div>
-  </div>
+          <dd className="text-base leading-6 font-medium text-gray-500">
+            <time dateTime="2020-06-30T18:05:31Z">
+              {props.date}
+            </time>
+          </dd>
+        </div>
+      </dl>
+      <div>
+        <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+          {props.title}
+        </h1>
+      </div>
+    </div>
   </header>
 }
 
-const PostArticle: React.FC<{htmlAst: any}> = props => {
+const PostArticle: React.FC<{ htmlAst: any }> = props => {
 
   return <main>
-      <article className="">
-        <PostContent htmlAst={props.htmlAst} />
-      </article>
+    <article className="">
+      <PostContent htmlAst={props.htmlAst} />
+    </article>
   </main>
 }
 
@@ -256,11 +250,9 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
   return (
     <IndexLayout className="post-template">
       <Helmet>
-        <html lang={config.lang} />
         <title>{post.frontmatter.title}</title>
 
         <meta name="description" content={post.excerpt} />
-        <meta property="og:site_name" content={config.title} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:description" content={post.excerpt} />
@@ -297,15 +289,21 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         {height && <meta property="og:image:height" content={height} />}
       </Helmet>
       <Wrapper>
-        <header>
-          <div>
-            <SiteNav />
-          </div>
-        </header>
-        <PostFullContainer>
+        <PageFullContent>
+          {post.frontmatter.image && post.frontmatter.image.childImageSharp &&
+            <><PostFullImage>
+              <Img
+                style={{ height: '100%', zIndex: "-1" }}
+                fluid={post.frontmatter.image.childImageSharp.fluid}
+              />
+            </PostFullImage>
+            <div className="mb-24">
+
+            </div></>
+          }
           <PostHeader date={post.frontmatter.userDate} title={post.frontmatter.title} />
           <PostArticle htmlAst={post.htmlAst} />
-        </PostFullContainer>
+        </PageFullContent>
         {/* <main id="site-main" className="site-main" css={[SiteMain, outer]}>
           <div>
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
@@ -363,7 +361,6 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
             </ReadNextFeed>
           </div>
         </aside>
-        <Footer />
       </Wrapper>
     </IndexLayout>
   );

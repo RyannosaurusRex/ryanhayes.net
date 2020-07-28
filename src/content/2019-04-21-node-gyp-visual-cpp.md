@@ -5,6 +5,7 @@ author: Ryan Hayes
 tags:
   - NPM
   - Web Development
+layout: post
 image: img/tools.jpg
 permalink: /npm-node-gyp-msbuild-vcbuildexe
 ---
