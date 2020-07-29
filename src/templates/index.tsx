@@ -56,9 +56,10 @@ const IndexPage: React.FC<IndexProps> = props => {
                   config.title
                 )} */}
       </div>
-      <FromTheBlog pages={props.data.allMarkdownRemark.edges} />
+      <FromTheBlog pages={props.data.allMarkdownRemark.edges}
+          currentPage={props.pageContext.currentPage} 
+          numPages={props.pageContext.numPages} />
       {props.children}
-      <Pagination currentPage={props.pageContext.currentPage} numPages={props.pageContext.numPages} />
     </IndexLayout>
   );
 };
