@@ -29,13 +29,13 @@ const Hero: React.FC<HeroProps> = (props: HeroProps) => {
                     <div className="rounded-md shadow">
                         <a href="/contact" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                             Contact Me
-              </a>
+                        </a>
                     </div>
-                    <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                    {/* <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                         <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                             Live demo
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

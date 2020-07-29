@@ -19,23 +19,25 @@ const FooterLink: React.FC<{ name: string, href: string }> = props => {
 
 const Footer: React.FC = () => {
   return (
-    <footer>
+    <footer className="mt-auto">
       <div className="bg-gray-800">
         <div className="max-w-screen-xl mx-auto py-6 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
-                <FooterList title="Test">
-                    <FooterLink name="test" href="#"></FooterLink>
+                <FooterList title="Organizations">
+                    <FooterLink name="FoundersForge" href="https://foundersforge.com"></FooterLink>
+                    <FooterLink name="TriDev" href="https://tricities.dev"></FooterLink>
                 </FooterList>
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
-                <FooterList title="Test">
-                    <FooterLink name="test" href="#"></FooterLink>
+                <FooterList title="Social Media">
+                    <FooterLink name="Github" href="https://github.com/RyannosaurusRex"></FooterLink>
+                    <FooterLink name="Twitter" href="https://twitter.com/RyannosaurusRex"></FooterLink>
                 </FooterList>
               </div>
             </div>
-            <div className="mt-8 xl:mt-0">
+            {/* <div className="mt-8 xl:mt-0">
               <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
                 Subscribe to our newsletter
         </h4>
@@ -50,7 +52,7 @@ const Footer: React.FC = () => {
             </button>
                 </div>
               </form>
-            </div>
+            </div> */}
           </div>
           <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
             <div className="flex md:order-2">

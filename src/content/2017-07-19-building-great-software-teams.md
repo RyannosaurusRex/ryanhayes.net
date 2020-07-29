@@ -4,7 +4,7 @@ date: 2017-07-19T18:35:12.+00:00
 author: Ryan Hayes
 layout: post
 permalink: /building-great-software-teams/
-image: /img/uploads/tumblr_l1uje5og5h1qbwim9o1_1280.jpg
+image: img/demo1.jpg
 tags: 
     - Leadership
 ---

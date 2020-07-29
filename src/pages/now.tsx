@@ -8,16 +8,17 @@ import { PostFullTitle, NoImage, PostFull } from '../templates/post';
 import { PostFullContent } from '../components/PostContent';
 import Footer from '../components/Footer';
 import Helmet from 'react-helmet';
+import PageFullContent from '../components/PageFullContent';
 
 
 const About: React.FunctionComponent = () => (
   <IndexLayout>
-      <main id="site-main" >
+      <PageFullContent>
+      <main id="site-main">
         <article className="post page">
           <article className="prose xl:prose-xl mx-auto">
           <div className="post-content">
             <h2>Here’s what I’m focusing on right now:</h2>
-
             <ul>
               <li>Trying to get through the pandemic. (Who isn't?)</li>
               <li>Building and dogfooding a meetup.com competitor called UpGo. <Link to="/contact">Drop me a line to get early access.</Link></li>
@@ -29,13 +30,11 @@ const About: React.FunctionComponent = () => (
               <li>I live stream coding and business development every Tuesday at 9PM Eastern on <a href="https://twitch.tv/RyannosaurusRex">Twitch</a>.</li>
               {/* <li><a href="https://youtube.com/ryanhayesnet">Becoming a better speaker by creating more video content.</a></li> */}
             </ul>
-            
-            This page is part of the /now movement. It's what I'd tell a friend if I hadn't seen them in a year.
-
           </div>
           </article>
         </article>
       </main>
+      </PageFullContent>
   </IndexLayout>
 );
 

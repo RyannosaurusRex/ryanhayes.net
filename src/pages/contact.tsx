@@ -21,7 +21,7 @@ return <IndexLayout>
           Let's work together
         </h2>
         <p className="mt-4 text-lg leading-7 text-gray-500 sm:mt-3">
-          We’d love to hear from you! Send us a message using the form opposite, or email us. We’d love to hear from you! Send us a message using the form opposite, or email us.
+          I'd love to hear from you! Send us a message using the form or just send me an email.
         </p>
         <form action="#" method="POST" name="contact" netlify className="mt-9 grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
           <div>
@@ -34,12 +34,6 @@ return <IndexLayout>
             <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email</label>
             <div className="mt-1 relative rounded-md shadow-sm">
               <input id="email" type="email" className="form-input block w-full transition ease-in-out duration-150 sm:text-sm sm:leading-5" />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <label for="how_did_you_hear_about_us" className="block text-sm font-medium leading-5 text-gray-700">How did you hear about us?</label>
-            <div className="mt-1 relative rounded-md shadow-sm">
-              <input id="how_did_you_hear_about_us" name="referredby" className="form-input block w-full transition ease-in-out duration-150 sm:text-sm sm:leading-5"/>
             </div>
           </div>
           <div className="sm:col-span-2">

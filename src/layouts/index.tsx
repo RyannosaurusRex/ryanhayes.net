@@ -55,7 +55,7 @@ const IndexLayout: React.FC<IndexProps> = props => {
 
       <SiteNav />
       {props.children}
-    <Footer></Footer>
+      <Footer />
     </div>
   );
 };
