@@ -23,7 +23,9 @@ return <IndexLayout>
         <p className="mt-4 text-lg leading-7 text-gray-500 sm:mt-3">
           I'd love to hear from you! Send us a message using the form or just send me an email.
         </p>
-        <form action="#" method="POST" name="contact" netlify className="mt-9 grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
+        <form action="#" method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field" className="mt-9 grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="contact" />
           <div>
             <label for="name" className="block text-sm font-medium leading-5 text-gray-700">Name</label>
             <div className="mt-1 relative rounded-md shadow-sm">
