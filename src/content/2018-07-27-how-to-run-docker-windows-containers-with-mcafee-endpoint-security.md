@@ -3,7 +3,6 @@ id: 1001347862
 title: How to run Docker Windows Containers with McAfee Endpoint Security
 date: 2018-07-27T15:14:27+00:00
 author: Ryan Hayes
-layout: post
 guid: https://ryanhayes.net/?p=1001347862
 permalink: /how-to-run-docker-windows-containers-with-mcafee-endpoint-security/
 image: img/boat-container.jpeg
@@ -30,8 +29,6 @@ The only potential downside that I had heard about Windows Server Core container
     — Tom Pardue (@tparlimited) <a href="https://twitter.com/tparlimited/status/1016732280138731521?ref_src=twsrc%5Etfw">July 10, 2018</a>
   </p>
 </blockquote>
-
-
 
 Ok, fine, that's...that's not good but there's no other way to run full framework .NET apps inside Docker without it being in a WindowsServerCore container, so it's something I'll have to live with for now.
 

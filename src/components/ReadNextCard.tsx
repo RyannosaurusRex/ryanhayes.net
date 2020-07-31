@@ -17,7 +17,6 @@ const ReadNextCardStyles = styled.article<ReadNextCardStylesProps>`
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin: 0 20px 40px;
   padding: 25px;
   color: #fff;
   background: ${colors.darkgrey} center center;
@@ -84,7 +83,7 @@ const ReadNextDivider = styled.div`
     fill: transparent;
     stroke: #fff;
 
-    stroke-width: 0.5px;
+    strokeWidth: 0.5px;
     stroke-opacity: 0.65;
   }
 `;

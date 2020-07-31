@@ -6,7 +6,6 @@ import { css } from '@emotion/core';
 import Footer from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
 import PostCard from '../components/PostCard';
-import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import {
   AuthorProfileImage,
@@ -154,7 +153,6 @@ const Author: React.FC<AuthorTemplateProps> = props => {
           />
         )}
       </Helmet>
-      <Wrapper>
         <header
           className="no-cover"
           css={[outer, SiteHeader]}
@@ -253,7 +251,6 @@ const Author: React.FC<AuthorTemplateProps> = props => {
           </div>
         </main>
         <Footer />
-      </Wrapper>
     </IndexLayout>
   );
 };

@@ -40,13 +40,13 @@ In this dialog, go to **Projects and Solutions > External Web Tools** to open t
 
 ![Locations of external tools setting in Visual Studio Options panel](img/wp-content/uploads/2015/07/Capture.png)
 
-###### Using the Windows PATH Instead
+#### Using the Windows PATH Instead
 
 If you're making this change, you probably notice that you can also move the `$(PATH)` option up to tell Visual Studio to look at the PATH environment variable to determine where it should look for `node` or other command line tools. This is probably what you want globally if you're someone who is comfortable with the command line and understand the implications. 
 
 In general it seems that Visual Studio tries to isolate itself and the tools it uses from both other installs of Visual Studio and anything else that may cause issue with it. In general, Visual Studio developers have not traditionally had to touch the command line much, so this makes sense historically, but modern web applications require a different approach.
 
-###### Managing switching the Node.js Version using Powershell
+#### Managing switching the Node.js Version using Powershell
 
 Another issue that might arise due to using the `$(PATH)` is that you might have projects that use different versions of Node.js. For example one might use Node.js 8.x.x, while another uses 10.x.x. In this case you might want to use [Node Version Manager](https://github.com/aaronpowell/ps-nvm), or "NVM" as it's called, to switch versions on the command line in powershell.
 

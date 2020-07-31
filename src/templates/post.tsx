@@ -17,11 +17,11 @@ import PostFullFooter from '../components/PostFullFooter';
 import PostFullFooterRight from '../components/PostFullFooterRight';
 import ReadNextCard from '../components/ReadNextCard';
 import Subscribe from '../components/subscribe/Subscribe';
-import Wrapper from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
 import { inner, outer, SiteHeader, SiteMain } from '../styles/shared';
 import config from '../website-config';
+import PageFullContent from '../components/PageFullContent';
 
 const PostTemplate = css`
   .site-main {
@@ -43,17 +43,6 @@ export const NoImage = css`
   .post-full-content:before,
   .post-full-content:after {
     display: none;
-  }
-`;
-
-export const PostFullHeader = styled.header`
-  margin: 0 auto;
-  padding: 6vw 3vw 3vw;
-  max-width: 1040px;
-  text-align: center;
-
-  @media (max-width: 500px) {
-    padding: 14vw 3vw 10vw;
   }
 `;
 
@@ -86,10 +75,13 @@ export const PostFullTitle = styled.h1`
 
 const PostFullImage = styled.figure`
   margin: 0 -10vw -165px;
-  height: 800px;
+  height:400px;
+  max-height:600px;
   background: ${colors.lightgrey} center center;
   background-size: cover;
   border-radius: 5px;
+  z-index: -1;
+  margin-bottom: 10px;
 
   @media (max-width: 1170px) {
     margin: 0 -4vw -100px;
@@ -101,7 +93,7 @@ const PostFullImage = styled.figure`
     height: 400px;
   }
   @media (max-width: 500px) {
-    margin-bottom: 4vw;
+    /*margin-bottom: 4vw;*/
     height: 350px;
   }
 `;
@@ -207,6 +199,40 @@ export interface PageContext {
   };
 }
 
+const PostHeader: React.FC<{ title: string; date: string }> = props => {
+
+  return <header className="pt-6 xl:pb-10">
+    <div className="space-y-1 text-center">
+      <dl className="space-y-10">
+        <div>
+          <dt className="sr-only">
+            Published on
+                      </dt>
+          <dd className="text-base leading-6 font-medium text-gray-500">
+            <time dateTime="2020-06-30T18:05:31Z">
+              {props.date}
+            </time>
+          </dd>
+        </div>
+      </dl>
+      <div>
+        <h1 className="text-3xl leading-9 font-extrabold text-gray-900 tracking-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-14">
+          {props.title}
+        </h1>
+      </div>
+    </div>
+  </header>
+}
+
+const PostArticle: React.FC<{ htmlAst: any, disqusConfig: any }> = props => {
+
+  return <main>
+    <article className="">
+      <PostContent htmlAst={props.htmlAst} disqusConfig={props.disqusConfig} />
+    </article>
+  </main>
+}
+
 const PageTemplate: React.FC<PageTemplateProps> = props => {
   const post = props.data.markdownRemark;
   let width = '';
@@ -216,20 +242,18 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
     height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
   }
 
-  const disqusShortname = "ryanhayesblog";
+  const disqusShortname: string = "ryanhayesblog";
   const disqusConfig = {
-    // identifier: post.id,
+    identifier: post.id,
     title: post.frontmatter.title,
   };
 
   return (
     <IndexLayout className="post-template">
       <Helmet>
-        <html lang={config.lang} />
         <title>{post.frontmatter.title}</title>
 
         <meta name="description" content={post.excerpt} />
-        <meta property="og:site_name" content={config.title} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:description" content={post.excerpt} />
@@ -265,15 +289,23 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         {width && <meta property="og:image:width" content={width} />}
         {height && <meta property="og:image:height" content={height} />}
       </Helmet>
-      <Wrapper css={PostTemplate}>
-        <header css={[outer, SiteHeader]}>
-          <div css={inner}>
-            <SiteNav />
-          </div>
-        </header>
-        <main id="site-main" className="site-main" css={[SiteMain, outer]}>
-          <div css={inner}>
-            {/* TODO: no-image css tag? */}
+      <PageFullContent>
+        {post.frontmatter.image && post.frontmatter.image.childImageSharp &&
+          <><PostFullImage>
+            <Img
+              style={{ height: '100%' }}
+              fluid={post.frontmatter.image.childImageSharp.fluid}
+            />
+          </PostFullImage>
+            <div className="mb-24">
+
+            </div></>
+        }
+        <PostHeader date={post.frontmatter.userDate} title={post.frontmatter.title} />
+        <PostArticle htmlAst={post.htmlAst} disqusConfig={disqusConfig} />
+      </PageFullContent>
+      {/* <main id="site-main" className="site-main" css={[SiteMain, outer]}>
+          <div>
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
               <PostFullHeader>
                 <PostFullMeta>
@@ -303,7 +335,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
               )}
               <PostContent htmlAst={post.htmlAst} />
 
-              {/* The big email subscribe modal content */}
+              {/* The big email subscribe modal content 
               {config.showSubscribe && <Subscribe title={config.title} />}
 
               <PostFullFooter>
@@ -311,13 +343,29 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
                 <PostFullFooterRight authorId={post.frontmatter.author.id} />
               </PostFullFooter>
             </article>
-            <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
 
           </div>
-        </main>
+        </main> */}
 
-        {/* Links to Previous/Next posts */}
-        <aside className="read-next" css={outer}>
+      {/* Links to Previous/Next posts */}
+
+      <aside className="" css={outer}>
+        <div css={inner}>
+          <div className="flex flex-wrap mx-auto">
+            <div className="w-full">
+              {props.data.relatedPosts && (
+                <div className="px-auto w-full"><ReadNextCard tags={post.frontmatter.tags} relatedPosts={props.data.relatedPosts} /></div>
+              )}
+            </div>
+            <div className="flex flex-wrap justify-around w-full">
+              {props.pageContext.prev && <div className="max-w-lg pt-4 pb-6 pr-2"><PostCard post={props.pageContext.prev} css="pt-2" /></div>}
+              {props.pageContext.next && <div className="max-w-lg pt-4 pb-6 pl-2"><PostCard post={props.pageContext.next} css="pt-2" /></div>}
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      {/* <aside className="read-next" css={outer}>
           <div css={inner}>
             <ReadNextFeed>
               {props.data.relatedPosts && (
@@ -328,9 +376,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
               {props.pageContext.next && <PostCard post={props.pageContext.next} />}
             </ReadNextFeed>
           </div>
-        </aside>
-        <Footer />
-      </Wrapper>
+        </aside> */}
     </IndexLayout>
   );
 };
