@@ -19,7 +19,7 @@ interface IndexProps {
 const IndexLayout: React.FC<IndexProps> = props => {
 
   return (
-    <div className={props.className}>
+    <div className="flex flex-col h-screen">
       <Helmet>
         <html lang={config.lang} />
         <title>{config.title}</title>
@@ -54,7 +54,9 @@ const IndexLayout: React.FC<IndexProps> = props => {
       </Helmet>
 
       <SiteNav />
-      {props.children}
+      <div className="">
+        {props.children}
+      </div>
       <Footer />
     </div>
   );

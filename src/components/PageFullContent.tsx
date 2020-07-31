@@ -5,6 +5,4 @@ const PageFullContent: React.FC = props => {
         </div>
 }
 
-const ContentWrapper: React.FC = props => <div>{props.children}</div>
-
 export default PageFullContent;

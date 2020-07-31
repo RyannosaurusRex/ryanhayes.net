@@ -228,7 +228,7 @@ const PostArticle: React.FC<{ htmlAst: any, disqusConfig: any }> = props => {
 
   return <main>
     <article className="">
-      <PostContent htmlAst={props.htmlAst} disqusConfig={props.disqusConfig}/>
+      <PostContent htmlAst={props.htmlAst} disqusConfig={props.disqusConfig} />
     </article>
   </main>
 }
@@ -289,22 +289,22 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
         {width && <meta property="og:image:width" content={width} />}
         {height && <meta property="og:image:height" content={height} />}
       </Helmet>
-        <PageFullContent>
-          {post.frontmatter.image && post.frontmatter.image.childImageSharp &&
-            <><PostFullImage>
-              <Img
-                style={{ height: '100%'}}
-                fluid={post.frontmatter.image.childImageSharp.fluid}
-              />
-            </PostFullImage>
+      <PageFullContent>
+        {post.frontmatter.image && post.frontmatter.image.childImageSharp &&
+          <><PostFullImage>
+            <Img
+              style={{ height: '100%' }}
+              fluid={post.frontmatter.image.childImageSharp.fluid}
+            />
+          </PostFullImage>
             <div className="mb-24">
 
             </div></>
-          }
-          <PostHeader date={post.frontmatter.userDate} title={post.frontmatter.title} />
-          <PostArticle htmlAst={post.htmlAst} disqusConfig={disqusConfig} />
-        </PageFullContent>
-        {/* <main id="site-main" className="site-main" css={[SiteMain, outer]}>
+        }
+        <PostHeader date={post.frontmatter.userDate} title={post.frontmatter.title} />
+        <PostArticle htmlAst={post.htmlAst} disqusConfig={disqusConfig} />
+      </PageFullContent>
+      {/* <main id="site-main" className="site-main" css={[SiteMain, outer]}>
           <div>
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
               <PostFullHeader>
@@ -347,8 +347,25 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
           </div>
         </main> */}
 
-        {/* Links to Previous/Next posts */}
-        <aside className="read-next" css={outer}>
+      {/* Links to Previous/Next posts */}
+
+      <aside className="" css={outer}>
+        <div css={inner}>
+          <div className="flex flex-wrap mx-auto">
+            <div className="w-full">
+              {props.data.relatedPosts && (
+                <div className="px-auto w-full"><ReadNextCard tags={post.frontmatter.tags} relatedPosts={props.data.relatedPosts} /></div>
+              )}
+            </div>
+            <div className="flex flex-wrap justify-around w-full">
+              {props.pageContext.prev && <div className="max-w-lg pt-4 pb-6 pr-2"><PostCard post={props.pageContext.prev} css="pt-2" /></div>}
+              {props.pageContext.next && <div className="max-w-lg pt-4 pb-6 pl-2"><PostCard post={props.pageContext.next} css="pt-2" /></div>}
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      {/* <aside className="read-next" css={outer}>
           <div css={inner}>
             <ReadNextFeed>
               {props.data.relatedPosts && (
@@ -359,7 +376,7 @@ const PageTemplate: React.FC<PageTemplateProps> = props => {
               {props.pageContext.next && <PostCard post={props.pageContext.next} />}
             </ReadNextFeed>
           </div>
-        </aside>
+        </aside> */}
     </IndexLayout>
   );
 };

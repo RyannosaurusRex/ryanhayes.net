@@ -16,11 +16,13 @@ const PostCard: React.FC<PostCardProps> = (props) => {
         <Link to={props.post.fields.slug} className="block">
             <div className="flex flex-col rounded-lg shadow-lg shadow overflow-hidden">
                 <div className="flex-shrink-0">
-                    <Img
-                        alt={`${props.post.frontmatter.title} cover image`}
-                        className="h-48 w-full object-cover"
-                        fluid={props.post.frontmatter.image?.childImageSharp?.fluid}
-                    />
+                    {props.post.frontmatter.image && props.post.frontmatter.image.childImageSharp &&
+                        <Img
+                            alt={`${props.post.frontmatter.title} cover image`}
+                            className="h-48 w-full object-cover"
+                            fluid={props.post.frontmatter.image?.childImageSharp?.fluid}
+                        />
+                    }
                 </div>
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
