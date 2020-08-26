@@ -1,11 +1,14 @@
 ---
 title: How to Win an Hackathon
-date: 2019-05-29T13:07:15+00:00
+date: 2020-08-26T13:07:15+00:00
 author: Ryan Hayes
 permalink: /how-to-win-a-hackathon
 image: /src/content/img/jeremy-philemon-lpev2kfcrw8-unsplash-1-.jpg
-tags: Entrepreneurship
-draft: true
+tags: 
+    - Entrepreneurship
+    - Software
+    - Leadership
+    - Intrapreneurship
 ---
 Ideas.
 
