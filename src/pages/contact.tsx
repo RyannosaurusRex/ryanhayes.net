@@ -35,7 +35,7 @@ return <IndexLayout>
           <div className="sm:col-span-2">
             <label for="email" class="block text-sm font-medium leading-5 text-gray-700">Email</label>
             <div className="mt-1 relative rounded-md shadow-sm">
-              <input id="email" type="email" className="form-input block w-full transition ease-in-out duration-150 sm:text-sm sm:leading-5" />
+              <input id="email" type="email" name="email" className="form-input block w-full transition ease-in-out duration-150 sm:text-sm sm:leading-5" />
             </div>
           </div>
           <div className="sm:col-span-2">
