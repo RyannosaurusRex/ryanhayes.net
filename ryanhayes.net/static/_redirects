@@ -1,0 +1,22 @@
+https://ryanhayes.netlify.com/* https://ryanhayes.net/:splat 301!
+http://blog.ryanhayes.net/* https://ryanhayes.net/:splat 301!
+https://blog.ryanhayes.net/* https://ryanhayes.net/:splat 301!
+https://ryanhayes.dev/* https://ryanhayes.net/:splat 301!
+https://www.ryanhayes.net/* https://ryanhayes.net/:splat 301!
+
+/home                                               /
+/blog/                                              /
+/blog/:slug                                         /:slug
+/software-development/:slug                         /:slug
+/data-annotations-for-entity-framework-4-entities   /data-annotations-for-entity-framework-4-entities-as-an-mvc-model/
+/ryan-hayes                                         /about-ryan-hayes
+/blog/software-development/:slug                    /:slug
+/blog/community/:slug                               /:slug
+/ghost-vs-wordpress-migrating/                      /ghost-vs-wordpress/
+/653866005/                                         /reading-rss-feeds-in-android-and-java/
+/ghost-vs-wordpress-review-and-how-to-migrate/                          /ghost-vs-wordpress
+/how-to-set-up-an-ember-app-inside-of-an-asp-net-mvc-app/               /how-to-set-up-an-emberjs-app-inside-of-an-asp-net-mvc-app/
+/post/910790633/how-to-install-sharepoint-server-2010-rtm-on-windows-7  /how-to-install-sharepoint-server-2010-rtm-on-windows/
+/how-to-install-sharepoint-server-2010-rtm-on-windows-7-2/              /how-to-install-sharepoint-server-2010-rtm-on-windows/
+/free-automated-wordpress-backup-strategy-using-dropbox-or-any-ftp-site/ /ghost-vs-wordpress/
+/synchronize-node-js-install-version-with-visual-studio-2015/ /synchronize-node-js-install-version-with-visual-studio/
