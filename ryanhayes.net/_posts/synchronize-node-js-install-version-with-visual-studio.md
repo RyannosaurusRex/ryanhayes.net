@@ -5,7 +5,7 @@ date: '2019-09-22T02:47:12+00:00'
 author: Ryan Hayes
 layout: post
 guid: https://ryanhayes.net/?p=1001347691
-permalink: synchronize-node-js-install-version-with-visual-studio/
+permalink: synchronize-node-js-install-version-with-visual-studio
 image: img/wp-content/uploads/2015/07/maxresdefault.jpg
 tags: 
   - Web Development

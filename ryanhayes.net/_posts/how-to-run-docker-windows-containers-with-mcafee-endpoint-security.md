@@ -4,7 +4,7 @@ title: How to run Docker Windows Containers with McAfee Endpoint Security
 date: '2018-07-27T15:14:27+00:00'
 author: Ryan Hayes
 guid: https://ryanhayes.net/?p=1001347862
-permalink: how-to-run-docker-windows-containers-with-mcafee-endpoint-security/
+permalink: how-to-run-docker-windows-containers-with-mcafee-endpoint-security
 image: img/boat-container.jpeg
 categories:
   - Blog

@@ -8,6 +8,9 @@ import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../types/post'
 
+import config from '../website-config'
+import Link from 'next/link'
+
 type Props = {
   allPosts: Post[]
 }
@@ -19,20 +22,15 @@ const Index = ({ allPosts }: Props) => {
     <>
       <Layout>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>{config.title}</title>
         </Head>
         <Container>
+          <div role="menu" className="flex justify-items-end">
+            <div className="ml-auto">
+              <Link href="/about">About</Link>
+            </div>
+          </div>
           <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.image}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.permalink}
-              excerpt={heroPost.excerpt}
-            />
-          )}
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>

@@ -3,7 +3,7 @@ title: Building Great Software Teams
 date: '2017-07-19T18:35:12.+00:00'
 author: Ryan Hayes
 layout: post
-permalink: building-great-software-teams/
+permalink: building-great-software-teams
 image: img/demo1.jpg
 tags: 
     - Leadership

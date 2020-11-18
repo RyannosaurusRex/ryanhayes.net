@@ -6,7 +6,7 @@ author: Ryan Hayes
 layout: post
 guid: https://ryanhayes.net/?p=1001347859
 image: img/demo1.jpg
-permalink: how-to-permanently-fix-could-not-copy-dll-to-dll/
+permalink: how-to-permanently-fix-could-not-copy-dll-to-dll
 categories:
   - Blog
 ---
