@@ -14,7 +14,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Author", name: "author", widget: "string", default: "Ryan Hayes"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "slug", name: "slug", widget: "string"}
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "Tag", name: "tags", widget: "select", options: [".NET", "Node.js", "Gatsby", "Wordpress", "Web Development", "React.js", "Entrepreneurship", "Leadership", "Productivity"], default: "Web Development"}
       - {label: "Body", name: "body", widget: "markdown"}
