@@ -6,7 +6,7 @@ const HeaderMenu: React.FC = () => {
         <div className="mr-auto">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight">
                 <Link href="/">
-                    <a className="hover:underline">Ryan's Blog</a>
+                    <a className="hover:underline">Ryan Hayes</a>
                 </Link>
             </h2>
         </div>

@@ -1,14 +1,20 @@
 import { CMS_NAME } from '../lib/constants'
+import ConvertKitForm from 'convertkit-react'
+
 
 /**
  * The intro block/blurb that sits next to the welcome title.
  */
 const Intro = () => {
   return (
+    <>
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-14 ">
-      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 md:mr-16 lg:min-w-max-content">
-        👋 Hi, I'm Ryan.
-      </h1>
+      <div className="flex flex-col">
+        <img className="my-auto w-36 border-2 border-black rounded-full mx-auto" src="/img/ryan-hayes.jpg" />
+        <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 md:mr-16 lg:min-w-max-content">
+          👋 Hi, I'm Ryan.
+        </h1>
+      </div>
       <div className="border-2 rounded-lg mt-16 md:mt-auto md:mb-auto">
         <h4 className="text-center md:text-left text-lg m-5">
           <p>🚀 I help teams and their software products reach their full potential.</p>
@@ -17,6 +23,10 @@ const Intro = () => {
         </h4>
       </div>
     </section>
+    <section>
+      <ConvertKitForm formId={1856231} />
+    </section>
+    </>
   )
 }
 

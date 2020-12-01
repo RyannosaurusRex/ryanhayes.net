@@ -11,6 +11,7 @@
     "@tailwindcss/ui": "^0.7.2",
     "@types/prismjs": "^1.16.2",
     "classnames": "2.2.6",
+    "convertkit-react": "^1.4.2",
     "date-fns": "2.10.0",
     "disqus-react": "^1.0.10",
     "gray-matter": "4.0.2",
