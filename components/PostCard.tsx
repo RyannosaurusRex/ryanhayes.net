@@ -18,7 +18,7 @@ const PostCard: React.FC<{
         { !props.draft && <a href={props.slug}>
             <div className="flex flex-col rounded-lg shadow-lg shadow overflow-hidden m-5">
                 <div className="flex-shrink-0">
-                    {props.image && 
+                    {props.image &&
                         <img src={"/" + props.image}/>
                     }
                 </div>
