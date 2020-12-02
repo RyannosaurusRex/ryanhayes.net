@@ -1,4 +1,6 @@
 import * as React from 'react';
+
+import NewsletterWidget from './NewsletterWidget'
 import { printIntrospectionSchema } from 'graphql';
 
 const FooterList: React.FC<{title: string}> = (props) => {
@@ -23,8 +25,8 @@ const Footer: React.FC = () => {
       <div className="bg-gray-800">
         <div className="max-w-screen-xl mx-auto py-6 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-            <div className="grid grid-cols-2 gap-8 xl:col-span-2">
-              <div className="md:grid md:grid-cols-2 md:gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 xl:col-span-2">
+              <div className="md:grid grid-rows-2 md:gap-8">
                 <FooterList title="Organizations">
                     <FooterLink name="FoundersForge" href="https://foundersforge.com"></FooterLink>
                     <FooterLink name="TriDev" href="https://tricities.dev"></FooterLink>
@@ -36,7 +38,12 @@ const Footer: React.FC = () => {
                     <FooterLink name="Twitter" href="https://twitter.com/RyannosaurusRex"></FooterLink>
                 </FooterList>
               </div>
+
+      <div className="hidden lg:block">
+              <NewsletterWidget />
+      </div>
             </div>
+
             {/* <div className="mt-8 xl:mt-0">
               <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
                 Subscribe to our newsletter
@@ -89,7 +96,7 @@ const Footer: React.FC = () => {
             </div>
             <p className="mt-8 text-base leading-6 text-gray-400 md:mt-0 md:order-1">
               &copy; {new Date().getFullYear()} Ryan Hayes. All rights reserved.
-      </p>
+          </p>
           </div>
         </div>
       </div>

@@ -42,6 +42,9 @@ const SiteNav: React.FC<SiteNavProps> = props => {
                         </button>
                     </div>
                     <nav className="hidden md:flex space-x-10">
+                        <a href="https://ryanhayes.ck.page/0f2722ffb4" className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+                          Newsletter
+                        </a>
                         <a href="/now" className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
                             /Now
                         </a>
@@ -62,15 +65,15 @@ const SiteNav: React.FC<SiteNavProps> = props => {
                     </nav>
                 </div>
 
-                <div 
-                    data-todo-x-description="Mobile menu, show/hide based on mobile menu state." 
-                    data-todo-x-show="mobileMenuOpen" 
-                    data-todo-x-transition-enter="duration-200 ease-out" 
-                    data-todo-x-transition-enter-start="opacity-0 scale-95" 
-                    data-todo-x-transition-enter-end="opacity-100 scale-100" 
-                    data-todo-x-transition-leave="duration-100 ease-in" 
-                    data-todo-x-transition-leave-start="opacity-100 scale-100" 
-                    data-todo-x-transition-leave-end="opacity-0 scale-95" 
+                <div
+                    data-todo-x-description="Mobile menu, show/hide based on mobile menu state."
+                    data-todo-x-show="mobileMenuOpen"
+                    data-todo-x-transition-enter="duration-200 ease-out"
+                    data-todo-x-transition-enter-start="opacity-0 scale-95"
+                    data-todo-x-transition-enter-end="opacity-100 scale-100"
+                    data-todo-x-transition-leave="duration-100 ease-in"
+                    data-todo-x-transition-leave-start="opacity-100 scale-100"
+                    data-todo-x-transition-leave-end="opacity-0 scale-95"
                     className={`absolute top-0 inset-x-0 p-2 transition transform origin-top-right ${mobileMenuOpen ? "" : "hidden"}`}>
                     <div className="rounded-lg shadow-lg">
                         <div className="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
@@ -108,7 +111,7 @@ const SiteNav: React.FC<SiteNavProps> = props => {
                                     </nav>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -164,7 +167,7 @@ const SiteNav: React.FC<SiteNavProps> = props => {
 //           <Twitter />
 //         </a>
 //       )}
-//       <a 
+//       <a
 //         css={SocialLink}
 //         href="https://twitch.tv/RyannosaurusRex"
 //         title="Twitch"
