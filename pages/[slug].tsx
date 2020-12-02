@@ -52,7 +52,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 author={post.author}
               />
               <PostBody content={post.content} />
-              <DisqusComments id={post.slug} slug={post.slug} />
+              <DisqusComments id={post.slug} title={post.title} slug={post.slug} />
             </article>
           </>
         )}
