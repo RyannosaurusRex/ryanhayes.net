@@ -19,9 +19,8 @@ npm config edit
 ```
 
 Once the config file is open, look for this line:
-```
+``` 
 ; cache-lock-retries=10
-```
 ```
 
 Now, replace that line with the following, to significantly increase the cache lock retries:

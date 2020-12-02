@@ -4,9 +4,8 @@ import Container from '../components/container';
 import HeaderMenu from '../components/header-menu';
 
 const Contact: React.FunctionComponent = () => {
-return <><Container>
+return <>
   <HeaderMenu/>
-  </Container>
   <div className="relative bg-white">
   <div className="lg:absolute lg:inset-0">
     <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
