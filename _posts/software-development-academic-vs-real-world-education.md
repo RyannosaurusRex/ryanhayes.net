@@ -4,7 +4,7 @@ title: "Software Development: Academic VS Real World Education"
 date: '2010-05-31T06:48:00+00:00'
 author: Ryan Hayes
 layout: post
-slug: software-development-academic-vs-real-world-education/
+slug: software-development-academic-vs-real-world-education
 robotsmeta:
   - index,follow
 dsq_thread_id:

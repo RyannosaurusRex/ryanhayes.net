@@ -1,4 +1,15 @@
 [Settings]
-# Added automatically by the Netlify CLI. It has no effect during normal
-# Git-backed deploys.
-ID = "e8ec5e2d-4143-4b6b-b705-a4b233519813"
+    # Added automatically by the Netlify CLI. It has no effect during normal
+    # Git-backed deploys.
+    ID = "e8ec5e2d-4143-4b6b-b705-a4b233519813"
+[build]
+    command   = "npm run build"
+    functions = "out_functions"
+    publish   = "out_publish"
+[dev]
+  functions = "out_functions"
+  publish   = "out_publish"
+  # We manually set the framework to static, otherwise Netlify automatically
+  # detects Next.js and redirects do not work.
+  # Read more: https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#project-detection
+  framework = "#static"
