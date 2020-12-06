@@ -48,7 +48,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
               </Head>
               <PostHeader
                 title={post.title}
-                coverImage={post.featuredImage.node.sourceUrl}
+                coverImage={post.featuredImage?.node.sourceUrl}
                 date={post.date}
                 author={post.author}
               />

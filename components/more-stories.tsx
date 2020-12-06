@@ -24,7 +24,7 @@ const MoreStories: React.FC<{posts: Post[], maxItems?: number}> = props => {
               key={post.slug}
               title={post.title}
               draft={false}
-              image={post.featuredImage.node.sourceUrl}
+              image={post.featuredImage?.node.sourceUrl}
               slug={post.slug}
               excerpt={post.excerpt}
               date={new Date(post.date).toLocaleDateString('mmddyyyy')}
