@@ -3,10 +3,9 @@ import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import { getAllPostsForHome, Post } from '../lib/wpApi'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
-import Post from '../types/post'
 
 import config from '../website-config'
 
@@ -34,16 +33,9 @@ const Index = ({ allPosts }: Props) => {
 export default Index
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'image',
-    'draft'
-  ])
+  const allPosts = await getAllPostsForHome(false)
 
   return {
-    props: { allPosts },
+    props: { allPosts: allPosts.posts.edges },
   }
 }

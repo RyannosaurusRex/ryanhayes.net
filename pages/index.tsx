@@ -5,10 +5,9 @@ import Intro from '../components/intro'
 import HeaderMenu from '../components/header-menu'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
-import { getAllPostsForHome } from '../lib/wpApi'
+import { Post, getAllPostsForHome } from '../lib/wpApi'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
-import Post from '../types/post'
 
 import config from '../website-config'
 import Link from 'next/link'
@@ -21,7 +20,7 @@ type Props = {
   allPosts: Post[]
 }
 
-const Index = ({ allPosts }: Props) => {
+const Index : React.FC<{allPosts: Post[]}> = ({ allPosts }) => {
   const heroPost = allPosts[0]
   const morePosts = allPosts.slice(1)
   return (
@@ -58,6 +57,6 @@ export const getStaticProps = async () => {
   })
   // console.log(allPosts[0].node.slug)
   return {
-    props: { allPosts },
+    props: { allPosts: allPosts },
   }
 }
