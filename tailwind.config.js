@@ -1,11 +1,15 @@
 module.exports = {
-  purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
     extend: {},
   },
   variants: {},
+  purge: {
+    enabled: false
+  },
   plugins: [
-    require('@tailwindcss/ui'),
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography')
   ],
 }
