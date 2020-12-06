@@ -5,6 +5,7 @@ import Intro from '../components/intro'
 import HeaderMenu from '../components/header-menu'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
+import { getAllPostsForHome } from '../lib/wpApi'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../types/post'
@@ -12,6 +13,9 @@ import Post from '../types/post'
 import config from '../website-config'
 import Link from 'next/link'
 import React from 'react'
+type WordpressPost = {
+
+}
 
 type Props = {
   allPosts: Post[]
@@ -39,16 +43,20 @@ const Index = ({ allPosts }: Props) => {
 export default Index
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'image',
-    'draft',
-    'excerpt'
-  ])
+  // const allPosts = getAllPosts([
+  //   'title',
+  //   'date',
+  //   'slug',
+  //   'author',
+  //   'image',
+  //   'draft',
+  //   'excerpt'
+  // ])
 
+  const allPosts = await (await getAllPostsForHome(false)).posts.edges.map((post) => {
+    return post.node;
+  })
+  // console.log(allPosts[0].node.slug)
   return {
     props: { allPosts },
   }

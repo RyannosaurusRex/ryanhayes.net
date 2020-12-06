@@ -12,7 +12,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <div className="max-w h-auto relative">
       <img
-        src={"/" + src}
+        src={src}
         alt={`Cover Image for ${title}`}
         className={'shadow-small mx-auto hover:shadow-medium transition-shadow duration-200 mx-auto'}
       />

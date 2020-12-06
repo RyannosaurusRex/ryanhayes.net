@@ -6,8 +6,10 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head />
         <body style={{fontFamily: "system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji"}}>
-          <Main />
-          <NextScript />
+          <div className="">
+            <Main />
+            <NextScript />
+          </div>
         </body>
       </Html>
     )

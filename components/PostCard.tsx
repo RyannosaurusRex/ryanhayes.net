@@ -19,7 +19,7 @@ const PostCard: React.FC<{
             <div className="flex flex-col rounded-lg shadow-lg shadow overflow-hidden m-5">
                 <div className="flex-shrink-0">
                     {props.image &&
-                        <img src={"/" + props.image}/>
+                        <img src={props.image}/>
                     }
                 </div>
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">

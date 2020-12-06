@@ -1,7 +1,7 @@
 import PostPreview from './post-preview'
-import Post from '../types/post'
 import React, { useMemo, useState } from 'react'
 import PostCard from './PostCard'
+import { Post, PostEdge,  } from './../lib/wpApi'
 
 type Props = {
   posts: Post[]
@@ -12,6 +12,9 @@ const MoreStories: React.FC<{posts: Post[], maxItems?: number}> = props => {
 
   return (
     <section>
+      <div>
+
+      </div>
       <h2 className="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">
         The Blog
       </h2>
@@ -20,8 +23,8 @@ const MoreStories: React.FC<{posts: Post[], maxItems?: number}> = props => {
             <PostCard
               key={post.slug}
               title={post.title}
-              draft={post.draft}
-              image={post.image}
+              draft={false}
+              image={post.featuredImage?.node.sourceUrl}
               slug={post.slug}
               excerpt={post.excerpt}
               date={new Date(post.date).toLocaleDateString('mmddyyyy')}

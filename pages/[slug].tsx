@@ -6,6 +6,7 @@ import Header from '../components/header'
 import PostHeader from '../components/post-header'
 import Layout from '../components/layout'
 import { getPostBySlug, getAllPosts } from '../lib/api'
+import { getAllPostsWithSlug, getPostAndMorePosts } from '../lib/wpApi'
 import PostTitle from '../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
@@ -15,7 +16,7 @@ import HeaderMenu from '../components/header-menu'
 import DisqusComments from '../components/DisqusComments'
 
 type Props = {
-  post: PostType
+  post: any
   morePosts: PostType[]
   preview?: boolean
 }
@@ -47,7 +48,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
               </Head>
               <PostHeader
                 title={post.title}
-                coverImage={post.image}
+                coverImage={post.featuredImage.node.sourceUrl}
                 date={post.date}
                 author={post.author}
               />
@@ -70,34 +71,31 @@ type Params = {
 }
 
 export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'date',
-    'slug',
-    'author',
-    'content',
-    'image',
-  ])
-  const content = await markdownToHtml(post.content || '')
+  const postswp = getPostAndMorePosts(params.slug, false, false)
+
+  // Not used anymore, but potentially if I move WP content to markdown.
+  // const content = await markdownToHtml(post.content || '')
+
+  const data = await getPostAndMorePosts(params.slug, false, null)
 
   return {
     props: {
-      post: {
-        ...post,
-        content,
-      },
+      post: data.post
     },
   }
 }
 
+/**
+ * Allows Next.js to understand all of the static URLs that will map here beforehand, so it can statically generate them.
+ */
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
-
+  const posts = await getAllPostsWithSlug()
+  console.log(JSON.stringify(posts))
   return {
-    paths: posts.map((posts) => {
+    paths: posts.edges.map((edge:any) => {
       return {
         params: {
-          slug: posts.slug,
+          slug: edge.node.slug,
         },
       }
     }),
