@@ -61,7 +61,7 @@ const Index : React.FC<{allPosts: Post[]}> = ({ allPosts }) => {
         <Container>
           <HeaderMenu />
           <Intro />
-          {blogPosts.length > 0 && <MoreStories posts={blogPosts} maxItems={3} />}
+          {blogPosts.length > 0 && <MoreStories posts={blogPosts} />}
         </Container>
       </Layout>
     </>
