@@ -8,14 +8,14 @@ import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 
 import config from '../website-config'
+import HeaderMenu from '../components/header-menu'
 
 type Props = {
   allPosts: Post[]
 }
 
 const Index = ({ allPosts }: Props) => {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  const morePosts = allPosts
   return (
     <>
       <Layout>
@@ -23,6 +23,7 @@ const Index = ({ allPosts }: Props) => {
           <title>{config.title}</title>
         </Head>
         <Container>
+          <HeaderMenu />
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
@@ -33,9 +34,10 @@ const Index = ({ allPosts }: Props) => {
 export default Index
 
 export const getStaticProps = async () => {
-  const allPosts = await getAllPostsForHome(false)
-
+  const allPosts = await (await getAllPostsForHome(false)).posts.edges.map((post) => {
+    return post.node;
+  })
   return {
-    props: { allPosts: allPosts.posts.edges },
+    props: { allPosts: allPosts },
   }
 }

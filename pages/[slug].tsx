@@ -90,7 +90,6 @@ export async function getStaticProps({ params }: Params) {
  */
 export async function getStaticPaths() {
   const posts = await getAllPostsWithSlug()
-  console.log(JSON.stringify(posts))
   return {
     paths: posts.edges.map((edge:any) => {
       return {
@@ -99,6 +98,6 @@ export async function getStaticPaths() {
         },
       }
     }),
-    fallback: false,
+    fallback: true,
   }
 }

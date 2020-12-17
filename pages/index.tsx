@@ -8,6 +8,7 @@ import { getAllPosts } from '../lib/api'
 import { Post, getAllPostsForHome } from '../lib/wpApi'
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
+import { filter, reduce } from 'lodash';
 
 import config from '../website-config'
 import Link from 'next/link'
@@ -21,8 +22,36 @@ type Props = {
 }
 
 const Index : React.FC<{allPosts: Post[]}> = ({ allPosts }) => {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  //const heroPost = allPosts[0]
+  const morePosts = allPosts;
+
+  // Fills up full Blog Post articles.
+  const blogPosts: Post[] = [];
+  allPosts.map((post) => {
+    let isBlogCategory = false;
+    post.categories.edges.forEach((cat) => {
+      if (cat.node.name === "Blog") {
+        isBlogCategory = true;
+      }
+    })
+    if (isBlogCategory) {
+      blogPosts.push(post)
+    }
+  })
+
+  const newsletters: Post[] = [];
+  allPosts.map((post) => {
+    let isNewsletter = false;
+    post.categories.edges.forEach((cat) => {
+      if (cat.node.name === "Newsletter") {
+        isNewsletter = true;
+      }
+    })
+    if (isNewsletter) {
+      blogPosts.push(post)
+    }
+  })
+
   return (
     <>
       <Layout>
@@ -32,7 +61,7 @@ const Index : React.FC<{allPosts: Post[]}> = ({ allPosts }) => {
         <Container>
           <HeaderMenu />
           <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} maxItems={3} />}
+          {blogPosts.length > 0 && <MoreStories posts={blogPosts} maxItems={3} />}
         </Container>
       </Layout>
     </>
@@ -42,20 +71,9 @@ const Index : React.FC<{allPosts: Post[]}> = ({ allPosts }) => {
 export default Index
 
 export const getStaticProps = async () => {
-  // const allPosts = getAllPosts([
-  //   'title',
-  //   'date',
-  //   'slug',
-  //   'author',
-  //   'image',
-  //   'draft',
-  //   'excerpt'
-  // ])
-
   const allPosts = await (await getAllPostsForHome(false)).posts.edges.map((post) => {
     return post.node;
   })
-  // console.log(allPosts[0].node.slug)
   return {
     props: { allPosts: allPosts },
   }

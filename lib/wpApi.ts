@@ -1,4 +1,4 @@
-const API_URL: string = process.env.WORDPRESS_API_URL ?? "https://ryanhayesstg.wpengine.com/gql-api";
+const API_URL: string = process.env.WORDPRESS_API_URL ?? "https://cms.ryanhayes.net/gql-api";
 
 async function fetchAPI(query: string, { variables }: any = {}) {
   const headers = { 'Content-Type': 'application/json', 'Authorization': "" }
@@ -62,13 +62,20 @@ export async function getAllPostsForHome(preview: boolean): Promise<GetAllPostsF
   const data = await fetchAPI(
     `
     query AllPosts {
-      posts(first: 20, where: { orderby: { field: DATE, order: DESC } }) {
+      posts(first: 120, where: { orderby: { field: DATE, order: DESC } }) {
         edges {
           node {
             title
             excerpt
             slug
             date
+            categories {
+              edges {
+                node {
+                  name
+                }
+              }
+            }
             featuredImage {
               node {
                 sourceUrl
@@ -96,12 +103,18 @@ export async function getAllPostsForHome(preview: boolean): Promise<GetAllPostsF
       },
     }
   )
-  console.log((data.posts.edges[0].node.title))
   return data;
 }
 export type GetAllPostsForHomeResponse = {
   posts: {
     edges: PostEdge[]
+  }
+}
+
+export type Category = {
+  node: {
+    name: string,
+    description: string
   }
 }
 export type Post = {
@@ -123,6 +136,9 @@ export type Post = {
         url: string
       }
     }
+  },
+  categories: {
+    edges: Category[]
   }
 }
 
