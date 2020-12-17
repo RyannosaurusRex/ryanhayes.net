@@ -27,13 +27,14 @@ const PostCard: React.FC<{
                 </div>
                 <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                     <div className="flex-1">
-                        <p className="text-sm leading-5 font-medium text-indigo-600">
-                            {props.categories && props.categories.map((cat) => {
+                        <div className="text-sm leading-5 font-medium text-indigo-600">
+                            {props.categories && props.categories.slice(1,2).map((cat) => {
                                 return <a href="#" className="hover:underline mr-3">
                                     {cat.node.name}
                                 </a>
                             })}
-                        </p>
+                        </div>
+                        
                         
                         <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
                             {props.title}

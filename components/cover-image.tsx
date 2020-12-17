@@ -22,10 +22,10 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <div className="">
       {slug ? (
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a aria-label={title} className="">{image}</a>
+          {src && <a aria-label={title} className="">{image}</a>}
         </Link>
       ) : (
-        image
+        src && image
       )}
     </div>
   )
