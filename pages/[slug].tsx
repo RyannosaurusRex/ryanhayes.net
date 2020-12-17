@@ -26,8 +26,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
-  console.log("draft: " + post.draft)
-  if (post.draft) {
+  if (post && post.draft) {
     return <ErrorPage statusCode={404} />
   }
 

@@ -19,14 +19,14 @@ const purgecss = [
 module.exports = {
   plugins: [
     "tailwindcss",
-    // "autoprefixer",
-    // [
-    //   "@fullhuman/postcss-purgecss",
-    //   {
-    //     content: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}", "./styles/tailwind.css"],
-    //     defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
-    //   },
-    // ],
+    "autoprefixer",
+    [
+      "@fullhuman/postcss-purgecss",
+      {
+        content: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}", "./styles/tailwind.css"],
+        defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+      },
+    ],
     "postcss-preset-env",
   ],
 };
