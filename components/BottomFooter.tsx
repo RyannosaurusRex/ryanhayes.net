@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { printIntrospectionSchema } from 'graphql';
 
 const FooterList: React.FC<{ title: string }> = (props) => {
   return <div className="mt-12 md:mt-0">
@@ -17,7 +16,7 @@ const FooterLink: React.FC<{ name: string, href: string }> = props => {
   </li>
 }
 
-const Footer: React.FC = () => {
+const BottomFooter: React.FC = () => {
   return (
     <footer className="">
       <div className="bg-gray-800">
@@ -123,4 +122,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer;
+export default BottomFooter;

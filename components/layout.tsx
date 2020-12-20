@@ -1,8 +1,8 @@
-  import Head from 'next/head'
 import Prism from 'prismjs'
 import React, { useEffect } from 'react'
 import Alert from './alert'
-import Footer from './Footer'
+import BottomFooter from './BottomFooter'
+import Footer from './BottomFooter'
 import Meta from './meta'
 
 
@@ -23,7 +23,7 @@ const Layout = ({ preview, children }: Props) => {
       <div className="min-h-screen">
         <Alert preview={preview} />
         <main>{children}</main>
-        <Footer />
+        <BottomFooter />
       </div>
     </>
   )
