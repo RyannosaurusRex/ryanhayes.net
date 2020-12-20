@@ -17,13 +17,13 @@ const Intro = () => {
       </div>
     </section>
     <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-      <div className="flex border-2 rounded-lg">
-        <h4 className="text-center md:text-left text-lg m-5 my-auto">
+      <div className="flex border-2 rounded-lg p-5">
+        <h4 className="text-center md:text-left text-lgmy-auto">
           <p>🚀 I help teams and their software products reach their full potential.</p>
           <br/>
           <p>🎯 I've spent the last 15 years helping fully remote teams work better together, bring their ideas to life, and get out of toxic cycles of burnout to build lasting productivity.</p>
           <br/>
-          <p>📬 Each week I write send out a newsletter of tips, tools, and systems to help you build a career in software development from anywhere in the world!</p>
+          <p>📬 Each week I send out a newsletter of tips, tools, ideas and systems to help you be more effective from anywhere in the world!</p>
         </h4>
       </div>
       <div className="flex flex-col border-2 rounded-lg p-4">

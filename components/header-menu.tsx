@@ -50,7 +50,7 @@ const HeaderMenu: React.FC = () => {
                 <div className="rounded-lg shadow-xs bg-white divide-y-2 divide-gray-50">
                     <div className="pt-5 pb-6 px-5 space-y-6">
                         <div className="flex items-center justify-between">
-                            <h1 className="text-xl font-bold">RyanHayes.NET</h1>
+                            <h1 className="text-xl font-bold">Ryan Hayes</h1>
                             {/* <div>
                                 <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Workflow" />
                             </div> */}

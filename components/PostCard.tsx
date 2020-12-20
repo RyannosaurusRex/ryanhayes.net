@@ -18,7 +18,7 @@ const PostCard: React.FC<{
     categories: Category[]
 }> = (props) => {
     return (<>
-        { !props.draft && <a href={props.slug}>
+        { !props.draft &&
             <div className="flex flex-col rounded-lg shadow-lg shadow overflow-hidden m-5">
                 <div className="flex-shrink-0">
                     {props.image &&
@@ -29,23 +29,25 @@ const PostCard: React.FC<{
                     <div className="flex-1">
                         <div className="text-sm leading-5 font-medium text-indigo-600">
                             {props.categories && props.categories.slice(1,2).map((cat) => {
-                                return <a href="#" className="hover:underline mr-3">
+                                return <a key={props.slug + cat} href="#" className="hover:underline mr-3">
                                     {cat.node.name}
                                 </a>
                             })}
                         </div>
                         
                         
-                        <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
-                            {props.title}
-                        </h3>
-                        <p className="mt-3 text-base leading-6 text-gray-500" dangerouslySetInnerHTML={{__html: props.excerpt}}>
-                        </p>
-                        {props.date && <p className="text-gray-500 mt-3">{props.date}</p>}
+                        <a href={props.slug}>
+                            <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
+                                {props.title}
+                            </h3>
+                            <p className="mt-3 text-base leading-6 text-gray-500" dangerouslySetInnerHTML={{__html: props.excerpt}}>
+                            </p>
+                            {props.date && <p className="text-gray-500 mt-3">{props.date}</p>}
+                        </a>
                     </div>
                 </div>
             </div>
-        </a>}
+        }
         </>
     );
 };

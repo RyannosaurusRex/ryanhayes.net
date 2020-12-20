@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { printIntrospectionSchema } from 'graphql';
 
-const FooterList: React.FC<{title: string}> = (props) => {
+const FooterList: React.FC<{ title: string }> = (props) => {
   return <div className="mt-12 md:mt-0">
     <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
       {props.title}
@@ -12,28 +12,28 @@ const FooterList: React.FC<{title: string}> = (props) => {
 const FooterLink: React.FC<{ name: string, href: string }> = props => {
   return <li className="mt-4">
     <a href="#" className="text-base leading-6 text-gray-300 hover:text-white">
-      <a href={props.href}>{props.name}</a>
+      {props.name}
     </a>
   </li>
 }
 
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-auto">
+    <footer className="">
       <div className="bg-gray-800">
         <div className="max-w-screen-xl mx-auto py-6 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <FooterList title="Organizations">
-                    <FooterLink name="FoundersForge" href="https://foundersforge.com"></FooterLink>
-                    <FooterLink name="TriDev" href="https://tricities.dev"></FooterLink>
+                  <FooterLink name="FoundersForge" href="https://foundersforge.com"></FooterLink>
+                  <FooterLink name="TriDev" href="https://tricities.dev"></FooterLink>
                 </FooterList>
               </div>
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <FooterList title="Social Media">
-                    <FooterLink name="Github" href="https://github.com/RyannosaurusRex"></FooterLink>
-                    <FooterLink name="Twitter" href="https://twitter.com/RyannosaurusRex"></FooterLink>
+                  <FooterLink name="Github" href="https://github.com/RyannosaurusRex"></FooterLink>
+                  <FooterLink name="Twitter" href="https://twitter.com/RyannosaurusRex"></FooterLink>
                 </FooterList>
               </div>
             </div>
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
             </div>
             <p className="mt-8 text-base leading-6 text-gray-400 md:mt-0 md:order-1">
               &copy; {new Date().getFullYear()} Ryan Hayes. All rights reserved.
-      </p>
+            </p>
           </div>
         </div>
       </div>
